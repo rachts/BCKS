@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&amp;family=Source+Sans+3:ital,wght@0,400;0,600;1,400&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-primary": "#ffffff", "primary-fixed-dim": "#ffb3b5", "error-container": "#ffdad6", "on-primary-container": "#ff8b92", "on-surface-variant": "#564242", "surface-variant": "#dee2f3", "secondary-fixed-dim": "#f5bd58", "outline": "#897172", "on-error": "#ffffff", "surface-container-lowest": "#ffffff", "on-background": "#161b27", "inverse-primary": "#ffb3b5", "outline-variant": "#dcc0c0", "on-primary-fixed-variant": "#822530", "surface-container-highest": "#dee2f3", "surface-container": "#e9edfe", "surface-container-low": "#f1f3ff", "tertiary-fixed-dim": "#ccc6b7", "tertiary-container": "#444136", "surface-bright": "#faf9ff", "on-secondary-container": "#755100", "on-error-container": "#93000a", "tertiary": "#2e2b21", "primary-container": "#7a1f2b", "on-tertiary-fixed": "#1e1c12", "on-primary-fixed": "#40000c", "surface": "#FAF6EC", "surface-tint": "#a13c46", "error": "#ba1a1a", "on-tertiary-container": "#b3ad9e", "secondary": "#7d5700", "background": "#FAF6EC", "on-secondary-fixed": "#271900", "on-surface": "#1F2430", "on-secondary": "#ffffff", "inverse-on-surface": "#edf0ff", "surface-container-high": "#e4e8f8", "tertiary-fixed": "#e9e2d2", "surface-dim": "#d5d9ea", "on-tertiary-fixed-variant": "#4a473b", "inverse-surface": "#2b303d", "secondary-fixed": "#ffdeaa", "on-tertiary": "#ffffff", "primary": "#7A1F2B", "on-secondary-fixed-variant": "#5f4100", "primary-fixed": "#ffdada", "secondary-container": "#ffc55f" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "gutter": "1.5rem", "space-sm": "0.5rem", "space-lg": "1.5rem", "space-xl": "2.5rem", "space-3xl": "6rem", "space-2xl": "4rem", "gutter-desktop": "2.5rem", "margin": "1.25rem", "space-md": "1rem", "margin-desktop": "4rem", "space-xs": "0.25rem" }, "fontFamily": { "display-stat-mobile": ["Playfair Display"], "body-lg": ["\"Source Sans 3\""], "headline-lg-mobile": ["Playfair Display"], "display-stat": ["Playfair Display"], "caption": ["\"Source Sans 3\""], "quote-lead": ["Playfair Display"], "label-caps": ["\"Source Sans 3\""], "body-md": ["\"Source Sans 3\""], "headline-lg": ["Playfair Display"], "headline-xl": ["Playfair Display"], "headline-sm": ["Playfair Display"], "headline-md": ["Playfair Display"], "headline-xl-mobile": ["Playfair Display"], "body-sm": ["\"Source Sans 3\""], "serif": ["Playfair Display", "serif"] }, "fontSize": { "display-stat-mobile": ["68px", { "lineHeight": "68px", "fontWeight": "400" }], "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }], "headline-lg-mobile": ["28px", { "lineHeight": "36px", "fontWeight": "600" }], "display-stat": ["112px", { "lineHeight": "104px", "fontWeight": "400" }], "caption": ["12px", { "lineHeight": "18px", "fontWeight": "400" }], "quote-lead": ["24px", { "lineHeight": "36px", "fontWeight": "400" }], "label-caps": ["12px", { "lineHeight": "16px", "letterSpacing": "0.12em", "fontWeight": "600" }], "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "headline-lg": ["40px", { "lineHeight": "48px", "fontWeight": "600" }], "headline-xl": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "600" }], "headline-md": ["26px", { "lineHeight": "34px", "fontWeight": "600" }], "headline-xl-mobile": ["38px", { "lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "body-sm": ["14px", { "lineHeight": "20px", "fontWeight": "400" }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface font-body-md text-body-md flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] pt-safe"><div class="h-20 px-margin flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0"><img alt="Profile" class="w-8 h-8 rounded-full object-cover shrink-0" src="https://lh3.googleusercontent.com/aida/AEtjO1XhLTykQsiDqhri1ACyT2K6R8V8IEYmrW-2CYNLu_3rLSvZDC-GHWdzN9UACr61ZK-Hh7DGgKQpGI2_wHoV8k9e9AdUtXByfAEnPkR8IgErvZfxpo5nXHCmOTUa9yAEkstpSzkyuB6qUgs0JWL8y_PFgtmnKGKJGRhuLIfuOLLrh242FFhw-OhEmdnlGOzQbnS1CntXO-dsEGhJM5nsOqVhoikF9xC_6yHJRed16WlYd8tE5aQdPJ1FW79RWl5AhRRGDcG9jApu2x4"/><div class="flex flex-col min-w-0"><span class="font-label-caps text-label-caps uppercase text-primary tracking-widest truncate">Purba Bardhaman, WB</span><h1 class="font-headline-sm text-headline-sm text-on-surface truncate leading-tight">Bardhaman Chhatra Kalyan Samiti</h1></div></div><div class="flex items-center gap-space-xs shrink-0"><a class="inline-flex items-center justify-center px-space-md py-space-xs bg-primary text-on-primary font-label-caps text-label-caps uppercase tracking-wider rounded-lg transition-colors hover:bg-primary-container min-h-[44px]" data-path="contribute" href="#">Donate</a></div></div></header><main class="flex flex-col relative w-full pt-20 pb-20 bg-surface min-h-screen"><div class="flex flex-col w-full text-on-surface">
+<!-- PAGE HEADER & BROADSHEET MASTHEAD -->
+<section class="px-margin pt-6 pb-space-lg">
+<!-- Folio Stamp -->
+<div class="flex items-center justify-between pb-space-xs border-b border-on-surface/15 mb-space-md">
+<span class="font-label-caps text-caption uppercase text-on-surface/60 tracking-widest">
+        Purba Bardhaman • Council Register
+      </span>
+<span class="font-label-caps text-caption uppercase text-on-surface/60 tracking-wider">
+        Vol. XLI • Term 2025–27
+      </span>
+</div>
+<!-- Section label with 24px maroon hairline -->
+<div class="flex items-center gap-2 mb-space-xs">
+<span class="font-label-caps text-[11px] uppercase tracking-[0.2em] text-primary font-semibold">
+        Our people
+      </span>
+<span class="inline-block w-6 h-[1px] bg-primary"></span>
+</div>
+<!-- Main Editorial Title -->
+<h2 class="font-headline-xl-mobile text-headline-xl-mobile text-on-surface font-serif mb-space-sm leading-tight">
+      The hands that run the Samiti.
+    </h2>
+<p class="font-body-md text-body-md text-on-surface/80 leading-relaxed font-normal max-w-prose">
+      Honorary office bearers, veteran educators, and district mentors dedicated to preserving student welfare and transparent stewardship across Purba Bardhaman.
+    </p>
+<!-- Ephemera Note -->
+<div class="mt-space-md pt-space-xs border-t border-on-surface/10 flex items-center justify-between text-caption text-on-surface/60 font-body-sm">
+<span>Official Gazette of the General Body</span>
+<span class="italic font-serif">Updated Jan 2025</span>
+</div>
+</section>
+<!-- 01 / EXECUTIVE COUNCIL -->
+<section class="px-margin pt-space-lg pb-space-xl">
+<!-- Chapter Header -->
+<div class="flex items-center gap-2 mb-1">
+<span class="font-label-caps text-[11px] uppercase tracking-[0.2em] text-primary font-semibold">
+        01 / Executive Council (2025–2027)
+      </span>
+<span class="inline-block w-6 h-[1px] bg-primary"></span>
+</div>
+<div class="flex items-baseline justify-between border-b border-on-surface/15 pb-2 mb-space-lg">
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile font-serif text-on-surface">
+        Office Bearers
+      </h3>
+<span class="font-label-caps text-caption text-secondary font-semibold uppercase tracking-wider">
+        Elected Biennial
+      </span>
+</div>
+<!-- Featured President (Broadsheet Lead Portrait) -->
+<div class="pb-space-lg border-b border-on-surface/15">
+<div class="relative w-full aspect-[4/3] bg-surface-container overflow-hidden mb-space-md">
+<img class="w-full h-full object-cover" data-alt="Dignified editorial black-and-white tinted archival portrait of Dr. Manoranjan Ghosh, an elderly Bengali gentleman in his late seventies with silver hair, wire-frame spectacles, wearing a traditional cream khadi kurta with a deep maroon border, seated by a library desk with leather-bound books in Bardhaman. Soft warm window light, fine print paper texture." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRmXXGC3dvQxuecsZFjJpW6YOSGGI-W1uejElaJmUejzC_-gsh3Mtffeyi2WU8Q-4IjOI9_2PMv4PUVcQecyVdMymUszxb4ARbMEK1cd6fC7J9TRryYmKs7QfKI1ZA8mc1kZNuipa2vVi4g96FQ85Nt9DMDZNI5XbAtGPeM3JnoKaTLSYvkPOTzPFx9-hzlme7HvQ0WE6N8sf73bcs1-O2q3FqGKY8MIHMRBh_8KAQO6JYAPrv_9WQPg"/>
+<div class="absolute bottom-2 left-2 px-2 py-0.5 bg-surface/90 text-on-surface font-label-caps text-[10px] uppercase tracking-widest border border-on-surface/15">
+          Council Chair
+        </div>
+</div>
+<div class="flex items-baseline justify-between gap-2 mb-1">
+<span class="font-label-caps text-caption uppercase text-primary font-semibold tracking-widest">
+          President
+        </span>
+<span class="font-body-sm text-caption text-on-surface/50 italic font-serif">
+          Term IV
+        </span>
+</div>
+<h4 class="font-headline-md text-headline-md font-serif text-on-surface mb-1">
+        Dr. Manoranjan Ghosh
+      </h4>
+<p class="font-body-sm text-body-sm text-on-surface/75 leading-snug mb-space-sm">
+        Former Principal of Burdwan Raj College. Guiding the Samiti’s educational charter, scholarship scrutiny panel, and institutional endowments since 2012.
+      </p>
+<div class="flex items-center gap-4 text-caption text-on-surface/60 font-body-sm">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-primary">verified</span>
+          Honorary • Non-Stipendiary
+        </span>
+<span>Purba Bardhaman</span>
+</div>
+</div>
+<!-- Office Bearers List with Hairlines -->
+<div class="divide-y divide-on-surface/15">
+<!-- General Secretary -->
+<div class="py-space-md">
+<div class="flex items-baseline justify-between mb-0.5">
+<span class="font-label-caps text-[11px] uppercase tracking-widest text-primary font-semibold">
+            General Secretary
+          </span>
+<span class="font-caption text-caption text-on-surface/50">Chief Executive</span>
+</div>
+<h5 class="font-headline-sm text-headline-sm font-serif text-on-surface">
+          Ashok Kumar Mukherjee
+        </h5>
+<p class="font-body-sm text-body-sm text-on-surface/75 mt-1 leading-normal">
+          Retired Headmaster, Burdwan Municipal High School. Oversees everyday district dispatches, beneficiary verification, and collegiate liaison.
+        </p>
+<span class="inline-block mt-2 font-caption text-[11px] text-secondary tracking-wider uppercase font-semibold">
+          Office: Curzon Gate Desk • Present Daily 4–7 PM
+        </span>
+</div>
+<!-- Treasurer -->
+<div class="py-space-md">
+<div class="flex items-baseline justify-between mb-0.5">
+<span class="font-label-caps text-[11px] uppercase tracking-widest text-primary font-semibold">
+            Treasurer
+          </span>
+<span class="font-caption text-caption text-on-surface/50">Audit Lead</span>
+</div>
+<h5 class="font-headline-sm text-headline-sm font-serif text-on-surface">
+          Tarun Kanti Sen
+        </h5>
+<p class="font-body-sm text-body-sm text-on-surface/75 mt-1 leading-normal">
+          Former Senior Accounts Officer, West Bengal State Electricity Board. Responsible for public ledger reconciliation, 80G filings, and endowment custody.
+        </p>
+</div>
+<!-- Vice Presidents -->
+<div class="py-space-md">
+<div class="flex items-baseline justify-between mb-0.5">
+<span class="font-label-caps text-[11px] uppercase tracking-widest text-primary font-semibold">
+            Vice Presidents
+          </span>
+<span class="font-caption text-caption text-on-surface/50">Academic &amp; Field</span>
+</div>
+<div class="space-y-3 mt-1.5">
+<div>
+<h5 class="font-headline-sm text-[18px] leading-tight font-serif text-on-surface">
+              Prof. Subhas Chandra Ray
+            </h5>
+<p class="font-body-sm text-caption text-on-surface/70">
+              Department of History, University of Burdwan (Retd.). Heading rural library initiatives and textbook stipends in Kalna and Katwa subdivisions.
+            </p>
+</div>
+<div class="pt-2 border-t border-on-surface/10">
+<h5 class="font-headline-sm text-[18px] leading-tight font-serif text-on-surface">
+              Dr. Bani Banerjee
+            </h5>
+<p class="font-body-sm text-caption text-on-surface/70">
+              Former Reader in Chemistry, Burdwan Raj College. Chair of the Girls’ Higher Secondary Grant Review Panel.
+            </p>
+</div>
+</div>
+</div>
+</div>
+<!-- Working Committee Compact Register Table -->
+<div class="mt-space-lg pt-space-md border-t-2 border-on-surface/20">
+<div class="flex items-baseline justify-between mb-space-sm">
+<h4 class="font-serif text-[18px] font-semibold text-on-surface">
+          Working Committee Members
+        </h4>
+<span class="font-label-caps text-[10px] tracking-widest uppercase text-on-surface/60">
+          Roll of Nine
+        </span>
+</div>
+<div class="grid grid-cols-2 gap-x-space-md gap-y-space-sm font-body-sm py-2 text-on-surface/85">
+<div class="border-b border-on-surface/10 pb-1.5">
+<span class="font-semibold text-on-surface block text-[13px]">Bimalendu Mondal</span>
+<span class="text-caption text-on-surface/60">Memari Block Desk</span>
+</div>
+<div class="border-b border-on-surface/10 pb-1.5">
+<span class="font-semibold text-on-surface block text-[13px]">Dr. Suniti Pal</span>
+<span class="text-caption text-on-surface/60">Medical Assistance Cell</span>
+</div>
+<div class="border-b border-on-surface/10 pb-1.5">
+<span class="font-semibold text-on-surface block text-[13px]">Kamal Krishna Hazra</span>
+<span class="text-caption text-on-surface/60">Field Verification</span>
+</div>
+<div class="border-b border-on-surface/10 pb-1.5">
+<span class="font-semibold text-on-surface block text-[13px]">Aparna Chattopadhyay</span>
+<span class="text-caption text-on-surface/60">Secondary School Wing</span>
+</div>
+<div class="border-b border-on-surface/10 pb-1.5">
+<span class="font-semibold text-on-surface block text-[13px]">Sujit Sarkar</span>
+<span class="text-caption text-on-surface/60">Logistics &amp; Rations</span>
+</div>
+<div class="border-b border-on-surface/10 pb-1.5">
+<span class="font-semibold text-on-surface block text-[13px]">Tanmoy Majumdar</span>
+<span class="text-caption text-on-surface/60">Digital Archives &amp; Records</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 02 / STATUTORY RULES & GOVERNANCE -->
+<section class="px-margin py-space-xl bg-on-surface/[0.02] border-y border-on-surface/15">
+<div class="flex items-center gap-2 mb-1">
+<span class="font-label-caps text-[11px] uppercase tracking-[0.2em] text-primary font-semibold">
+        Statutory Rules
+      </span>
+<span class="inline-block w-6 h-[1px] bg-primary"></span>
+</div>
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile font-serif text-on-surface mb-2">
+      How we are governed
+    </h3>
+<p class="font-body-sm text-body-sm text-on-surface/75 mb-space-md">
+      Enacted under the West Bengal Societies Registration Act, 1961. Every post is strictly voluntary without honorarium, allowance, or monetary sitting fee.
+    </p>
+<!-- Collapsible Rows -->
+<div class="divide-y divide-on-surface/15 border-t border-b border-on-surface/15" id="governance-accordion">
+<!-- Row 1 -->
+<div class="accordion-item">
+<button class="w-full py-space-md flex items-center justify-between text-left group" onclick="toggleAccordion(this)" type="button">
+<span class="font-headline-sm text-[17px] font-serif text-on-surface group-hover:text-primary transition-colors pr-4">
+            How the committee is formed
+          </span>
+<span class="material-symbols-outlined text-primary text-[20px] shrink-0 transition-transform duration-200">add</span>
+</button>
+<div class="accordion-content hidden pb-space-md pr-space-md text-body-sm text-on-surface/75 leading-relaxed">
+          Office bearers are elected every two years by the registered General Assembly of life and patron members convened at the Bardhaman Town Hall. No member holding political executive office may stand for election as an active officer.
+        </div>
+</div>
+<!-- Row 2 -->
+<div class="accordion-item">
+<button class="w-full py-space-md flex items-center justify-between text-left group" onclick="toggleAccordion(this)" type="button">
+<span class="font-headline-sm text-[17px] font-serif text-on-surface group-hover:text-primary transition-colors pr-4">
+            Tenure of the committee
+          </span>
+<span class="material-symbols-outlined text-primary text-[20px] shrink-0 transition-transform duration-200">add</span>
+</button>
+<div class="accordion-content hidden pb-space-md pr-space-md text-body-sm text-on-surface/75 leading-relaxed">
+          The elected council serves an un-extended term of twenty-four calendar months. The General Secretary and Treasurer are mandated to publish a notarised public balance sheet thirty days before concluding each biennial tenure.
+        </div>
+</div>
+<!-- Row 3 -->
+<div class="accordion-item">
+<button class="w-full py-space-md flex items-center justify-between text-left group" onclick="toggleAccordion(this)" type="button">
+<span class="font-headline-sm text-[17px] font-serif text-on-surface group-hover:text-primary transition-colors pr-4">
+            Filling vacancies
+          </span>
+<span class="material-symbols-outlined text-primary text-[20px] shrink-0 transition-transform duration-200">add</span>
+</button>
+<div class="accordion-content hidden pb-space-md pr-space-md text-body-sm text-on-surface/75 leading-relaxed">
+          Casual vacancies arising from resignation, relocation, or demise are filled by consensus nomination through an Extraordinary Working Committee meeting, subject to ratification by the Advisory Council within sixty days.
+        </div>
+</div>
+</div>
+</section>
+<!-- 03 / ADVISORY COUNCIL & MENTORS -->
+<section class="px-margin pt-space-xl pb-space-xl">
+<div class="flex items-center gap-2 mb-1">
+<span class="font-label-caps text-[11px] uppercase tracking-[0.2em] text-primary font-semibold">
+        02 / Advisory Council
+      </span>
+<span class="inline-block w-6 h-[1px] bg-primary"></span>
+</div>
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile font-serif text-on-surface mb-2">
+      Mentors &amp; Patrons
+    </h3>
+<p class="font-body-sm text-body-sm text-on-surface/75 mb-space-lg">
+      Eminent figures whose counsel anchors our ethics, scholarship disbursement standards, and public trust.
+    </p>
+<!-- Profiles: Horizontal Rows -->
+<div class="space-y-space-lg">
+<!-- Row 1: Founder Memorial -->
+<div class="flex gap-space-md items-start pb-space-lg border-b border-on-surface/15">
+<div class="w-20 h-24 shrink-0 bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Monochrome sepia portrait photograph of Late Satyen Sen, respected Bengali educationist and social thinker, dignified expression with classic round spectacles, wearing folded shawl, vintage 1980s soft film grain, archival print quality." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA9cOtSUqImoiEWLiT0gt_SdllYCtnK-0iCSY4CLkufnTsJ143zxDukLo99nWanRFOn-9d2jPDarScDdUgKmfoviv_u0QI3MlirMVma4WlKi0cYB7bHF8LVU5X36Xgvof4fqFXvcwEgYE3TzRlmyoTLOwmFa3rOFzC8sZp5Xq39NtQsydJWAgYfi04eTgPzLTrrcLhz3NmCtvJJflvXyFVpL7lhxA9acOtsbuQohBB7xGt2d4tbzOOtQA"/>
+</div>
+<div class="flex-1 min-w-0">
+<span class="font-label-caps text-[10px] uppercase text-primary font-semibold tracking-widest block">
+            Founder Convenor • In Memoriam (1984)
+          </span>
+<h4 class="font-headline-sm text-[19px] font-serif text-on-surface leading-tight mt-0.5">
+            Late Satyen Sen
+          </h4>
+<p class="font-body-sm text-caption text-on-surface/75 mt-1 leading-snug line-clamp-3">
+            Pioneered the initial student hostel relief cell during the drought of 1984. His handwritten inaugural diary remains the ethical constitution of our bursary programme.
+          </p>
+<a class="inline-flex items-center gap-1 mt-2 text-primary font-label-caps text-[11px] tracking-wider uppercase font-semibold hover:text-secondary transition-colors underline underline-offset-4 decoration-1" href="#">
+            Read biographical note →
+          </a>
+</div>
+</div>
+<!-- Row 2: Prof. Alok Kumar Banerjee -->
+<div class="flex gap-space-md items-start pb-space-lg border-b border-on-surface/15">
+<div class="w-20 h-24 shrink-0 bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Editorial portrait of Prof. Alok Kumar Banerjee, distinguished Bengali academician with dignified silver beard, wearing warm grey waistcoat over handspun kurta, natural classroom lighting, scholarly ambience with books in soft background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBIG7OYC4xQm8IH65Hfxlc67VHe6HLSprxTJ7P4tFARMZObrGCvQ9zBaLB4AHnAfHq2jaj7EYJzR0gGNXj7Rtq4fTsSqi6lRIy0RY2DXFAEqTCNI0CWvGsWhQuxBLjuNQye8HnJ3HYpVaTYpHXiL4AqfoGn7aKIVgoEZ-NpmW0YVGI2Ozh5QZuuiVeY1SZ7lUbuKVTMy78x5hqKzdicuY9l8QLRs77xHmIkyoXbjM6Wao64bIVmGOln-w"/>
+</div>
+<div class="flex-1 min-w-0">
+<span class="font-label-caps text-[10px] uppercase text-primary font-semibold tracking-widest block">
+            Academic Mentor
+          </span>
+<h4 class="font-headline-sm text-[19px] font-serif text-on-surface leading-tight mt-0.5">
+            Prof. Alok Kumar Banerjee
+          </h4>
+<p class="font-body-sm text-caption text-on-surface/75 mt-1 leading-snug line-clamp-3">
+            Former Vice Chancellor, University of Burdwan. Leads external scrutiny of university-level research fellowships and higher secondary coaching centres.
+          </p>
+<a class="inline-flex items-center gap-1 mt-2 text-primary font-label-caps text-[11px] tracking-wider uppercase font-semibold hover:text-secondary transition-colors underline underline-offset-4 decoration-1" href="#">
+            Read biographical note →
+          </a>
+</div>
+</div>
+<!-- Row 3: Dr. Sarmistha Dutta -->
+<div class="flex gap-space-md items-start pb-space-lg border-b border-on-surface/15">
+<div class="w-20 h-24 shrink-0 bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Natural environmental portrait of Dr. Sarmistha Dutta, senior Bengali woman physician in her sixties, wearing a deep red border white cotton saree with small pearl necklace, warm compassionate smile, natural clinic daylight." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDYJwTh3hadKclXnKidA3nxJqGnPeJRqd59wScZrBMePwppGotUrj8NkMm3AzIiF9pK4upSTAEVQHGQGHMg3pGS0OhO8KpthdoXnZ-Ozba-OjmwzmXIbbLP3WxZUvHXnuPyiO63xuUteycEznoaUAHYvVJV-Xmyo9mCeDEKnokCs_429UwJgzNDB5ZnBIACl8_SgHH5m_zZN998XW-4-LEMceZ6gIat1SfzQ8XB5zufz7O7HmIxiGOOAA"/>
+</div>
+<div class="flex-1 min-w-0">
+<span class="font-label-caps text-[10px] uppercase text-primary font-semibold tracking-widest block">
+            Medical Cell Lead • Patron
+          </span>
+<h4 class="font-headline-sm text-[19px] font-serif text-on-surface leading-tight mt-0.5">
+            Dr. Sarmistha Dutta
+          </h4>
+<p class="font-body-sm text-caption text-on-surface/75 mt-1 leading-snug line-clamp-3">
+            Senior Paediatrician at Burdwan Medical College (Retd.). Coordinates urgent healthcare stipends for convalescing students and diagnostic relief camps.
+          </p>
+<a class="inline-flex items-center gap-1 mt-2 text-primary font-label-caps text-[11px] tracking-wider uppercase font-semibold hover:text-secondary transition-colors underline underline-offset-4 decoration-1" href="#">
+            Read biographical note →
+          </a>
+</div>
+</div>
+<!-- Row 4: Sri Pranab Mukherjee -->
+<div class="flex gap-space-md items-start">
+<div class="w-20 h-24 shrink-0 bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Quiet thoughtful portrait of Sri Pranab Mukherjee, elderly Bengali schoolmaster, wearing simple khadi kurta, rimless spectacles, warm textured cream library background, printed literary journal atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBDsuJtFmzbe09ysCLgK9LplcSNr2OXrSJYQYDO961MV4Bd4z9L2WMtRMDDBH6CW-U7ivWaH3GZ5Wga1zVwVp_wucXXBg1ZmG5J7z6GEZbuLKFgahfjLebN7rstr-9yKZbhDoXjbzoeMpWFDH9ww_xROpGANuPUWsFdPRZP4tQ6K9YTQ7WnWVO7P7oo1wcYe6W2J3nyuuTw_FjvZM37un7ws74UiDvZip9m7-OPDSNyD7D88A-CfcVqjw"/>
+</div>
+<div class="flex-1 min-w-0">
+<span class="font-label-caps text-[10px] uppercase text-primary font-semibold tracking-widest block">
+            Advisory Council • District Outreach
+          </span>
+<h4 class="font-headline-sm text-[19px] font-serif text-on-surface leading-tight mt-0.5">
+            Sri Pranab Mukherjee
+          </h4>
+<p class="font-body-sm text-caption text-on-surface/75 mt-1 leading-snug line-clamp-3">
+            Veteran Headmaster and founder of the Kalna Rural Readers Club. Advises on rural high school drop-out prevention and vocational apprentice grants.
+          </p>
+<a class="inline-flex items-center gap-1 mt-2 text-primary font-label-caps text-[11px] tracking-wider uppercase font-semibold hover:text-secondary transition-colors underline underline-offset-4 decoration-1" href="#">
+            Read biographical note →
+          </a>
+</div>
+</div>
+</div>
+</section>
+<!-- 04 / VOLUNTEER SECRETARIAT CALLOUT (Plain hairline-bordered on cream) -->
+<section class="px-margin pb-space-2xl">
+<div class="p-space-lg border border-on-surface/20 bg-surface">
+<div class="flex items-center gap-2 mb-2">
+<span class="font-label-caps text-[10px] uppercase tracking-widest text-primary font-semibold">
+          Public Inquiries • Secretariat
+        </span>
+</div>
+<h4 class="font-serif text-[20px] font-semibold text-on-surface mb-2">
+        Correspond with the Office Bearers
+      </h4>
+<p class="font-body-sm text-body-sm text-on-surface/80 leading-normal mb-space-md">
+        The Secretariat is open to students, parents, and prospective sponsors six days a week. For official records scrutiny or meeting the General Secretary in person:
+      </p>
+<div class="space-y-2 text-body-sm border-t border-on-surface/15 pt-space-sm mb-space-md font-body-sm">
+<div class="flex items-start gap-2 text-on-surface/90">
+<span class="material-symbols-outlined text-[18px] text-primary shrink-0 mt-0.5">location_on</span>
+<span>Curzon Gate Memorial Hall, 1st Floor, GT Road, Purba Bardhaman – 713101</span>
+</div>
+<div class="flex items-center gap-2 text-on-surface/90">
+<span class="material-symbols-outlined text-[18px] text-primary shrink-0">schedule</span>
+<span>Monday to Saturday • 4:00 PM – 7:30 PM IST</span>
+</div>
+<div class="flex items-center gap-2 text-on-surface/90">
+<span class="material-symbols-outlined text-[18px] text-primary shrink-0">call</span>
+<span>+91 (0342) 266-4180 / +91 94341 02981</span>
+</div>
+</div>
+<div class="pt-space-xs border-t border-on-surface/10 flex items-center justify-between">
+<span class="text-caption text-on-surface/60 font-body-sm italic">Affiliated to Burdwan District Welfare Register</span>
+<a class="font-label-caps text-[11px] text-primary uppercase tracking-wider font-semibold underline underline-offset-2" href="mailto:secretariat@bardhamanchhatra.org">
+          Send memo
+        </a>
+</div>
+</div>
+</section>
+</div>
+<script>
+  function toggleAccordion(btn) {
+    const content = btn.nextElementSibling;
+    const icon = btn.querySelector('.material-symbols-outlined');
+    const isExpanded = !content.classList.contains('hidden');
+
+    if (isExpanded) {
+      content.classList.add('hidden');
+      icon.textContent = 'add';
+      icon.classList.remove('rotate-45');
+    } else {
+      content.classList.remove('hidden');
+      icon.textContent = 'close';
+    }
+  }
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-1px_8px_rgba(0,0,0,0.04)]" data-active-classes="text-primary font-semibold"><div class="flex justify-around items-center h-16 px-space-xs"><a class="flex flex-col items-center justify-center min-w-[44px] min-h-[44px] px-space-xs text-on-surface-variant hover:text-on-surface transition-colors" data-path="chronicle" href="#"><span class="material-symbols-outlined text-[22px]">auto_stories</span><span class="font-label-caps text-[10px] tracking-wider uppercase mt-0.5">Chronicle</span></a><a class="flex flex-col items-center justify-center min-w-[44px] min-h-[44px] px-space-xs text-on-surface-variant hover:text-on-surface transition-colors" data-path="scholars" href="#"><span class="material-symbols-outlined text-[22px]">school</span><span class="font-label-caps text-[10px] tracking-wider uppercase mt-0.5">Scholar</span></a><a class="flex flex-col items-center justify-center min-w-[44px] min-h-[44px] px-space-xs text-on-surface-variant hover:text-on-surface transition-colors" data-path="ledger" href="#"><span class="material-symbols-outlined text-[22px]">account_balance</span><span class="font-label-caps text-[10px] tracking-wider uppercase mt-0.5">Ledger</span></a><a class="flex flex-col items-center justify-center min-w-[44px] min-h-[44px] px-space-xs text-on-surface-variant hover:text-on-surface transition-colors" data-path="dispatches" href="#"><span class="material-symbols-outlined text-[22px]">newspaper</span><span class="font-label-caps text-[10px] tracking-wider uppercase mt-0.5">Dispatch</span></a><a aria-current="page" class="flex flex-col items-center justify-center min-w-[44px] min-h-[44px] px-space-xs transition-colors text-primary font-semibold" data-path="council" href="#"><span class="material-symbols-outlined text-[22px]">group</span><span class="font-label-caps text-[10px] tracking-wider uppercase mt-0.5">Council</span></a></div></nav></body></html>

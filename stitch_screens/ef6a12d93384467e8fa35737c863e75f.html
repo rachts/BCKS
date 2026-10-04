@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"inverse-primary":"#ffb3b5","surface-container-lowest":"#ffffff","on-tertiary-container":"#b3ad9e","on-tertiary-fixed-variant":"#4a473b","secondary":"#7d5700","error":"#ba1a1a","outline":"#897172","tertiary-fixed-dim":"#ccc6b7","inverse-on-surface":"#edf0ff","on-primary-fixed":"#40000c","on-error-container":"#93000a","surface-bright":"#faf9ff","primary-fixed":"#ffdada","inverse-surface":"#2b303d","secondary-fixed":"#ffdeaa","surface-container-highest":"#dee2f3","on-primary":"#ffffff","on-tertiary-fixed":"#1e1c12","error-container":"#ffdad6","on-tertiary":"#ffffff","surface-dim":"#d5d9ea","primary-fixed-dim":"#ffb3b5","outline-variant":"#dcc0c0","on-secondary-fixed":"#271900","on-background":"#161b27","surface-container":"#e9edfe","secondary-fixed-dim":"#f5bd58","on-surface":"#161b27","background":"#faf9ff","tertiary":"#2e2b21","surface-container-low":"#f1f3ff","tertiary-container":"#444136","on-secondary-container":"#755100","surface":"#faf9ff","on-secondary":"#ffffff","on-primary-fixed-variant":"#822530","on-primary-container":"#ff8b92","surface-tint":"#a13c46","on-error":"#ffffff","primary-container":"#7a1f2b","primary":"#5b0617","surface-container-high":"#e4e8f8","tertiary-fixed":"#e9e2d2","on-surface-variant":"#564242","surface-variant":"#dee2f3","on-secondary-fixed-variant":"#5f4100","secondary-container":"#ffc55f"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"space-xs":"0.25rem","space-md":"1rem","gutter-desktop":"2.5rem","margin-desktop":"4rem","space-lg":"1.5rem","space-sm":"0.5rem","space-2xl":"4rem","space-3xl":"6rem","margin":"1.25rem","gutter":"1.5rem","space-xl":"2.5rem"},"fontFamily":{"caption":["\"Source Sans 3\""],"headline-sm":["Playfair Display"],"display-stat-mobile":["Playfair Display"],"quote-lead":["Playfair Display"],"body-sm":["\"Source Sans 3\""],"label-caps":["\"Source Sans 3\""],"headline-lg-mobile":["Playfair Display"],"headline-xl-mobile":["Playfair Display"],"headline-lg":["Playfair Display"],"headline-xl":["Playfair Display"],"body-md":["\"Source Sans 3\""],"body-lg":["\"Source Sans 3\""],"display-stat":["Playfair Display"],"headline-md":["Playfair Display"]},"fontSize":{"caption":["12px",{"lineHeight":"18px","fontWeight":"400"}],"headline-sm":["20px",{"lineHeight":"28px","fontWeight":"600"}],"display-stat-mobile":["68px",{"lineHeight":"68px","fontWeight":"400"}],"quote-lead":["24px",{"lineHeight":"36px","fontWeight":"400"}],"body-sm":["14px",{"lineHeight":"20px","fontWeight":"400"}],"label-caps":["12px",{"lineHeight":"16px","letterSpacing":"0.12em","fontWeight":"600"}],"headline-lg-mobile":["28px",{"lineHeight":"36px","fontWeight":"600"}],"headline-xl-mobile":["38px",{"lineHeight":"44px","letterSpacing":"-0.01em","fontWeight":"700"}],"headline-lg":["40px",{"lineHeight":"48px","fontWeight":"600"}],"headline-xl":["56px",{"lineHeight":"64px","letterSpacing":"-0.02em","fontWeight":"700"}],"body-md":["16px",{"lineHeight":"24px","fontWeight":"400"}],"body-lg":["18px",{"lineHeight":"28px","fontWeight":"400"}],"display-stat":["112px",{"lineHeight":"104px","fontWeight":"400"}],"headline-md":["26px",{"lineHeight":"34px","fontWeight":"600"}]}}}};</script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@100..900&family=Source+Sans+3:wght@100..900&display=swap" rel="stylesheet"/></head><body class="bg-surface font-body-md text-on-surface"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/95 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="bg-tertiary-fixed text-on-tertiary-fixed px-margin lg:px-margin-desktop py-space-xs"><div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-space-sm"><div class="flex items-center gap-space-md"><span class="font-label-caps text-label-caps uppercase tracking-widest text-on-tertiary-fixed font-bold">FOLIO: ARCHIVAL RECORD VOL. XIV</span><span class="hidden sm:inline font-caption text-caption text-on-tertiary-fixed-variant">• ESTD. 2011 • BARDHAMAN, WEST BENGAL</span></div><div class="flex items-center gap-space-md font-label-caps text-label-caps text-on-tertiary-fixed-variant uppercase"><span>REG. NO: S/1L/84931</span><span class="hidden md:inline font-quote-lead text-caption italic text-secondary">সা বিদ্যা যা বিমুক্তয়ে</span></div></div></div><div class="h-20 max-w-7xl mx-auto px-margin lg:px-margin-desktop flex items-center justify-between gap-space-md"><a class="flex items-center gap-space-md py-space-xs text-left group" data-path="about" href="#"><div class="flex-shrink-0"><img alt="Bardhaman Chhatra Kalyan Samiti Insignia" class="w-10 h-10 rounded-full object-cover ring-1 ring-outline-variant/60" src="https://lh3.googleusercontent.com/aida/AEtjO1XhLTykQsiDqhri1ACyT2K6R8V8IEYmrW-2CYNLu_3rLSvZDC-GHWdzN9UACr61ZK-Hh7DGgKQpGI2_wHoV8k9e9AdUtXByfAEnPkR8IgErvZfxpo5nXHCmOTUa9yAEkstpSzkyuB6qUgs0JWL8y_PFgtmnKGKJGRhuLIfuOLLrh242FFhw-OhEmdnlGOzQbnS1CntXO-dsEGhJM5nsOqVhoikF9xC_6yHJRed16WlYd8tE5aQdPJ1FW79RWl5AhRRGDcG9jApu2x4"/></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary group-hover:text-primary-container transition-colors tracking-tight font-bold leading-tight">Bardhaman Chhatra Kalyan Samiti</span><span class="font-caption text-caption text-on-surface-variant font-medium">বর্ধমান ছাত্র কল্যাণ সমিতি • Charitable Society</span></div></a><nav class="hidden xl:flex items-center gap-space-lg" data-active-classes="text-primary font-bold border-b-2 border-primary"><a class="font-label-caps text-label-caps uppercase tracking-wider text-on-surface-variant hover:text-on-surface py-space-xs transition-colors" data-path="about" href="#">About</a><a class="font-label-caps text-label-caps uppercase tracking-wider text-on-surface-variant hover:text-on-surface py-space-xs transition-colors" data-path="activities" href="#">Activities</a><a class="font-label-caps text-label-caps uppercase tracking-wider text-on-surface-variant hover:text-on-surface py-space-xs transition-colors" data-path="scholarships" href="#">Scholarships</a><a class="font-label-caps text-label-caps uppercase tracking-wider text-on-surface-variant hover:text-on-surface py-space-xs transition-colors" data-path="competitions" href="#">Competitions</a><a class="font-label-caps text-label-caps uppercase tracking-wider text-on-surface-variant hover:text-on-surface py-space-xs transition-colors" data-path="programmes" href="#">Programmes</a><a aria-current="page" class="uppercase tracking-wider py-space-xs transition-colors text-primary font-bold border-b-2 border-primary" data-path="updates" href="#">Updates</a></nav><div class="flex items-center gap-space-md"><a class="px-space-lg py-space-sm bg-primary-container text-on-primary font-label-caps text-label-caps uppercase rounded-lg hover:bg-primary transition-colors flex items-center justify-center text-center shadow-none" data-path="join-and-donate" href="#">Join / Donate</a></div></div></header><main class="w-full pt-28 bg-surface"><div class="flex flex-col w-full">
+<!-- Archival Running Folio Ribbon -->
+<div class="w-full bg-surface-container-low border-b border-on-surface/15">
+<div class="max-w-[1200px] mx-auto px-margin lg:px-margin-desktop py-space-xs flex flex-wrap items-center justify-between text-caption font-caption text-on-surface-variant gap-space-xs">
+<div class="flex items-center gap-space-sm">
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-primary font-bold">FOLIO NO. 08</span>
+<span class="text-on-surface/30">|</span>
+<span class="tracking-wide">OFFICIAL GAZETTE & PERIODIC NOTICES • BARDHAMAN</span>
+</div>
+<div class="flex items-center gap-space-sm font-label-caps text-label-caps">
+<span class="text-on-surface/40 uppercase">PUBLIC ARCHIVE REF:</span>
+<span class="text-on-surface font-semibold tracking-wider">BCKS/NOTICES/2026-Q1</span>
+</div>
+</div>
+</div>
+<!-- Editorial Broadside Main Canvas -->
+<div class="w-full bg-surface">
+<div class="max-w-[1200px] mx-auto px-margin lg:px-margin-desktop pt-space-2xl pb-space-3xl">
+<!-- Section Super-Header & Playfair Lead -->
+<header class="pb-space-xl">
+<div class="flex items-center gap-space-sm mb-space-sm">
+<span class="font-label-caps text-label-caps uppercase tracking-[0.18em] text-primary font-bold">UPDATES</span>
+<span class="w-6 h-[1px] bg-primary/40 inline-block"></span>
+<span class="font-caption text-body-sm text-secondary font-medium tracking-normal">বিজ্ঞপ্তি, ফলাফল ও সাময়িক ইতিবৃত্ত</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-on-surface tracking-tight font-normal leading-[1.08] mb-space-md">
+          Notices, dates and results.
+        </h1>
+<p class="font-quote-lead text-quote-lead text-on-surface-variant italic max-w-4xl font-normal leading-relaxed">
+          The official public chronicle of student laurels, scholarship disbursements, annual convocations, and district outreach bulletins.
+        </p>
+</header>
+<!-- Category Filter Broadsheet Row -->
+<nav aria-label="Gazette Category Filter" class="border-t border-b border-on-surface/15 py-space-sm my-space-lg flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex flex-wrap items-center gap-space-md text-body-sm font-body-sm" id="filter-container">
+<button class="filter-btn text-primary font-semibold relative pb-1 transition-colors" data-filter="all" type="button">
+            All
+            <span class="indicator absolute bottom-0 left-0 right-0 h-[2px] bg-secondary"></span>
+</button>
+<span class="text-on-surface/20 hidden sm:inline">•</span>
+<button class="filter-btn text-on-surface/60 hover:text-primary transition-colors relative pb-1" data-filter="scholarships" type="button">
+            Scholarships
+            <span class="indicator absolute bottom-0 left-0 right-0 h-[2px] bg-secondary hidden"></span>
+</button>
+<span class="text-on-surface/20 hidden sm:inline">•</span>
+<button class="filter-btn text-on-surface/60 hover:text-primary transition-colors relative pb-1" data-filter="competitions" type="button">
+            Competitions
+            <span class="indicator absolute bottom-0 left-0 right-0 h-[2px] bg-secondary hidden"></span>
+</button>
+<span class="text-on-surface/20 hidden sm:inline">•</span>
+<button class="filter-btn text-on-surface/60 hover:text-primary transition-colors relative pb-1" data-filter="agm" type="button">
+            AGM
+            <span class="indicator absolute bottom-0 left-0 right-0 h-[2px] bg-secondary hidden"></span>
+</button>
+<span class="text-on-surface/20 hidden sm:inline">•</span>
+<button class="filter-btn text-on-surface/60 hover:text-primary transition-colors relative pb-1" data-filter="health" type="button">
+            Health camps
+            <span class="indicator absolute bottom-0 left-0 right-0 h-[2px] bg-secondary hidden"></span>
+</button>
+</div>
+<div class="font-caption text-caption text-on-surface-variant flex items-center gap-space-xs self-start md:self-auto">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span id="gazette-count">Showing 6 recent dispatches • Year 2025–2026</span>
+</div>
+</nav>
+<!-- Chronological Feed (6 Realistic Entries) -->
+<section class="flex flex-col w-full divide-y divide-on-surface/15" id="gazette-feed">
+<!-- Entry 1: Scholarships -->
+<article class="gazette-entry py-10 flex flex-col md:flex-row gap-space-lg transition-colors hover:bg-surface-container-low/40 px-2" data-category="scholarships">
+<div class="w-full md:w-52 shrink-0 flex flex-col gap-space-xs">
+<time class="font-label-caps text-label-caps uppercase tracking-widest text-primary font-bold" datetime="2026-02-28">28 FEBRUARY 2026</time>
+<span class="font-caption text-caption italic text-on-surface/60">১৫ ফাল্গুন ১৪৩২</span>
+<div class="pt-space-xs">
+<span class="inline-block px-1.5 py-0.5 bg-surface-container text-on-surface-variant font-label-caps text-[10px] tracking-wider uppercase border border-on-surface/15">
+                SCHOLARSHIPS
+              </span>
+</div>
+<span class="font-caption text-caption text-on-surface/40 mt-space-xs">DISPATCH #894</span>
+</div>
+<div class="flex-1 flex flex-col">
+<h2 class="font-headline-md text-headline-md text-on-surface hover:text-primary font-normal leading-snug transition-colors cursor-pointer mb-space-xs">
+              Medha Chhatravritti 2026: Final List of 180 Empanelled Secondary Scholars Published
+            </h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-[1.7] max-w-3xl mb-space-md">
+              Following village-level academic verifications by the scrutiny committee, the annual bursary list for Purba and Paschim Bardhaman has been ratified for direct semester disbursement.
+            </p>
+<div class="flex flex-wrap items-center gap-x-space-lg gap-y-space-xs font-body-sm text-body-sm pt-space-xs">
+<a class="text-primary hover:text-secondary underline underline-offset-4 decoration-primary/40 hover:decoration-secondary font-medium transition-colors" href="#">
+                Read full dispatch →
+              </a>
+<span class="text-on-surface/20 hidden sm:inline">|</span>
+<a class="text-on-surface-variant hover:text-primary transition-colors flex items-center gap-1 group" href="#">
+<span class="font-normal underline underline-offset-4 decoration-on-surface/20 group-hover:decoration-primary">Download Merit Roster (PDF ↓)</span>
+<span class="text-caption font-caption text-on-surface/50 font-mono">[PDF • 420 KB]</span>
+</a>
+</div>
+</div>
+</article>
+<!-- Entry 2: Health Camps -->
+<article class="gazette-entry py-10 flex flex-col md:flex-row gap-space-lg transition-colors hover:bg-surface-container-low/40 px-2" data-category="health">
+<div class="w-full md:w-52 shrink-0 flex flex-col gap-space-xs">
+<time class="font-label-caps text-label-caps uppercase tracking-widest text-primary font-bold" datetime="2026-02-14">14 FEBRUARY 2026</time>
+<span class="font-caption text-caption italic text-on-surface/60">১ ফাল্গুন ১৪৩২</span>
+<div class="pt-space-xs">
+<span class="inline-block px-1.5 py-0.5 bg-surface-container text-on-surface-variant font-label-caps text-[10px] tracking-wider uppercase border border-on-surface/15">
+                HEALTH CAMPS
+              </span>
+</div>
+<span class="font-caption text-caption text-on-surface/40 mt-space-xs">DISPATCH #893</span>
+</div>
+<div class="flex-1 flex flex-col">
+<h2 class="font-headline-md text-headline-md text-on-surface hover:text-primary font-normal leading-snug transition-colors cursor-pointer mb-space-xs">
+              Upcoming Paediatric & Vision Screening Camp at Kalna Maharaja's High School
+            </h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-[1.7] max-w-3xl mb-space-md">
+              Voluntary panel ophthalmologists and paediatricians will conduct clinical vitals, refractive testing, and provide complimentary corrective spectacles for Classes 8 through 10.
+            </p>
+<div class="flex flex-wrap items-center gap-x-space-lg gap-y-space-xs font-body-sm text-body-sm pt-space-xs">
+<a class="text-primary hover:text-secondary underline underline-offset-4 decoration-primary/40 hover:decoration-secondary font-medium transition-colors" href="#">
+                Camp schedule & parent advisory →
+              </a>
+</div>
+</div>
+</article>
+<!-- Entry 3: Competitions -->
+<article class="gazette-entry py-10 flex flex-col md:flex-row gap-space-lg transition-colors hover:bg-surface-container-low/40 px-2" data-category="competitions">
+<div class="w-full md:w-52 shrink-0 flex flex-col gap-space-xs">
+<time class="font-label-caps text-label-caps uppercase tracking-widest text-primary font-bold" datetime="2026-01-22">22 JANUARY 2026</time>
+<span class="font-caption text-caption italic text-on-surface/60">৮ মাঘ ১৪৩২</span>
+<div class="pt-space-xs">
+<span class="inline-block px-1.5 py-0.5 bg-surface-container text-on-surface-variant font-label-caps text-[10px] tracking-wider uppercase border border-on-surface/15">
+                COMPETITIONS
+              </span>
+</div>
+<span class="font-caption text-caption text-on-surface/40 mt-space-xs">DISPATCH #892</span>
+</div>
+<div class="flex-1 flex flex-col">
+<h2 class="font-headline-md text-headline-md text-on-surface hover:text-primary font-normal leading-snug transition-colors cursor-pointer mb-space-xs">
+              Results Announced: 14th District Inter-School Essay & Debate Laureates
+            </h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-[1.7] max-w-3xl mb-space-md">
+              Over 620 student essays evaluated on vernacular prose and scientific temper; ceremonial citation distribution to take place at Chhatra Kalyan Bhavan.
+            </p>
+<div class="flex flex-wrap items-center gap-x-space-lg gap-y-space-xs font-body-sm text-body-sm pt-space-xs">
+<a class="text-primary hover:text-secondary underline underline-offset-4 decoration-primary/40 hover:decoration-secondary font-medium transition-colors" href="#">
+                Read announcement →
+              </a>
+<span class="text-on-surface/20 hidden sm:inline">|</span>
+<a class="text-on-surface-variant hover:text-primary transition-colors flex items-center gap-1 group" href="#">
+<span class="font-normal underline underline-offset-4 decoration-on-surface/20 group-hover:decoration-primary">Award Gazette (PDF ↓)</span>
+<span class="text-caption font-caption text-on-surface/50 font-mono">[PDF • 280 KB]</span>
+</a>
+</div>
+</div>
+</article>
+<!-- Entry 4: AGM Notice -->
+<article class="gazette-entry py-10 flex flex-col md:flex-row gap-space-lg transition-colors hover:bg-surface-container-low/40 px-2" data-category="agm">
+<div class="w-full md:w-52 shrink-0 flex flex-col gap-space-xs">
+<time class="font-label-caps text-label-caps uppercase tracking-widest text-primary font-bold" datetime="2026-01-05">05 JANUARY 2026</time>
+<span class="font-caption text-caption italic text-on-surface/60">২০ পৌষ ১৪৩২</span>
+<div class="pt-space-xs">
+<span class="inline-block px-1.5 py-0.5 bg-surface-container text-on-surface-variant font-label-caps text-[10px] tracking-wider uppercase border border-on-surface/15">
+                AGM NOTICE
+              </span>
+</div>
+<span class="font-caption text-caption text-on-surface/40 mt-space-xs">DISPATCH #891</span>
+</div>
+<div class="flex-1 flex flex-col">
+<h2 class="font-headline-md text-headline-md text-on-surface hover:text-primary font-normal leading-snug transition-colors cursor-pointer mb-space-xs">
+              Statutory Notice: 15th Annual General Meeting Convened for 22 March 2026
+            </h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-[1.7] max-w-3xl mb-space-md">
+              Notice is hereby given to all registered life and patron members of the Samiti to assemble at Town Hall, Bardhaman for presentation of audited accounts and council elections.
+            </p>
+<div class="flex flex-wrap items-center gap-x-space-lg gap-y-space-xs font-body-sm text-body-sm pt-space-xs">
+<a class="text-primary hover:text-secondary underline underline-offset-4 decoration-primary/40 hover:decoration-secondary font-medium transition-colors" href="#">
+                Agenda details →
+              </a>
+<span class="text-on-surface/20 hidden sm:inline">|</span>
+<a class="text-on-surface-variant hover:text-primary transition-colors flex items-center gap-1 group" href="#">
+<span class="font-normal underline underline-offset-4 decoration-on-surface/20 group-hover:decoration-primary">Official Notice & Form (PDF ↓)</span>
+<span class="text-caption font-caption text-on-surface/50 font-mono">[PDF • 650 KB]</span>
+</a>
+</div>
+</div>
+</article>
+<!-- Entry 5: Scholarships -->
+<article class="gazette-entry py-10 flex flex-col md:flex-row gap-space-lg transition-colors hover:bg-surface-container-low/40 px-2" data-category="scholarships">
+<div class="w-full md:w-52 shrink-0 flex flex-col gap-space-xs">
+<time class="font-label-caps text-label-caps uppercase tracking-widest text-primary font-bold" datetime="2025-12-18">18 DECEMBER 2025</time>
+<span class="font-caption text-caption italic text-on-surface/60">২ পৌষ ১৪৩২</span>
+<div class="pt-space-xs">
+<span class="inline-block px-1.5 py-0.5 bg-surface-container text-on-surface-variant font-label-caps text-[10px] tracking-wider uppercase border border-on-surface/15">
+                SCHOLARSHIPS
+              </span>
+</div>
+<span class="font-caption text-caption text-on-surface/40 mt-space-xs">DISPATCH #890</span>
+</div>
+<div class="flex-1 flex flex-col">
+<h2 class="font-headline-md text-headline-md text-on-surface hover:text-primary font-normal leading-snug transition-colors cursor-pointer mb-space-xs">
+              Disbursement of Emergency Book Grants & Winter Educational Kits across Galsi Block
+            </h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-[1.7] max-w-3xl mb-space-md">
+              Immediate distribution of high-school mathematics primers, geometry instruments, and warm woollen wear completed across six rural secondary institutions.
+            </p>
+<div class="flex flex-wrap items-center gap-x-space-lg gap-y-space-xs font-body-sm text-body-sm pt-space-xs">
+<a class="text-primary hover:text-secondary underline underline-offset-4 decoration-primary/40 hover:decoration-secondary font-medium transition-colors" href="#">
+                Audit summary & village roll →
+              </a>
+</div>
+</div>
+</article>
+<!-- Entry 6: Health Camps -->
+<article class="gazette-entry py-10 flex flex-col md:flex-row gap-space-lg transition-colors hover:bg-surface-container-low/40 px-2" data-category="health">
+<div class="w-full md:w-52 shrink-0 flex flex-col gap-space-xs">
+<time class="font-label-caps text-label-caps uppercase tracking-widest text-primary font-bold" datetime="2025-11-28">28 NOVEMBER 2025</time>
+<span class="font-caption text-caption italic text-on-surface/60">১১ অগ্রহায়ণ ১৪৩২</span>
+<div class="pt-space-xs">
+<span class="inline-block px-1.5 py-0.5 bg-surface-container text-on-surface-variant font-label-caps text-[10px] tracking-wider uppercase border border-on-surface/15">
+                HEALTH CAMPS
+              </span>
+</div>
+<span class="font-caption text-caption text-on-surface/40 mt-space-xs">DISPATCH #889</span>
+</div>
+<div class="flex-1 flex flex-col">
+<h2 class="font-headline-md text-headline-md text-on-surface hover:text-primary font-normal leading-snug transition-colors cursor-pointer mb-space-xs">
+              Adolescent Nutrition & Mental Health Counselling Forum Held at Memari
+            </h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-[1.7] max-w-3xl mb-space-md">
+              Senior child psychologists and visiting educators engaged 160 secondary candidates and their guardians in dialogue on coping with exam anxiety and post-Madhyamik career mapping.
+            </p>
+<div class="flex flex-wrap items-center gap-x-space-lg gap-y-space-xs font-body-sm text-body-sm pt-space-xs">
+<a class="text-primary hover:text-secondary underline underline-offset-4 decoration-primary/40 hover:decoration-secondary font-medium transition-colors" href="#">
+                Field report & counselor notes →
+              </a>
+<span class="text-on-surface/20 hidden sm:inline">|</span>
+<a class="text-on-surface-variant hover:text-primary transition-colors flex items-center gap-1 group" href="#">
+<span class="font-normal underline underline-offset-4 decoration-on-surface/20 group-hover:decoration-primary">Summary Report (PDF ↓)</span>
+<span class="text-caption font-caption text-on-surface/50 font-mono">[PDF • 310 KB]</span>
+</a>
+</div>
+</div>
+</article>
+</section>
+<!-- Archival Inquiry & Newsletter Dossier Broadside -->
+<section class="mt-space-3xl pt-space-xl border-t-2 border-on-surface/20 bg-surface-container-low px-space-xl py-space-xl">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-start">
+<!-- Dossier Metadata (Left 6 Cols) -->
+<div class="lg:col-span-6 flex flex-col">
+<div class="flex items-center gap-space-xs mb-space-xs">
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-primary font-bold">ARCHIVAL GAZETTE REGISTER</span>
+<span class="text-on-surface/30">/</span>
+<span class="font-caption text-caption text-on-surface-variant uppercase">REG. ACT XXVI 1961</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-normal mb-space-sm leading-snug">
+              Receive periodic dispatch notices by postal courier or email.
+            </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed max-w-lg">
+              Official circulars are released quarterly for institutional trustees, school headmasters, and empanelled scholarship sponsors. Publications strictly respect non-commercial donor confidentiality and West Bengal Charitable Societies standards.
+            </p>
+<div class="mt-space-md pt-space-sm border-t border-on-surface/10 flex items-center gap-space-md text-caption font-caption text-on-surface/60">
+<span>ISSN: PENDING</span>
+<span>•</span>
+<span>DESPATCHED FROM BARDHAMAN G.P.O.</span>
+</div>
+</div>
+<!-- Subscription Form (Right 6 Cols) -->
+<div class="lg:col-span-6 flex flex-col justify-center">
+<form class="flex flex-col gap-space-md w-full" id="gazette-subscribe-form" onsubmit="event.preventDefault(); document.getElementById('subscribe-feedback').classList.remove('hidden');">
+<div class="flex flex-col gap-1">
+<label class="font-label-caps text-label-caps uppercase tracking-wider text-on-surface font-semibold" for="subscriber-contact">
+                  Recipient Dispatch Address
+                </label>
+<div class="relative flex flex-col sm:flex-row items-stretch sm:items-end gap-space-md pt-2">
+<input class="flex-1 bg-transparent border-b-2 border-on-surface/30 focus:border-primary text-body-md text-on-surface placeholder:text-on-surface/40 py-2 px-1 outline-none transition-colors rounded-none" id="subscriber-contact" placeholder="Your email or registered postal box number" required="" type="text"/>
+<button class="h-[44px] px-space-lg bg-primary-container hover:bg-primary text-on-primary font-label-caps text-label-caps uppercase tracking-wider transition-colors shrink-0 flex items-center justify-center cursor-pointer" type="submit">
+                    Subscribe to Gazette
+                  </button>
+</div>
+</div>
+<div class="flex items-start gap-space-xs font-caption text-caption text-on-surface/60">
+<span class="text-secondary font-bold">§</span>
+<span>Submissions are catalogued under Schedule IV of the Samiti Governance Code. Unsubscribe or switch to annual postal folio at any time via written notice to the General Secretary.</span>
+</div>
+<div class="hidden text-body-sm text-primary font-medium border-l-2 border-primary pl-2 py-1 bg-surface-container" id="subscribe-feedback">
+                Thank you. Your address has been entered into the Q2 2026 Bardhaman Gazette register.
+              </div>
+</form>
+</div>
+</div>
+</section>
+<!-- Archival Colophon / Bottom Stamp -->
+<div class="mt-space-2xl pt-space-md border-t border-on-surface/15 flex flex-wrap items-center justify-between text-caption font-caption text-on-surface/50 gap-space-sm">
+<div>
+<span>RECORDS CURATED BY: COMMITTEE ON SCHOLASTIC ARCHIVES & PUBLIC GAZETTES</span>
+</div>
+<div class="font-mono text-[11px] tracking-widest uppercase">
+          HASH: 2026-BCKS-NOTICES-VOL-XIV-SEC-3
+        </div>
+</div>
+</div>
+</div>
+<!-- Interactive Filter Logic -->
+<script>
+    (function() {
+      const filterButtons = document.querySelectorAll('.filter-btn');
+      const articles = document.querySelectorAll('#gazette-feed .gazette-entry');
+      const counterEl = document.getElementById('gazette-count');
+
+      filterButtons.forEach(btn => {
+        btn.addEventListener('click', function() {
+          const selectedFilter = this.getAttribute('data-filter');
+
+          // Style active button
+          filterButtons.forEach(b => {
+            b.classList.remove('text-primary', 'font-semibold');
+            b.classList.add('text-on-surface/60');
+            const ind = b.querySelector('.indicator');
+            if (ind) ind.classList.add('hidden');
+          });
+
+          this.classList.remove('text-on-surface/60');
+          this.classList.add('text-primary', 'font-semibold');
+          const activeInd = this.querySelector('.indicator');
+          if (activeInd) activeInd.classList.remove('hidden');
+
+          // Filter articles
+          let visibleCount = 0;
+          articles.forEach(article => {
+            const articleCat = article.getAttribute('data-category');
+            if (selectedFilter === 'all' || articleCat === selectedFilter) {
+              article.classList.remove('hidden');
+              visibleCount++;
+            } else {
+              article.classList.add('hidden');
+            }
+          });
+
+          // Update counter label
+          if (counterEl) {
+            const label = selectedFilter === 'all' 
+              ? 'Showing 6 recent dispatches • Year 2025–2026'
+              : 'Showing ' + visibleCount + ' filtered notice' + (visibleCount === 1 ? '' : 's') + ' • Year 2025–2026';
+            counterEl.textContent = label;
+          }
+        });
+      });
+    })();
+  </script>
+</div></main><footer class="w-full bg-surface-container-low mt-space-3xl"><div class="max-w-7xl mx-auto px-margin lg:px-margin-desktop py-space-2xl"><div class="grid grid-cols-1 md:grid-cols-12 gap-space-xl"><div class="md:col-span-5 flex flex-col gap-space-md"><div class="flex items-center gap-space-sm"><img alt="Logo Seal" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1XhLTykQsiDqhri1ACyT2K6R8V8IEYmrW-2CYNLu_3rLSvZDC-GHWdzN9UACr61ZK-Hh7DGgKQpGI2_wHoV8k9e9AdUtXByfAEnPkR8IgErvZfxpo5nXHCmOTUa9yAEkstpSzkyuB6qUgs0JWL8y_PFgtmnKGKJGRhuLIfuOLLrh242FFhw-OhEmdnlGOzQbnS1CntXO-dsEGhJM5nsOqVhoikF9xC_6yHJRed16WlYd8tE5aQdPJ1FW79RWl5AhRRGDcG9jApu2x4"/><span class="font-headline-sm text-headline-sm text-primary font-bold">Bardhaman Chhatra Kalyan Samiti</span></div><p class="font-quote-lead text-quote-lead italic text-secondary">সা বিদ্যা যা বিমুক্তয়ে — Knowledge is that which liberates.</p><p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">An autonomous, voluntary philanthropic institution dedicated to extending educational endowments, healthcare stipends, and merit-cum-means awards to underprivileged scholars across Purba & Paschim Bardhaman since 2011.</p><div class="font-caption text-caption text-on-tertiary-fixed-variant space-y-space-xs pt-space-xs"><div><strong>Registration:</strong> West Bengal Societies Registration Act XXVI, 1961 (No. S/1L/84931)</div><div><strong>Tax Exemption:</strong> Certified under Sections 12A & 80G of the Income Tax Act, 1961.</div><div>All domestic contributions are eligible for 50% tax deduction under Sec 80G.</div></div></div><div class="md:col-span-4 flex flex-col gap-space-md"><span class="font-label-caps text-label-caps uppercase tracking-widest text-primary font-bold">Headquarters & Secretariat</span><div class="font-body-sm text-body-sm text-on-surface-variant space-y-space-xs"><p class="font-semibold text-on-surface">Chhatra Kalyan Bhavan</p><p>Khoshbagan (Near Burdwan Medical College)</p><p>P.O. & Dist. Bardhaman, PIN 713101</p><p>West Bengal, India</p></div><div class="pt-space-sm space-y-space-xs font-body-sm text-body-sm text-on-surface-variant"><div><span class="font-semibold text-on-surface">Email:</span> secretariat@bcks-bardhaman.org</div><div><span class="font-semibold text-on-surface">Despatch Office:</span> +91 342 266 4108</div><div><span class="font-semibold text-on-surface">Hours:</span> Monday – Saturday, 10:00 to 18:00 IST</div></div></div><div class="md:col-span-3 flex flex-col gap-space-md"><span class="font-label-caps text-label-caps uppercase tracking-widest text-primary font-bold">Archival Indexes</span><ul class="font-body-sm text-body-sm text-on-surface-variant space-y-space-sm"><li><a class="hover:text-primary transition-colors" data-path="about" href="#">Institutional History</a></li><li><a class="hover:text-primary transition-colors" data-path="scholarships" href="#">Merit Stipends & Grants</a></li><li><a class="hover:text-primary transition-colors" data-path="activities" href="#">Book Bank & Reading Room</a></li><li><a class="hover:text-primary transition-colors" data-path="competitions" href="#">District Essay & Quiz Laureates</a></li><li><a class="hover:text-primary transition-colors" data-path="programmes" href="#">Annual General Convocation</a></li><li><a class="hover:text-primary transition-colors" data-path="updates" href="#">Press Bulletins & Notices</a></li><li><a class="hover:text-primary transition-colors" data-path="join-and-donate" href="#">Endowment & 80G Receipts</a></li></ul></div></div><div class="mt-space-2xl pt-space-lg flex flex-col sm:flex-row items-center justify-between gap-space-md text-on-surface-variant font-caption text-caption"><p>© 2011–2025 Bardhaman Chhatra Kalyan Samiti. All rights reserved. Bengali Type & Folio System.</p><div class="flex items-center gap-space-lg font-label-caps text-label-caps uppercase"><span>Transparency & Governance</span><span>Annual Audit Reports</span><span>FCRA Compliance</span></div></div></div></footer></body></html>

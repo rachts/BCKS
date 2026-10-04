@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
+<title>Bardhaman Chhatra Kalyan Samiti | Mobile Editorial</title>
+<!-- Tailwind CSS v3 with Forms & Container-Queries Plugins -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Configuration -->
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            paper: '#FAF6EC',
+            'paper-dark': '#F1EADA',
+            ink: '#1F2430',
+            maroon: '#7A1F2B',
+            'maroon-dark': '#611620',
+            marigold: '#D9A441',
+            rule: 'rgba(31, 36, 48, 0.15)',
+            'rule-maroon': 'rgba(122, 31, 43, 0.25)',
+          },
+          fontFamily: {
+            serif: ['Lora', 'Playfair Display', 'Georgia', 'serif'],
+            sans: ['Inter', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+<!-- Typography Stylesheet -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&amp;family=Playfair+Display:ital,wght@0,600;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+<!-- Core Page Styles -->
+<style data-purpose="base-styling">
+    body {
+      background-color: #FAF6EC;
+      color: #1F2430;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      line-height: 1.55;
+    }
+    .font-editorial {
+      font-family: 'Lora', 'Playfair Display', Georgia, serif;
+    }
+    .hairline-border {
+      border-color: rgba(31, 36, 48, 0.14);
+    }
+  </style>
+</head>
+<body class="bg-paper text-ink min-h-screen flex flex-col items-center">
+<!-- Mobile Viewport Wrapper (~390px Max Width Standard Mobile Canvas) -->
+<div class="w-full max-w-[430px] min-h-screen bg-paper flex flex-col relative shadow-sm border-x border-rule">
+<!-- BEGIN: MobileHeader -->
+<header class="sticky top-0 z-40 bg-paper/95 backdrop-blur-sm border-b hairline-border px-4 py-3 flex items-center justify-between" data-purpose="mobile-navigation">
+<div class="flex items-center gap-2.5">
+<!-- Logo Image -->
+<img alt="Bardhaman Chhatra Kalyan Samiti Logo" class="h-10 w-10 object-contain rounded-full border border-rule-maroon" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCy3x--OAS9FeLvuPMfMUTHZruJxXsL5p7QodYi6LeFR-dIjEdbHgvQL2N5hak-ft7cUsurRWhd6wGleD5nCLJDYxUyfv-QVQ-4f_vEQoSQV2Hs6iHIY1QaW_KfDGADn2ke57gDu4ormhRiU076vaxXjQdNP0eTUXmTY2Qh2VcPU2urmXDGz79cfFcvz8hyanwR8r0Hl50oeHT5b4bgne1mdBsYMIshglwZDtpJDc7xn638ldyPwYxRn0l1d6286RBb_Co"/>
+<div class="flex flex-col">
+<span class="font-editorial text-[14px] font-bold tracking-tight text-ink leading-tight">
+            Bardhaman Chhatra
+          </span>
+<span class="font-editorial text-[12px] font-medium tracking-tight text-maroon leading-tight">
+            Kalyan Samiti
+          </span>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<!-- Compact Donate Action -->
+<a class="px-3 py-1.5 text-xs font-semibold uppercase tracking-wider text-paper bg-maroon hover:bg-maroon-dark transition-colors duration-150 rounded-none border border-maroon" href="#ways-to-support">
+          Donate
+        </a>
+<!-- Minimalist Mobile Menu Toggle -->
+<button aria-label="Toggle navigation menu" class="p-1.5 text-ink hover:text-maroon focus:outline-none" onclick="const nav = document.getElementById('mobile-drawer'); nav.classList.toggle('hidden');" type="button">
+<svg class="w-6 h-6" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="square" stroke-linejoin="miter" stroke-width="1.8"></path>
+</svg>
+</button>
+</div>
+</header>
+<!-- Simple Mobile Drawer Menu -->
+<nav class="hidden bg-paper-dark border-b hairline-border px-5 py-4 space-y-3 font-editorial text-sm" id="mobile-drawer">
+<a class="block py-1 text-ink hover:text-maroon" href="#about">About Us</a>
+<a class="block py-1 text-ink hover:text-maroon" href="#activities">Our Activities</a>
+<a class="block py-1 text-ink hover:text-maroon" href="#scholarships">Scholarship Criteria</a>
+<a class="block py-1 text-ink hover:text-maroon" href="#founder">Founder's Note</a>
+<a class="block py-1 text-ink hover:text-maroon" href="#notices">Notices &amp; Circulars</a>
+<a class="block py-1 text-ink hover:text-maroon" href="#contact">Contact &amp; Exemption</a>
+</nav>
+<!-- END: MobileHeader -->
+<main class="flex-1">
+<!-- BEGIN: HeroSection -->
+<section class="px-5 pt-7 pb-8 border-b hairline-border" data-purpose="hero-editorial" id="about">
+<!-- Eyebrow Tag -->
+<div class="flex items-center gap-2 mb-3.5">
+<span class="w-5 h-[1.5px] bg-maroon"></span>
+<span class="text-[11px] font-semibold tracking-widest uppercase text-maroon">
+            ESTD 2011 • BARDHAMAN, WB
+          </span>
+</div>
+<!-- Primary Editorial Headline -->
+<h1 class="font-editorial text-[34px] leading-[1.15] font-bold text-ink mb-5 tracking-tight">
+          No deserving student should stop learning because of money.
+        </h1>
+<!-- Natural 3:4 Crop Founder Photo with Handover -->
+<div class="my-5 border hairline-border p-1.5 bg-paper-dark">
+<div class="overflow-hidden aspect-[4/3] bg-stone-200">
+<img alt="Sri Baidyanath Singha Roy handing educational aid to a mother and child" class="w-full h-full object-cover object-center" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-iH7NG5OnZ-BCJw2l-ECA7pAAFVAyNy9glEU3OrmZcl29zlaUyKxSfx01kDpsxzxwbmTLHe0RP4xnniVzc0N50WnBw8NyYqwviMcO-_zblHk0BauHkq52C3BYwLrf7DUB1UvA87OogdM9iJ2gJ_mEa0EwYzMkKfje1ix6L4bF8j5NOHiTlLF7o7NoMhjdztb9PvfVikVAaIE3_Vy8Kh-txCxd6c7cFzZ7_dfvMIvXBFp1A9SjlrUWRQt42oAviPI-u3U"/>
+</div>
+<p class="font-editorial italic text-[13px] text-ink/75 text-center mt-2 px-1">
+            Sri Baidyanath Singha Roy, Founder-Secretary, presenting financial assistance to a scholar student &amp; his mother.
+          </p>
+</div>
+<!-- Narrative Copy -->
+<p class="text-[15.5px] leading-relaxed text-ink/90 mt-4 mb-6">
+          Bardhaman Chhatra Kalyan Samiti is a grassroots educational trust driven by retired teachers, civil servants, and alumni. Since 2011, we have stood beside impoverished students across Purba Bardhaman district with stipends, textbooks, and moral guidance.
+        </p>
+<!-- Call to Action Buttons -->
+<div class="flex flex-col gap-2.5">
+<a class="w-full text-center py-3.5 px-4 bg-maroon text-paper font-semibold text-sm tracking-wide uppercase hover:bg-maroon-dark transition-colors duration-150" href="#ways-to-support">
+            Join Us
+          </a>
+<a class="w-full text-center py-3.5 px-4 bg-transparent border border-maroon text-maroon font-semibold text-sm tracking-wide uppercase hover:bg-paper-dark transition-colors duration-150" href="#ways-to-support">
+            Donate to Fund
+          </a>
+</div>
+</section>
+<!-- END: HeroSection -->
+<!-- BEGIN: TickerStrip -->
+<section class="bg-paper-dark/70 border-b hairline-border py-2.5 px-4 overflow-hidden" data-purpose="editorial-ticker">
+<p class="font-editorial text-[13px] text-maroon font-semibold text-center tracking-wide leading-relaxed">
+          Scholarships <span class="text-marigold mx-1">•</span> Quiz Competitions <span class="text-marigold mx-1">•</span> Cultural Meets <span class="text-marigold mx-1">•</span> Health Camps
+        </p>
+</section>
+<!-- END: TickerStrip -->
+<!-- BEGIN: MissionVisionSection -->
+<section class="px-5 py-8 border-b hairline-border space-y-6" data-purpose="mission-vision">
+<!-- Section Header -->
+<div class="flex items-center gap-2">
+<span class="text-marigold text-xs">◆</span>
+<h2 class="text-xs uppercase font-bold tracking-widest text-maroon">Our Creed &amp; Foundation</h2>
+</div>
+<!-- Mission Card -->
+<div class="border-l-2 border-maroon pl-4 py-1">
+<h3 class="font-editorial text-xl font-bold text-ink mb-1.5">Our Mission</h3>
+<p class="text-[14.5px] text-ink/80 leading-relaxed">
+            To identify, adopt, and support deserving students with education, financial assistance, and opportunities, ensuring socio-economic distress never truncates an earnest academic journey.
+          </p>
+</div>
+<div class="w-full border-t hairline-border"></div>
+<!-- Vision Card -->
+<div class="border-l-2 border-marigold pl-4 py-1">
+<h3 class="font-editorial text-xl font-bold text-ink mb-1.5">Our Vision</h3>
+<p class="text-[14.5px] text-ink/80 leading-relaxed">
+            To create an equitable society where financial limitations never prevent a promising young mind from realizing their true moral, academic, and professional potential.
+          </p>
+</div>
+</section>
+<!-- END: MissionVisionSection -->
+<!-- BEGIN: ActivitiesSection -->
+<section class="px-5 py-8 border-b hairline-border" data-purpose="activities-list" id="activities">
+<div class="flex items-center gap-2 mb-2">
+<span class="text-marigold text-xs">◆</span>
+<span class="text-xs uppercase font-bold tracking-widest text-maroon">Grassroots Action</span>
+</div>
+<h2 class="font-editorial text-2xl font-bold text-ink mb-6">Our Core Activities</h2>
+<div class="space-y-6">
+<!-- Activity 01 (Featured) -->
+<article class="p-4 bg-paper-dark/60 border border-maroon/30 relative">
+<div class="flex items-center justify-between mb-2">
+<span class="font-editorial text-2xl font-bold text-maroon">01</span>
+<span class="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 bg-maroon text-paper">Flagship Initiative</span>
+</div>
+<h3 class="font-editorial text-lg font-bold text-ink mb-2">Merit-cum-Need Scholarships</h3>
+<p class="text-sm text-ink/85 mb-3 leading-relaxed">
+              Year-long monthly stipends and textbook supplies distributed to Madhyamik &amp; Uchha Madhyamik rank-holders hailing from impoverished agricultural and rural families.
+            </p>
+<a class="inline-flex items-center text-xs font-bold text-maroon uppercase tracking-wider hover:underline" href="#scholarships">
+              Criteria &amp; Application →
+            </a>
+</article>
+<!-- Activity 02 -->
+<article class="border-t hairline-border pt-4">
+<div class="flex items-baseline gap-3 mb-1">
+<span class="font-editorial text-xl font-bold text-ink/40">02</span>
+<h3 class="font-editorial text-base font-bold text-ink">Annual District Quiz Competition</h3>
+</div>
+<p class="text-sm text-ink/80 leading-relaxed pl-8 mb-2">
+              Inter-school general knowledge competition gathering over 60 schools across Bardhaman to nurture curiosity, historical consciousness, and competitive aptitude.
+            </p>
+<a class="text-xs font-semibold text-maroon pl-8 inline-block hover:underline" href="#notices">Read reports →</a>
+</article>
+<!-- Activity 03 -->
+<article class="border-t hairline-border pt-4">
+<div class="flex items-baseline gap-3 mb-1">
+<span class="font-editorial text-xl font-bold text-ink/40">03</span>
+<h3 class="font-editorial text-base font-bold text-ink">Drawing &amp; Cultural Meets</h3>
+</div>
+<p class="text-sm text-ink/80 leading-relaxed pl-8 mb-2">
+              Platform celebrating regional art, Tagore music, recitation, and traditional craft among underprivileged children to preserve cultural literacy.
+            </p>
+<a class="text-xs font-semibold text-maroon pl-8 inline-block hover:underline" href="#notices">View winners list →</a>
+</article>
+<!-- Activity 04 -->
+<article class="border-t hairline-border pt-4">
+<div class="flex items-baseline gap-3 mb-1">
+<span class="font-editorial text-xl font-bold text-ink/40">04</span>
+<h3 class="font-editorial text-base font-bold text-ink">Free Student Health Checkups</h3>
+</div>
+<p class="text-sm text-ink/80 leading-relaxed pl-8 mb-2">
+              Voluntary diagnostic clinics with licensed pediatricians offering eye evaluations, dental exams, and free distribution of spectacles and iron supplements.
+            </p>
+<a class="text-xs font-semibold text-maroon pl-8 inline-block hover:underline" href="#notices">Camp summaries →</a>
+</article>
+</div>
+</section>
+<!-- END: ActivitiesSection -->
+<!-- BEGIN: ScholarshipCriteria -->
+<section class="px-5 py-8 border-b hairline-border" data-purpose="scholarship-eligibility" id="scholarships">
+<div class="flex items-center gap-2 mb-2">
+<span class="text-marigold text-xs">◆</span>
+<span class="text-xs uppercase font-bold tracking-widest text-maroon">Transparency &amp; Process</span>
+</div>
+<h2 class="font-editorial text-2xl font-bold text-ink mb-3">Who Can Receive A Scholarship?</h2>
+<p class="text-sm text-ink/80 mb-6 leading-relaxed">
+          Beneficiaries are vetted rigorously through a 4-tier grassroots verification framework to ensure aid reaches the most genuine students.
+        </p>
+<!-- 4 Criteria Items with Large Editorial Numerals -->
+<div class="space-y-4">
+<div class="flex gap-4 items-start p-3 bg-paper-dark/40 border hairline-border">
+<span class="font-editorial text-3xl font-light text-maroon/60 leading-none">01</span>
+<div>
+<h4 class="font-editorial font-bold text-sm text-ink mb-1">Classes 9 to 12 in Govt/Aided Schools</h4>
+<p class="text-xs text-ink/75 leading-relaxed">Regular bona fide students in Purba Bardhaman whose family annual income falls below the rural poverty threshold.</p>
+</div>
+</div>
+<div class="flex gap-4 items-start p-3 bg-paper-dark/40 border hairline-border">
+<span class="font-editorial text-3xl font-light text-maroon/60 leading-none">02</span>
+<div>
+<h4 class="font-editorial font-bold text-sm text-ink mb-1">Official School Endorsement</h4>
+<p class="text-xs text-ink/75 leading-relaxed">Application must be formally countersigned by the Headmaster, Headmistress, or Teacher-in-Charge confirming merit &amp; conduct.</p>
+</div>
+</div>
+<div class="flex gap-4 items-start p-3 bg-paper-dark/40 border hairline-border">
+<span class="font-editorial text-3xl font-light text-maroon/60 leading-none">03</span>
+<div>
+<h4 class="font-editorial font-bold text-sm text-ink mb-1">Duly Completed Prescribed Form</h4>
+<p class="text-xs text-ink/75 leading-relaxed">Attached marksheets, ration card/BPL certificate copy, and handwritten declaration by the candidate.</p>
+</div>
+</div>
+<div class="flex gap-4 items-start p-3 bg-paper-dark/40 border hairline-border">
+<span class="font-editorial text-3xl font-light text-maroon/60 leading-none">04</span>
+<div>
+<h4 class="font-editorial font-bold text-sm text-ink mb-1">Direct Guardian Interview</h4>
+<p class="text-xs text-ink/75 leading-relaxed">In-person session accompanied by a parent or legal guardian alongside original academic scorecards.</p>
+</div>
+</div>
+</div>
+<!-- Announcement Box -->
+<div class="mt-6 p-4 border border-maroon bg-paper text-ink">
+<div class="flex items-center gap-2 mb-1.5">
+<span class="w-2 h-2 rounded-full bg-marigold animate-pulse"></span>
+<span class="text-xs font-bold uppercase tracking-wider text-maroon">Applications Open Soon</span>
+</div>
+<p class="text-xs text-ink/80 mb-3">
+            Academic session 2026–2027 forms will be made available at registered schools and our Bardhaman town office.
+          </p>
+<button class="w-full py-2.5 bg-maroon text-paper font-semibold text-xs tracking-wider uppercase hover:bg-maroon-dark transition-colors duration-150" onclick="alert('Application forms for 2026-27 will be downloadable in November. Contact your school Headmaster.');" type="button">
+            Apply / Download Form (PDF)
+          </button>
+</div>
+</section>
+<!-- END: ScholarshipCriteria -->
+<!-- BEGIN: WaysToSupport -->
+<section class="px-5 py-8 border-b hairline-border" data-purpose="donation-tiers" id="ways-to-support">
+<div class="flex items-center gap-2 mb-2">
+<span class="text-marigold text-xs">◆</span>
+<span class="text-xs uppercase font-bold tracking-widest text-maroon">Civic Participation</span>
+</div>
+<h2 class="font-editorial text-2xl font-bold text-ink mb-4">Ways to Support Our Mission</h2>
+<div class="space-y-4">
+<!-- Block 1: Membership -->
+<div class="border-t-2 border-ink pt-3">
+<div class="flex justify-between items-baseline mb-1">
+<h3 class="font-editorial text-base font-bold text-ink">Become a General Member</h3>
+<span class="text-xs font-semibold text-maroon">₹2,000 new / ₹500 renewal</span>
+</div>
+<p class="text-xs text-ink/75 leading-relaxed mb-3">
+              Gain voting participation in general meetings and inspect annual audits directly while contributing to foundational corpus.
+            </p>
+<button class="text-xs font-bold uppercase tracking-wider text-maroon hover:underline">Enroll as Member →</button>
+</div>
+<!-- Block 2: Donate -->
+<div class="border-t-2 border-ink pt-3">
+<div class="flex justify-between items-baseline mb-1">
+<h3 class="font-editorial text-base font-bold text-ink">Direct Voluntary Contribution</h3>
+<span class="text-xs font-semibold text-maroon">From ₹200 upwards</span>
+</div>
+<p class="text-xs text-ink/75 leading-relaxed mb-3">
+              Small contributions pooled monthly purchase school uniforms, notebooks, geometry instruments, and cycle repairs for pupils.
+            </p>
+<button class="text-xs font-bold uppercase tracking-wider text-maroon hover:underline">Contribute Online →</button>
+</div>
+<!-- Block 3: Sponsor -->
+<div class="border-t-2 border-ink pt-3">
+<div class="flex justify-between items-baseline mb-1">
+<h3 class="font-editorial text-base font-bold text-ink">Sponsor a Student or Award</h3>
+<span class="text-xs font-semibold text-maroon">Memorial Endowments</span>
+</div>
+<p class="text-xs text-ink/75 leading-relaxed mb-3">
+              Establish an annual merit medal or sponsor complete secondary schooling expenses in loving memory of your parents or mentors.
+            </p>
+<button class="text-xs font-bold uppercase tracking-wider text-maroon hover:underline">Inquire About Endowments →</button>
+</div>
+</div>
+</section>
+<!-- END: WaysToSupport -->
+<!-- BEGIN: FounderBand (The Dark Editorial Section) -->
+<section class="bg-maroon text-paper px-6 py-10" data-purpose="founder-quote-band" id="founder">
+<div class="flex flex-col items-center text-center">
+<!-- Circular Founder Crop -->
+<div class="w-24 h-24 rounded-full border-2 border-marigold/60 overflow-hidden mb-4 shadow-md bg-maroon-dark">
+<img alt="Sri Baidyanath Singha Roy" class="w-full h-full object-cover object-top filter brightness-95" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAIQorFSsn-qrnO06o-D9Kzk2kpO_gHl5GQW6q64ToBeIPJyeuMaH_AGbnbNW3DBBVlr0ZNiht6d8yM1fMP69CPO4e1ZmTL41gMRV5ez60LoDtW7eX0rHCZlYMUzlL9kmUaP4P-vNxsX6FVwomihBeRugbQVW4B5eelRc4R8jkM_CIVBLxiRJt7UFM3lsz4vn43_xbRM8Q7hEEu9ujGwkqaLRDr3IxudgZYACKBY6l1VEwaynfreq_affkyU-ZC9Lk6jwk"/>
+</div>
+<!-- Editorial Pull Quote -->
+<blockquote class="font-editorial italic text-lg leading-relaxed text-paper mb-3 px-2">
+            “Education given to one child does not merely educate an individual; it lifts an entire family out of darkness forever.”
+          </blockquote>
+<!-- Citation -->
+<div class="w-8 h-[1px] bg-marigold/50 my-2"></div>
+<cite class="not-italic text-sm font-bold tracking-wide text-marigold uppercase">
+            Sri Baidyanath Singha Roy
+          </cite>
+<span class="text-xs text-paper/70 tracking-tight mt-0.5">Founder-Secretary</span>
+<!-- Tribute Copy -->
+<p class="text-xs leading-relaxed text-paper/85 mt-4 text-justify px-1">
+            Sri Baidyanath Singha Roy has dedicated over two decades traversing village roads of Bardhaman on his bicycle, knocking on doors to identify drop-out prone students. His self-effacing leadership continues to inspire hundreds of teachers and patrons across West Bengal.
+          </p>
+</div>
+</section>
+<!-- END: FounderBand -->
+<!-- BEGIN: NoticesAndDocuments -->
+<section class="px-5 py-8 border-b hairline-border" data-purpose="documents-archive" id="notices">
+<div class="flex items-center gap-2 mb-2">
+<span class="text-marigold text-xs">◆</span>
+<span class="text-xs uppercase font-bold tracking-widest text-maroon">Official Archive</span>
+</div>
+<h2 class="font-editorial text-2xl font-bold text-ink mb-4">Notices &amp; Reports</h2>
+<div class="divide-y hairline-border">
+<!-- Document Item 1 -->
+<div class="py-3 flex items-center justify-between gap-3">
+<div>
+<p class="text-[11px] font-semibold text-ink/50 uppercase tracking-wider">Aug 2026</p>
+<h4 class="font-editorial text-sm font-semibold text-ink">Annual Merit Scholarship Notification 2026-27</h4>
+</div>
+<a class="flex-shrink-0 px-2.5 py-1 text-xs font-bold text-maroon border border-maroon hover:bg-maroon hover:text-paper transition-colors duration-150" href="#download">
+              PDF ↓
+            </a>
+</div>
+<!-- Document Item 2 -->
+<div class="py-3 flex items-center justify-between gap-3">
+<div>
+<p class="text-[11px] font-semibold text-ink/50 uppercase tracking-wider">May 2026</p>
+<h4 class="font-editorial text-sm font-semibold text-ink">District Inter-School Quiz Winners Roll</h4>
+</div>
+<a class="flex-shrink-0 px-2.5 py-1 text-xs font-bold text-maroon border border-maroon hover:bg-maroon hover:text-paper transition-colors duration-150" href="#download">
+              PDF ↓
+            </a>
+</div>
+<!-- Document Item 3 -->
+<div class="py-3 flex items-center justify-between gap-3">
+<div>
+<p class="text-[11px] font-semibold text-ink/50 uppercase tracking-wider">Mar 2026</p>
+<h4 class="font-editorial text-sm font-semibold text-ink">Audited Accounts &amp; Annual General Meeting Report</h4>
+</div>
+<a class="flex-shrink-0 px-2.5 py-1 text-xs font-bold text-maroon border border-maroon hover:bg-maroon hover:text-paper transition-colors duration-150" href="#download">
+              PDF ↓
+            </a>
+</div>
+<!-- Document Item 4 -->
+<div class="py-3 flex items-center justify-between gap-3">
+<div>
+<p class="text-[11px] font-semibold text-ink/50 uppercase tracking-wider">Jan 2026</p>
+<h4 class="font-editorial text-sm font-semibold text-ink">Comprehensive Health &amp; Vision Camp Summary</h4>
+</div>
+<a class="flex-shrink-0 px-2.5 py-1 text-xs font-bold text-maroon border border-maroon hover:bg-maroon hover:text-paper transition-colors duration-150" href="#download">
+              PDF ↓
+            </a>
+</div>
+</div>
+</section>
+<!-- END: NoticesAndDocuments -->
+</main>
+<!-- BEGIN: FooterSection -->
+<footer class="bg-paper-dark px-5 pt-8 pb-10 text-ink/80 text-xs border-t hairline-border" data-purpose="editorial-footer" id="contact">
+<div class="space-y-6">
+<!-- Bengali Motto & Stamp -->
+<div class="text-center pb-5 border-b hairline-border">
+<div class="font-editorial text-lg font-bold text-maroon tracking-wider mb-1">
+            "সা বিদ্যা যা বিমুক্তয়ে"
+          </div>
+<p class="italic text-[11px] text-ink/60">"That which liberates is true knowledge"</p>
+</div>
+<!-- Registered Office Coordinates -->
+<div>
+<h4 class="font-editorial text-sm font-bold text-ink uppercase tracking-wide mb-2">Registered Office</h4>
+<address class="not-italic leading-relaxed text-ink/75">
+            Bardhaman Chhatra Kalyan Samiti<br/>
+            Bara Bazar Road, Near Curzon Gate,<br/>
+            Bardhaman, West Bengal – 713101, India.
+          </address>
+</div>
+<!-- Direct Contact Details -->
+<div>
+<h4 class="font-editorial text-sm font-bold text-ink uppercase tracking-wide mb-2">Contact &amp; Inquiries</h4>
+<p class="leading-relaxed text-ink/75">
+            Phone: <a class="hover:underline text-maroon" href="tel:+919434000000">+91 9434X XXXXX</a> / <a class="hover:underline text-maroon" href="tel:+91342200000">0342-2XXXXX</a><br/>
+            Email: <a class="hover:underline text-maroon" href="mailto:bardhaman.chhatrakalyan@gmail.com">bardhaman.chhatrakalyan@gmail.com</a>
+</p>
+</div>
+<!-- Exemption & Governance Notice -->
+<div class="p-3 bg-paper border hairline-border">
+<h5 class="font-bold text-[11px] text-ink uppercase tracking-wide mb-1">Statutory Compliance</h5>
+<p class="text-[11px] leading-relaxed text-ink/70">
+            Registered under West Bengal Societies Registration Act, 1961. Donations are eligible for tax deduction under Section 80G and registered under Section 12A of the Income Tax Act.
+          </p>
+</div>
+<!-- Colophon & Copyright -->
+<div class="pt-2 text-center text-[11px] text-ink/60 space-y-1">
+<p>© 2011–2026 Bardhaman Chhatra Kalyan Samiti. All rights reserved.</p>
+<p class="font-editorial italic">Crafted with care for students and community patrons.</p>
+</div>
+</div>
+</footer>
+<!-- END: FooterSection -->
+</div>
+</body></html>

@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&amp;family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"tertiary-fixed":"#e9e2d2","surface-dim":"#d5d9ea","error-container":"#ffdad6","on-tertiary-fixed":"#1e1c12","on-tertiary":"#ffffff","secondary-container":"#ffc55f","primary-fixed-dim":"#ffb3b5","on-primary-fixed":"#40000c","outline":"#897172","secondary-fixed":"#ffdeaa","inverse-surface":"#2b303d","on-secondary-fixed-variant":"#5f4100","tertiary-fixed-dim":"#ccc6b7","on-error-container":"#93000a","inverse-on-surface":"#edf0ff","on-primary-fixed-variant":"#822530","secondary":"#7d5700","on-background":"#161b27","on-tertiary-container":"#b3ad9e","on-primary":"#ffffff","inverse-primary":"#ffb3b5","secondary-fixed-dim":"#f5bd58","on-tertiary-fixed-variant":"#4a473b","surface-container-high":"#e4e8f8","surface-bright":"#faf9ff","on-error":"#ffffff","on-secondary-fixed":"#271900","primary-fixed":"#ffdada","background":"#faf9ff","tertiary":"#2e2b21","on-surface":"#161b27","primary":"#5b0617","primary-container":"#7a1f2b","tertiary-container":"#444136","surface-variant":"#dee2f3","surface-container-low":"#f1f3ff","on-primary-container":"#ff8b92","surface":"#faf9ff","error":"#ba1a1a","on-surface-variant":"#564242","surface-tint":"#a13c46","on-secondary-container":"#755100","on-secondary":"#ffffff","outline-variant":"#dcc0c0","surface-container-lowest":"#ffffff","surface-container":"#e9edfe","surface-container-highest":"#dee2f3"},borderRadius:{DEFAULT:"0.125rem",lg:"0.25rem",xl:"0.5rem",full:"0.75rem"},spacing:{"space-md":"1rem","space-xs":"0.25rem","margin-desktop":"4rem","space-lg":"1.5rem","gutter-desktop":"2.5rem",gutter:"1.5rem",margin:"1.25rem","space-sm":"0.5rem","space-xl":"2.5rem","space-2xl":"4rem","space-3xl":"6rem"},fontFamily:{"quote-lead":["Playfair Display"],"body-md":["\"Source Sans 3\""],"headline-lg":["Playfair Display"],"headline-sm":["Playfair Display"],"display-stat-mobile":["Playfair Display"],"label-caps":["\"Source Sans 3\""],"body-lg":["\"Source Sans 3\""],"body-sm":["\"Source Sans 3\""],"headline-md":["Playfair Display"],"headline-lg-mobile":["Playfair Display"],caption:["\"Source Sans 3\""],"headline-xl-mobile":["Playfair Display"],"display-stat":["Playfair Display"],"headline-xl":["Playfair Display"]},fontSize:{"quote-lead":["24px",{lineHeight:"36px",fontWeight:"400"}],"body-md":["16px",{lineHeight:"24px",fontWeight:"400"}],"headline-lg":["40px",{lineHeight:"48px",fontWeight:"600"}],"headline-sm":["20px",{lineHeight:"28px",fontWeight:"600"}],"display-stat-mobile":["68px",{lineHeight:"68px",fontWeight:"400"}],"label-caps":["12px",{lineHeight:"16px",letterSpacing:"0.12em",fontWeight:"600"}],"body-lg":["18px",{lineHeight:"28px",fontWeight:"400"}],"body-sm":["14px",{lineHeight:"20px",fontWeight:"400"}],"headline-md":["26px",{lineHeight:"34px",fontWeight:"600"}],"headline-lg-mobile":["28px",{lineHeight:"36px",fontWeight:"600"}],caption:["12px",{lineHeight:"18px",fontWeight:"400"}],"headline-xl-mobile":["38px",{lineHeight:"44px",letterSpacing:"-0.01em",fontWeight:"700"}],"display-stat":["112px",{lineHeight:"104px",fontWeight:"400"}],"headline-xl":["56px",{lineHeight:"64px",letterSpacing:"-0.02em",fontWeight:"700"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/95 backdrop-blur-md border-b border-outline-variant/40"><div class="w-full px-margin md:px-margin-desktop"><div class="h-20 flex items-center justify-between gap-gutter"><div class="flex items-center gap-space-md"><div class="flex flex-col"><div class="flex items-center gap-space-xs"><span class="font-label-caps text-label-caps text-secondary uppercase">Purba Bardhaman, West Bengal</span><span class="text-outline-variant">•</span><span class="font-label-caps text-label-caps text-on-surface-variant uppercase">Estd. 2011</span></div><span class="font-headline-sm text-headline-sm text-primary font-semibold tracking-tight">Bardhaman Chhatra Kalyan Samiti</span></div></div><nav class="hidden xl:flex items-center gap-space-lg" data-active-classes="text-primary font-semibold border-b border-primary"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors py-1" data-path="about" href="#">About</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors py-1" data-path="activities" href="#">Activities</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors py-1" data-path="scholarships" href="#">Scholarships</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors py-1" data-path="competitions" href="#">Competitions</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors py-1" data-path="programmes" href="#">Programmes</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors py-1" data-path="governance" href="#">Governance</a><a aria-current="page" class="transition-colors py-1 text-primary font-semibold border-b border-primary" data-path="agm-archives" href="#">AGM</a></nav><div class="flex items-center gap-space-md"><a class="inline-flex items-center justify-center h-10 px-space-lg rounded bg-primary-container text-on-primary font-body-sm text-body-sm font-semibold hover:bg-primary transition-colors" data-path="donate" href="#">Donate</a><img alt="Profile" class="w-8 h-8 rounded-full object-cover border border-outline-variant/60" src="https://lh3.googleusercontent.com/aida/AEtjO1XhLTykQsiDqhri1ACyT2K6R8V8IEYmrW-2CYNLu_3rLSvZDC-GHWdzN9UACr61ZK-Hh7DGgKQpGI2_wHoV8k9e9AdUtXByfAEnPkR8IgErvZfxpo5nXHCmOTUa9yAEkstpSzkyuB6qUgs0JWL8y_PFgtmnKGKJGRhuLIfuOLLrh242FFhw-OhEmdnlGOzQbnS1CntXO-dsEGhJM5nsOqVhoikF9xC_6yHJRed16WlYd8tE5aQdPJ1FW79RWl5AhRRGDcG9jApu2x4"/></div></div></div></header><main class="w-full pt-20 bg-surface"><div class="flex flex-col w-full text-[#1F2430]">
+<!-- TOP FOLIO RUNNING HEADER -->
+<section class="w-full border-b border-[#1F2430]/15 pt-6 pb-4">
+<div class="max-w-[1200px] mx-auto px-6 flex flex-col md:flex-row items-start md:items-center justify-between gap-2 font-mono text-[11px] tracking-wider text-[#1F2430]/70 uppercase">
+<div class="flex items-center gap-3">
+<span class="text-[#7A1F2B] font-semibold">Folio No. 07</span>
+<span class="text-[#1F2430]/30">/</span>
+<span>Statutory Governance &amp; Convocation</span>
+<span class="text-[#1F2430]/30">•</span>
+<span>Purba Bardhaman</span>
+</div>
+<div class="flex items-center gap-4">
+<span>Registry Ref: <strong class="text-[#1F2430] font-semibold">BCKS/AGM/2026-NOT</strong></span>
+<span class="hidden sm:inline text-[#D9A441]">●</span>
+<span class="hidden sm:inline">Act XXVI of 1961</span>
+</div>
+</div>
+</section>
+<!-- EDITORIAL MASTHEAD & INTRODUCTION -->
+<section class="w-full pt-16 pb-12">
+<div class="max-w-[1200px] mx-auto px-6">
+<div class="flex items-center gap-3 mb-6">
+<span class="font-mono text-[11px] uppercase tracking-[0.2em] text-[#7A1F2B] font-bold">Governance &amp; Records</span>
+<div class="w-6 h-[1px] bg-[#7A1F2B]"></div>
+<span class="text-[12px] italic text-[#1F2430]/60 font-serif">Convocatio Solemnis</span>
+</div>
+<div class="grid grid-cols-12 gap-y-6 lg:gap-x-12 items-baseline">
+<div class="col-span-12 lg:col-span-7">
+<h1 class="font-serif text-[44px] md:text-[56px] leading-[1.08] text-[#1F2430] tracking-[-0.02em]">
+            Annual General <br class="hidden sm:inline"/><span class="italic font-normal text-[#7A1F2B]">Meeting</span>
+</h1>
+</div>
+<div class="col-span-12 lg:col-span-5 border-l-0 lg:border-l border-[#1F2430]/15 lg:pl-8">
+<p class="font-serif text-[19px] leading-[30px] text-[#1F2430]/85 italic">
+            The sovereign democratic assembly of registered members, reviewing audited accounts, ratifying bursaries, and confirming the executive mandate.
+          </p>
+<div class="mt-4 flex items-center gap-4 text-xs font-mono tracking-wider text-[#1F2430]/50 uppercase">
+<span>Quinquennial Term: 2024–29</span>
+<span>•</span>
+<span>Purba Bardhaman District</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- NOTICE OF CONVOCATION: FOCAL ELEMENT -->
+<section class="w-full py-4">
+<div class="max-w-[1200px] mx-auto px-6">
+<div class="relative bg-transparent border border-[#7A1F2B]/60 p-8 md:p-12">
+<!-- Corner Registry Indices -->
+<span class="absolute top-2 left-3 font-mono text-[10px] tracking-widest text-[#7A1F2B]/70 uppercase">Gazette Notice § 14(a)</span>
+<span class="absolute top-2 right-3 font-mono text-[10px] tracking-widest text-[#1F2430]/40 uppercase">State Code: 19 / WB</span>
+<!-- Section Badge -->
+<div class="flex items-center gap-2 mb-6">
+<span class="font-mono text-[11px] font-bold uppercase tracking-[0.25em] text-[#7A1F2B]">Next AGM</span>
+<span class="text-[#D9A441] text-xs">◆</span>
+<span class="font-mono text-[11px] tracking-widest text-[#1F2430]/60 uppercase">15th Conclave</span>
+</div>
+<!-- Assembly Schedule Line Elements -->
+<div class="border-b border-[#1F2430]/15 pb-8 mb-8 space-y-3">
+<div>
+<h2 class="font-serif text-[42px] sm:text-[52px] md:text-[58px] leading-[1.05] italic text-[#1F2430] font-normal tracking-tight">
+              Sunday, 20 September 2026
+            </h2>
+</div>
+<div class="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 font-sans text-[16px] text-[#1F2430]/90">
+<span class="font-semibold text-[#7A1F2B] uppercase tracking-wide text-xs font-mono">Conclave Hours</span>
+<span class="text-[17px]">10:30 AM to 02:00 PM (IST)</span>
+<span class="hidden sm:inline text-[#1F2430]/30">—</span>
+<span class="italic text-[#1F2430]/70 text-[15px]">Registration desk closes at 10:15 AM sharp</span>
+</div>
+<div class="flex flex-col sm:flex-row sm:items-start gap-2 sm:gap-4 font-sans text-[16px] text-[#1F2430]/90 pt-1">
+<span class="font-semibold text-[#7A1F2B] uppercase tracking-wide text-xs font-mono mt-1">Conclave Hall</span>
+<span class="font-serif text-[18px] text-[#1F2430]">Auditorium Hall, Burdwan Town Hall, B.C. Road, Bardhaman Sadar, West Bengal 713101</span>
+</div>
+</div>
+<!-- Solemn Agenda Listing -->
+<div class="mb-10">
+<div class="flex items-baseline justify-between mb-4">
+<span class="font-mono text-[11px] tracking-[0.2em] uppercase text-[#7A1F2B] font-semibold">Statutory Agenda of Business</span>
+<span class="text-[12px] font-mono text-[#1F2430]/50 tracking-wider">3 Matters Tabled</span>
+</div>
+<div class="divide-y divide-[#1F2430]/15">
+<div class="py-4 grid grid-cols-12 gap-4 items-start">
+<span class="col-span-1 font-serif italic text-lg text-[#D9A441]">01.</span>
+<p class="col-span-11 font-sans text-[16px] leading-[25px] text-[#1F2430]">
+                Tabling and adoption of the Annual Audited Balance Sheet &amp; Auditor’s Report for FY 2025–26, prepared by Statutory Auditors M/s Sen &amp; Ray Associates, Chartered Accountants.
+              </p>
+</div>
+<div class="py-4 grid grid-cols-12 gap-4 items-start">
+<span class="col-span-1 font-serif italic text-lg text-[#D9A441]">02.</span>
+<p class="col-span-11 font-sans text-[16px] leading-[25px] text-[#1F2430]">
+                Ratification of the Medha Chhatravritti budget expansion and district screening selections across 23 rural blocks of Purba Bardhaman for Higher Secondary scholars.
+              </p>
+</div>
+<div class="py-4 grid grid-cols-12 gap-4 items-start">
+<span class="col-span-1 font-serif italic text-lg text-[#D9A441]">03.</span>
+<p class="col-span-11 font-sans text-[16px] leading-[25px] text-[#1F2430]">
+                Deliberation on constitutional amendments regarding corpus preservation and statutory election of the 2026–28 Governing Council as per registered society bye-laws.
+              </p>
+</div>
+</div>
+</div>
+<!-- Action Banner -->
+<div class="pt-6 border-t border-[#1F2430]/15 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+<div class="flex items-center gap-3 text-xs font-mono text-[#1F2430]/70">
+<span class="w-2 h-2 rounded-full bg-[#7A1F2B]"></span>
+<span>Printed notice dispatched via postal dispatch &amp; courier to registered roll</span>
+</div>
+<a class="bg-[#7A1F2B] text-white px-6 py-3 rounded-[6px] hover:bg-[#631821] text-sm font-semibold tracking-wide inline-flex items-center gap-2 transition-colors" href="#">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span>Download notice (PDF)</span>
+<span class="text-white/60 font-mono text-xs pl-1">2.4 MB</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- STATUTORY QUORUM & ELIGIBILITY EDITORIAL NOTE -->
+<section class="w-full py-14">
+<div class="max-w-[1200px] mx-auto px-6">
+<div class="grid grid-cols-12 gap-y-6 lg:gap-x-12 pb-12 border-b border-[#1F2430]/15">
+<div class="col-span-12 lg:col-span-4">
+<div class="flex items-center gap-2 mb-3">
+<span class="font-mono text-[11px] uppercase tracking-[0.2em] text-[#7A1F2B] font-semibold">Article XIV</span>
+<div class="w-6 h-[1px] bg-[#7A1F2B]"></div>
+</div>
+<h3 class="font-serif text-[28px] leading-[34px] text-[#1F2430]">
+            Quorum &amp; Voting Eligibility
+          </h3>
+<p class="font-mono text-[12px] uppercase text-[#1F2430]/50 tracking-wider mt-2">
+            WB Societies Act XXVI of 1961
+          </p>
+</div>
+<div class="col-span-12 lg:col-span-8">
+<div class="relative pl-6 border-l-2 border-[#D9A441]">
+<p class="font-serif text-[18px] leading-[30px] text-[#1F2430]/90 italic mb-4">
+              “As stipulated under Section 14 of the Samiti Constitution registered under West Bengal Act XXVI of 1961, one-third of the active registered voting members on the central roll constitutes a valid statutory quorum.”
+            </p>
+<p class="font-sans text-[15px] leading-[26px] text-[#1F2430]/80">
+              If no quorum is formed within 30 minutes of the appointed hour (10:30 AM), the assembly stands adjourned to reconvene at the same venue 45 minutes thereafter, where present members shall conduct statutory business and resolve agenda motions irrespective of total registered headcounts, provided no resolution amends the Permanent Corpus Deed.
+            </p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-6 mt-6 border-t border-[#1F2430]/15 font-mono text-xs">
+<div>
+<span class="text-[#1F2430]/50 block uppercase text-[10px]">Registered Roll (2025–26)</span>
+<span class="text-sm font-semibold text-[#1F2430]">418 Qualified Members</span>
+</div>
+<div>
+<span class="text-[#1F2430]/50 block uppercase text-[10px]">Mandatory Quorum (33.3%)</span>
+<span class="text-sm font-semibold text-[#7A1F2B]">140 Voting Delegates</span>
+</div>
+<div>
+<span class="text-[#1F2430]/50 block uppercase text-[10px]">Scrutineer Panel</span>
+<span class="text-sm font-semibold text-[#1F2430]">Adv. T. K. Chattopadhyay</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- HOW THE AGM IS CONDUCTED (1-6 STEPS PROTOCOL) -->
+<section class="w-full py-10">
+<div class="max-w-[1200px] mx-auto px-6">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+<div>
+<div class="flex items-center gap-3 mb-2">
+<span class="font-mono text-[11px] uppercase tracking-[0.2em] text-[#7A1F2B] font-bold">Statutory Protocol</span>
+<div class="w-6 h-[1px] bg-[#7A1F2B]"></div>
+<span class="font-mono text-[11px] uppercase tracking-wider text-[#1F2430]/50">Order of Conclave</span>
+</div>
+<h2 class="font-serif text-[36px] leading-[44px] text-[#1F2430]">
+            How the AGM is conducted
+          </h2>
+</div>
+<p class="font-serif italic text-[16px] text-[#1F2430]/70 max-w-[420px] mt-3 md:mt-0">
+          Parliamentary decorum and transparent archival compliance govern every minute of our general convocation.
+        </p>
+</div>
+<!-- 6-Part broadsheet layout -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-12">
+<!-- Step 1 -->
+<div class="border-t border-[#1F2430]/15 pt-6 flex flex-col justify-between">
+<div>
+<div class="flex items-baseline justify-between mb-4">
+<span class="font-serif italic text-[76px] leading-[68px] text-[#7A1F2B] select-none">1.</span>
+<span class="font-mono text-[10px] tracking-widest uppercase text-[#D9A441] font-semibold">Stage 09:30–10:15</span>
+</div>
+<h4 class="font-serif text-[22px] leading-[28px] text-[#1F2430] font-semibold mb-3">
+              Registration &amp; Roll Verification
+            </h4>
+<p class="font-sans text-[15px] leading-[24px] text-[#1F2430]/80">
+              Checking verified photo credentials against the central registrar ledger. Registered voting tokens and printed dossier folios are issued at the entrance counter.
+            </p>
+</div>
+<div class="mt-6 pt-3 border-t border-[#1F2430]/10 font-mono text-[11px] text-[#1F2430]/50 uppercase">
+            Ledger: General Membership Index
+          </div>
+</div>
+<!-- Step 2 -->
+<div class="border-t border-[#1F2430]/15 pt-6 flex flex-col justify-between">
+<div>
+<div class="flex items-baseline justify-between mb-4">
+<span class="font-serif italic text-[76px] leading-[68px] text-[#7A1F2B] select-none">2.</span>
+<span class="font-mono text-[10px] tracking-widest uppercase text-[#D9A441] font-semibold">Stage 10:30–11:00</span>
+</div>
+<h4 class="font-serif text-[22px] leading-[28px] text-[#1F2430] font-semibold mb-3">
+              Presidential Invocation &amp; Minutes
+            </h4>
+<p class="font-sans text-[15px] leading-[24px] text-[#1F2430]/80">
+              Reviewing, confirming, and adopting the formal minutes of the preceding annual assembly. Tributes to departed patrons and formal constitutional opening remarks.
+            </p>
+</div>
+<div class="mt-6 pt-3 border-t border-[#1F2430]/10 font-mono text-[11px] text-[#1F2430]/50 uppercase">
+            Ratification: 14th AGM Gazette
+          </div>
+</div>
+<!-- Step 3 -->
+<div class="border-t border-[#1F2430]/15 pt-6 flex flex-col justify-between">
+<div>
+<div class="flex items-baseline justify-between mb-4">
+<span class="font-serif italic text-[76px] leading-[68px] text-[#7A1F2B] select-none">3.</span>
+<span class="font-mono text-[10px] tracking-widest uppercase text-[#D9A441] font-semibold">Stage 11:00–11:45</span>
+</div>
+<h4 class="font-serif text-[22px] leading-[28px] text-[#1F2430] font-semibold mb-3">
+              Tabling of Secretary’s Report
+            </h4>
+<p class="font-sans text-[15px] leading-[24px] text-[#1F2430]/80">
+              Detailed presentation of field dispatches, scholarship distributions, textbook banks, and rural outreach programs accomplished during the completed operational year.
+            </p>
+</div>
+<div class="mt-6 pt-3 border-t border-[#1F2430]/10 font-mono text-[11px] text-[#1F2430]/50 uppercase">
+            Document: Annual Dispatch Dossier
+          </div>
+</div>
+<!-- Step 4 -->
+<div class="border-t border-[#1F2430]/15 pt-6 flex flex-col justify-between">
+<div>
+<div class="flex items-baseline justify-between mb-4">
+<span class="font-serif italic text-[76px] leading-[68px] text-[#7A1F2B] select-none">4.</span>
+<span class="font-mono text-[10px] tracking-widest uppercase text-[#D9A441] font-semibold">Stage 11:45–12:30</span>
+</div>
+<h4 class="font-serif text-[22px] leading-[28px] text-[#1F2430] font-semibold mb-3">
+              Presentation of Audited Ledger
+            </h4>
+<p class="font-sans text-[15px] leading-[24px] text-[#1F2430]/80">
+              Comprehensive scrutiny by the independent chartered accountant, clarification of balance sheets, and an open floor question-and-answer period for active voting members.
+            </p>
+</div>
+<div class="mt-6 pt-3 border-t border-[#1F2430]/10 font-mono text-[11px] text-[#1F2430]/50 uppercase">
+            Scrutiny: Sec. 80G Statutory Audit
+          </div>
+</div>
+<!-- Step 5 -->
+<div class="border-t border-[#1F2430]/15 pt-6 flex flex-col justify-between">
+<div>
+<div class="flex items-baseline justify-between mb-4">
+<span class="font-serif italic text-[76px] leading-[68px] text-[#7A1F2B] select-none">5.</span>
+<span class="font-mono text-[10px] tracking-widest uppercase text-[#D9A441] font-semibold">Stage 12:30–01:30</span>
+</div>
+<h4 class="font-serif text-[22px] leading-[28px] text-[#1F2430] font-semibold mb-3">
+              Voting on Resolutions &amp; Endowments
+            </h4>
+<p class="font-sans text-[15px] leading-[24px] text-[#1F2430]/80">
+              Formal voting via paper slips on operational budgets, corpus preservation terms, appointment of statutory auditors, and policy updates regarding scholarship criteria.
+            </p>
+</div>
+<div class="mt-6 pt-3 border-t border-[#1F2430]/10 font-mono text-[11px] text-[#1F2430]/50 uppercase">
+            Ballot: Show of Hands / Slips
+          </div>
+</div>
+<!-- Step 6 -->
+<div class="border-t border-[#1F2430]/15 pt-6 flex flex-col justify-between">
+<div>
+<div class="flex items-baseline justify-between mb-4">
+<span class="font-serif italic text-[76px] leading-[68px] text-[#7A1F2B] select-none">6.</span>
+<span class="font-mono text-[10px] tracking-widest uppercase text-[#D9A441] font-semibold">Stage 01:30–02:00</span>
+</div>
+<h4 class="font-serif text-[22px] leading-[28px] text-[#1F2430] font-semibold mb-3">
+              Adjournment &amp; Benediction
+            </h4>
+<p class="font-sans text-[15px] leading-[24px] text-[#1F2430]/80">
+              Formal recording of adopted resolutions, distribution of printed gazette dossiers, reading of the closing Rabindrasangeet benediction, and formal adjournment sine die.
+            </p>
+</div>
+<div class="mt-6 pt-3 border-t border-[#1F2430]/10 font-mono text-[11px] text-[#1F2430]/50 uppercase">
+            Conclusion: Minutes Inscribed
+          </div>
+</div>
+</div>
+</div>
+</section>
+<!-- RESOLUTIONS ADOPTED — YEAR-WISE ARCHIVE (2025 -> 2021) -->
+<section class="w-full pt-16 pb-24">
+<div class="max-w-[1200px] mx-auto px-6">
+<div class="border-b border-[#1F2430]/15 pb-4 mb-8 flex flex-col sm:flex-row sm:items-end justify-between">
+<div>
+<div class="flex items-center gap-3 mb-2">
+<span class="font-mono text-[11px] uppercase tracking-[0.2em] text-[#7A1F2B] font-bold">Archival Decisions</span>
+<div class="w-6 h-[1px] bg-[#7A1F2B]"></div>
+<span class="font-mono text-[11px] uppercase tracking-wider text-[#1F2430]/50">Statutory Gazette Records</span>
+</div>
+<h2 class="font-serif text-[36px] leading-[44px] text-[#1F2430]">
+            Resolutions Adopted <span class="italic font-normal text-[#1F2430]/60">(2025 → 2021)</span>
+</h2>
+</div>
+<div class="font-mono text-xs text-[#1F2430]/60 mt-3 sm:mt-0">
+          Showing 5 Preceding Assemblies
+        </div>
+</div>
+<!-- Plain broadsheet table/rows with hairline dividers -->
+<div class="w-full divide-y divide-[#1F2430]/15 border-b border-[#1F2430]/15" id="agm-archive-container">
+<!-- ROW 2025 -->
+<div class="py-8 transition-colors agm-row">
+<div class="grid grid-cols-12 gap-y-4 md:gap-x-8 items-start">
+<div class="col-span-12 md:col-span-2">
+<span class="font-serif italic text-[52px] leading-[48px] text-[#7A1F2B] block">2025</span>
+<span class="font-mono text-[11px] uppercase tracking-wider text-[#1F2430]/60 block mt-1">14th Convocation</span>
+<span class="text-[11px] font-sans text-[#1F2430]/50">14 Sept 2025</span>
+</div>
+<div class="col-span-12 md:col-span-7">
+<h5 class="font-serif text-[20px] leading-[26px] text-[#1F2430] font-semibold mb-2">
+                Corpus Expansion &amp; Sub-divisional Stipend Augmentation
+              </h5>
+<p class="font-sans text-[16px] leading-[26px] text-[#1F2430]/85">
+                Corpus allocation augmented by ₹18.5 Lakhs; sanctioning of 120 additional secondary stipends across Galsi and Memari sub-divisions.
+              </p>
+<!-- Collapsible Clause Breakdown -->
+<div class="hidden clause-detail mt-6 pt-5 border-t border-[#1F2430]/10 bg-[#1F2430]/[0.02] p-4 text-[14px]">
+<div class="font-mono text-[11px] uppercase tracking-wider text-[#7A1F2B] font-semibold mb-2">
+                  Ratified Clauses &amp; Voting Record
+                </div>
+<ul class="space-y-2 font-sans text-[#1F2430]/90">
+<li class="flex items-start gap-2">
+<span class="text-[#D9A441] font-serif font-bold">§ 1.</span>
+<span><strong>Clause 14/2025-A:</strong> Reinvestment of surplus returns from the Vidyasagar Endowment fixed deposit into recurring higher secondary textbooks bank.</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="text-[#D9A441] font-serif font-bold">§ 2.</span>
+<span><strong>Clause 14/2025-B:</strong> Creation of a dedicated emergency medical subsidy pool of ₹2.5 Lakhs for scholar families undergoing acute hospitalization.</span>
+</li>
+</ul>
+<div class="flex items-center gap-6 mt-4 pt-3 border-t border-[#1F2430]/10 font-mono text-xs text-[#1F2430]/60">
+<span>Votes in Favor: 134</span>
+<span>Dissenting: 0</span>
+<span>Abstentions: 4</span>
+<span class="text-[#7A1F2B] font-semibold">Outcome: Adopted Unanimously</span>
+</div>
+</div>
+</div>
+<div class="col-span-12 md:col-span-3 flex flex-row md:flex-col items-center md:items-end justify-between md:justify-start gap-4">
+<button class="toggle-btn font-mono text-[11px] uppercase tracking-wider text-[#1F2430] hover:text-[#7A1F2B] flex items-center gap-1 transition-colors" type="button">
+<span class="btn-text">View clauses</span>
+<span class="material-symbols-outlined text-[16px] transition-transform duration-200">expand_more</span>
+</button>
+<a class="font-serif italic text-[15px] text-[#7A1F2B] hover:text-[#D9A441] border-b border-[#7A1F2B] hover:border-[#D9A441] transition-colors pb-0.5 inline-flex items-center gap-1" href="#">
+<span>Download minutes (PDF)</span>
+<span class="material-symbols-outlined text-[14px]">arrow_outward</span>
+</a>
+</div>
+</div>
+</div>
+<!-- ROW 2024 -->
+<div class="py-8 transition-colors agm-row">
+<div class="grid grid-cols-12 gap-y-4 md:gap-x-8 items-start">
+<div class="col-span-12 md:col-span-2">
+<span class="font-serif italic text-[52px] leading-[48px] text-[#7A1F2B] block">2024</span>
+<span class="font-mono text-[11px] uppercase tracking-wider text-[#1F2430]/60 block mt-1">13th Convocation</span>
+<span class="text-[11px] font-sans text-[#1F2430]/50">17 Sept 2024</span>
+</div>
+<div class="col-span-12 md:col-span-7">
+<h5 class="font-serif text-[20px] leading-[26px] text-[#1F2430] font-semibold mb-2">
+                Tripartite Health Clinics &amp; Memorial Bursary Deed
+              </h5>
+<p class="font-sans text-[16px] leading-[26px] text-[#1F2430]/85">
+                Ratification of tripartite student clinic partnerships with Purba Bardhaman health professionals and establishment of the Vidyasagar Memorial Book Bursary.
+              </p>
+<!-- Collapsible Clause Breakdown -->
+<div class="hidden clause-detail mt-6 pt-5 border-t border-[#1F2430]/10 bg-[#1F2430]/[0.02] p-4 text-[14px]">
+<div class="font-mono text-[11px] uppercase tracking-wider text-[#7A1F2B] font-semibold mb-2">
+                  Ratified Clauses &amp; Voting Record
+                </div>
+<ul class="space-y-2 font-sans text-[#1F2430]/90">
+<li class="flex items-start gap-2">
+<span class="text-[#D9A441] font-serif font-bold">§ 1.</span>
+<span><strong>Clause 13/2024-A:</strong> Formal execution of Memorandum of Understanding with Bardhaman Medical Alumni Association for bi-monthly adolescent health and vision screenings.</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="text-[#D9A441] font-serif font-bold">§ 2.</span>
+<span><strong>Clause 13/2024-C:</strong> Institutionalization of the Vidyasagar Book Award granting sets of higher secondary textbooks to top ten meritorious applicants from municipal high schools.</span>
+</li>
+</ul>
+<div class="flex items-center gap-6 mt-4 pt-3 border-t border-[#1F2430]/10 font-mono text-xs text-[#1F2430]/60">
+<span>Votes in Favor: 129</span>
+<span>Dissenting: 2</span>
+<span>Abstentions: 1</span>
+<span class="text-[#7A1F2B] font-semibold">Outcome: Adopted by Supermajority</span>
+</div>
+</div>
+</div>
+<div class="col-span-12 md:col-span-3 flex flex-row md:flex-col items-center md:items-end justify-between md:justify-start gap-4">
+<button class="toggle-btn font-mono text-[11px] uppercase tracking-wider text-[#1F2430] hover:text-[#7A1F2B] flex items-center gap-1 transition-colors" type="button">
+<span class="btn-text">View clauses</span>
+<span class="material-symbols-outlined text-[16px] transition-transform duration-200">expand_more</span>
+</button>
+<a class="font-serif italic text-[15px] text-[#7A1F2B] hover:text-[#D9A441] border-b border-[#7A1F2B] hover:border-[#D9A441] transition-colors pb-0.5 inline-flex items-center gap-1" href="#">
+<span>Download minutes (PDF)</span>
+<span class="material-symbols-outlined text-[14px]">arrow_outward</span>
+</a>
+</div>
+</div>
+</div>
+<!-- ROW 2023 -->
+<div class="py-8 transition-colors agm-row">
+<div class="grid grid-cols-12 gap-y-4 md:gap-x-8 items-start">
+<div class="col-span-12 md:col-span-2">
+<span class="font-serif italic text-[52px] leading-[48px] text-[#7A1F2B] block">2023</span>
+<span class="font-mono text-[11px] uppercase tracking-wider text-[#1F2430]/60 block mt-1">12th Convocation</span>
+<span class="text-[11px] font-sans text-[#1F2430]/50">24 Sept 2023</span>
+</div>
+<div class="col-span-12 md:col-span-7">
+<h5 class="font-serif text-[20px] leading-[26px] text-[#1F2430] font-semibold mb-2">
+                Statutory 80G Renewal &amp; Digital Registry Architecture
+              </h5>
+<p class="font-sans text-[16px] leading-[26px] text-[#1F2430]/85">
+                Unanimous approval of statutory 80G tax renewal filings and digitization of student merit application registries.
+              </p>
+<!-- Collapsible Clause Breakdown -->
+<div class="hidden clause-detail mt-6 pt-5 border-t border-[#1F2430]/10 bg-[#1F2430]/[0.02] p-4 text-[14px]">
+<div class="font-mono text-[11px] uppercase tracking-wider text-[#7A1F2B] font-semibold mb-2">
+                  Ratified Clauses &amp; Voting Record
+                </div>
+<ul class="space-y-2 font-sans text-[#1F2430]/90">
+<li class="flex items-start gap-2">
+<span class="text-[#D9A441] font-serif font-bold">§ 1.</span>
+<span><strong>Clause 12/2023-A:</strong> Formal execution and filing of Form 10AC under Section 80G(5) of the Income Tax Act with Principal Commissioner of Income Tax, Asansol.</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="text-[#D9A441] font-serif font-bold">§ 2.</span>
+<span><strong>Clause 12/2023-B:</strong> Commissioning of open archival registry for district applicants with cryptographic hash tracking to ensure bias-free scholarship evaluation.</span>
+</li>
+</ul>
+<div class="flex items-center gap-6 mt-4 pt-3 border-t border-[#1F2430]/10 font-mono text-xs text-[#1F2430]/60">
+<span>Votes in Favor: 118</span>
+<span>Dissenting: 0</span>
+<span>Abstentions: 0</span>
+<span class="text-[#7A1F2B] font-semibold">Outcome: Unanimous Ratification</span>
+</div>
+</div>
+</div>
+<div class="col-span-12 md:col-span-3 flex flex-row md:flex-col items-center md:items-end justify-between md:justify-start gap-4">
+<button class="toggle-btn font-mono text-[11px] uppercase tracking-wider text-[#1F2430] hover:text-[#7A1F2B] flex items-center gap-1 transition-colors" type="button">
+<span class="btn-text">View clauses</span>
+<span class="material-symbols-outlined text-[16px] transition-transform duration-200">expand_more</span>
+</button>
+<a class="font-serif italic text-[15px] text-[#7A1F2B] hover:text-[#D9A441] border-b border-[#7A1F2B] hover:border-[#D9A441] transition-colors pb-0.5 inline-flex items-center gap-1" href="#">
+<span>Download minutes (PDF)</span>
+<span class="material-symbols-outlined text-[14px]">arrow_outward</span>
+</a>
+</div>
+</div>
+</div>
+<!-- ROW 2022 -->
+<div class="py-8 transition-colors agm-row">
+<div class="grid grid-cols-12 gap-y-4 md:gap-x-8 items-start">
+<div class="col-span-12 md:col-span-2">
+<span class="font-serif italic text-[52px] leading-[48px] text-[#7A1F2B] block">2022</span>
+<span class="font-mono text-[11px] uppercase tracking-wider text-[#1F2430]/60 block mt-1">11th Convocation</span>
+<span class="text-[11px] font-sans text-[#1F2430]/50">18 Sept 2022</span>
+</div>
+<div class="col-span-12 md:col-span-7">
+<h5 class="font-serif text-[20px] leading-[26px] text-[#1F2430] font-semibold mb-2">
+                Emergency Academic Bridging Grant Protocol
+              </h5>
+<p class="font-sans text-[16px] leading-[26px] text-[#1F2430]/85">
+                Post-pandemic welfare expansion; emergency academic bridging grants allotted to 85 rural drop-out risk candidates across Kalna and Katwa sub-divisions.
+              </p>
+<!-- Collapsible Clause Breakdown -->
+<div class="hidden clause-detail mt-6 pt-5 border-t border-[#1F2430]/10 bg-[#1F2430]/[0.02] p-4 text-[14px]">
+<div class="font-mono text-[11px] uppercase tracking-wider text-[#7A1F2B] font-semibold mb-2">
+                  Ratified Clauses &amp; Voting Record
+                </div>
+<ul class="space-y-2 font-sans text-[#1F2430]/90">
+<li class="flex items-start gap-2">
+<span class="text-[#D9A441] font-serif font-bold">§ 1.</span>
+<span><strong>Clause 11/2022-A:</strong> Emergency appropriation of ₹5,20,000 from auxiliary reserves to cover secondary school examination fees of first-generation learners.</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="text-[#D9A441] font-serif font-bold">§ 2.</span>
+<span><strong>Clause 11/2022-D:</strong> Establishment of community study rooms equipped with reference encyclopedias in five rural panchayat hubs.</span>
+</li>
+</ul>
+<div class="flex items-center gap-6 mt-4 pt-3 border-t border-[#1F2430]/10 font-mono text-xs text-[#1F2430]/60">
+<span>Votes in Favor: 122</span>
+<span>Dissenting: 1</span>
+<span>Abstentions: 2</span>
+<span class="text-[#7A1F2B] font-semibold">Outcome: Adopted</span>
+</div>
+</div>
+</div>
+<div class="col-span-12 md:col-span-3 flex flex-row md:flex-col items-center md:items-end justify-between md:justify-start gap-4">
+<button class="toggle-btn font-mono text-[11px] uppercase tracking-wider text-[#1F2430] hover:text-[#7A1F2B] flex items-center gap-1 transition-colors" type="button">
+<span class="btn-text">View clauses</span>
+<span class="material-symbols-outlined text-[16px] transition-transform duration-200">expand_more</span>
+</button>
+<a class="font-serif italic text-[15px] text-[#7A1F2B] hover:text-[#D9A441] border-b border-[#7A1F2B] hover:border-[#D9A441] transition-colors pb-0.5 inline-flex items-center gap-1" href="#">
+<span>Download minutes (PDF)</span>
+<span class="material-symbols-outlined text-[14px]">arrow_outward</span>
+</a>
+</div>
+</div>
+</div>
+<!-- ROW 2021 -->
+<div class="py-8 transition-colors agm-row">
+<div class="grid grid-cols-12 gap-y-4 md:gap-x-8 items-start">
+<div class="col-span-12 md:col-span-2">
+<span class="font-serif italic text-[52px] leading-[48px] text-[#7A1F2B] block">2021</span>
+<span class="font-mono text-[11px] uppercase tracking-wider text-[#1F2430]/60 block mt-1">10th Convocation</span>
+<span class="text-[11px] font-sans text-[#1F2430]/50">19 Sept 2021</span>
+</div>
+<div class="col-span-12 md:col-span-7">
+<h5 class="font-serif text-[20px] leading-[26px] text-[#1F2430] font-semibold mb-2">
+                Decennial Charter &amp; Mandatory Audit Rotation
+              </h5>
+<p class="font-sans text-[16px] leading-[26px] text-[#1F2430]/85">
+                Decennial Charter re-affirmation; governance tenure terms set to biennial conventions with mandatory external audit rotation.
+              </p>
+<!-- Collapsible Clause Breakdown -->
+<div class="hidden clause-detail mt-6 pt-5 border-t border-[#1F2430]/10 bg-[#1F2430]/[0.02] p-4 text-[14px]">
+<div class="font-mono text-[11px] uppercase tracking-wider text-[#7A1F2B] font-semibold mb-2">
+                  Ratified Clauses &amp; Voting Record
+                </div>
+<ul class="space-y-2 font-sans text-[#1F2430]/90">
+<li class="flex items-start gap-2">
+<span class="text-[#D9A441] font-serif font-bold">§ 1.</span>
+<span><strong>Clause 10/2021-A:</strong> Codification of the Society’s founding Decennial Covenant reaffirming secular and non-partisan allocation of all education stipends.</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="text-[#D9A441] font-serif font-bold">§ 2.</span>
+<span><strong>Clause 10/2021-E:</strong> Statutory policy mandating independent chartered firm change every three continuous accounting periods.</span>
+</li>
+</ul>
+<div class="flex items-center gap-6 mt-4 pt-3 border-t border-[#1F2430]/10 font-mono text-xs text-[#1F2430]/60">
+<span>Votes in Favor: 141</span>
+<span>Dissenting: 0</span>
+<span>Abstentions: 0</span>
+<span class="text-[#7A1F2B] font-semibold">Outcome: Unanimous Ratification</span>
+</div>
+</div>
+</div>
+<div class="col-span-12 md:col-span-3 flex flex-row md:flex-col items-center md:items-end justify-between md:justify-start gap-4">
+<button class="toggle-btn font-mono text-[11px] uppercase tracking-wider text-[#1F2430] hover:text-[#7A1F2B] flex items-center gap-1 transition-colors" type="button">
+<span class="btn-text">View clauses</span>
+<span class="material-symbols-outlined text-[16px] transition-transform duration-200">expand_more</span>
+</button>
+<a class="font-serif italic text-[15px] text-[#7A1F2B] hover:text-[#D9A441] border-b border-[#7A1F2B] hover:border-[#D9A441] transition-colors pb-0.5 inline-flex items-center gap-1" href="#">
+<span>Download minutes (PDF)</span>
+<span class="material-symbols-outlined text-[14px]">arrow_outward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+<!-- Archival Inscription Note -->
+<div class="mt-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 font-mono text-xs text-[#1F2430]/60">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-[#7A1F2B]">history_edu</span>
+<span>Physical register preserved at Society Records Room, Samiti Bhavan, Bardhaman</span>
+</div>
+<div>
+<span>Archival Officer: <strong class="text-[#1F2430]">Sri Rathindra Nath Ghosh</strong></span>
+</div>
+</div>
+</div>
+</section>
+<!-- INLINE VANILLA INTERACTIVE SCRIPT -->
+<script>
+    (function initAgmArchive() {
+      const container = document.getElementById('agm-archive-container');
+      if (!container) return;
+
+      const rows = container.querySelectorAll('.agm-row');
+      rows.forEach(row => {
+        const toggleBtn = row.querySelector('.toggle-btn');
+        const detail = row.querySelector('.clause-detail');
+        const btnText = row.querySelector('.btn-text');
+        const icon = row.querySelector('.material-symbols-outlined');
+
+        if (toggleBtn && detail) {
+          toggleBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            const isHidden = detail.classList.contains('hidden');
+            if (isHidden) {
+              detail.classList.remove('hidden');
+              btnText.textContent = 'Hide clauses';
+              if (icon) icon.style.transform = 'rotate(180deg)';
+            } else {
+              detail.classList.add('hidden');
+              btnText.textContent = 'View clauses';
+              if (icon) icon.style.transform = 'rotate(0deg)';
+            }
+          });
+        }
+      });
+    })();
+  </script>
+</div></main><footer class="w-full bg-surface-container-low border-t border-outline-variant/50 pt-space-2xl pb-space-xl"><div class="w-full px-margin md:px-margin-desktop"><div class="flex flex-col md:flex-row md:items-baseline justify-between gap-space-md border-b border-outline-variant/40 pb-space-lg mb-space-xl"><div><h4 class="font-headline-sm text-headline-sm text-primary font-semibold">Bardhaman Chhatra Kalyan Samiti</h4><p class="font-quote-lead text-body-md italic text-on-surface-variant mt-space-xs">“সা বিদ্যা যা বিমুক্তয়ে” — Knowledge is that which liberates</p></div><div class="text-left md:text-right"><span class="font-label-caps text-label-caps text-secondary uppercase block">Statutory Compliance</span><span class="font-body-sm text-body-sm text-on-surface-variant block">Regd. under West Bengal Societies Registration Act XXVI of 1961</span><span class="font-body-sm text-body-sm text-on-surface-variant block">Donations Exempted under Section 80G of the Income Tax Act, 1961</span></div></div><div class="grid grid-cols-2 md:grid-cols-4 gap-gutter mb-space-xl"><div class="flex flex-col gap-space-xs"><span class="font-label-caps text-label-caps uppercase text-primary font-semibold tracking-wider mb-space-xs">Institutional Records</span><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="agm-archives" href="#">AGM Proceedings &amp; Minutes</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="governance" href="#">Executive Committee</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="annual-audits" href="#">Audited Balance Sheets</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="legal-charter" href="#">Society Memorandum &amp; Bye-Laws</a></div><div class="flex flex-col gap-space-xs"><span class="font-label-caps text-label-caps uppercase text-primary font-semibold tracking-wider mb-space-xs">Student Welfare</span><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="scholarships" href="#">Merit-cum-Means Scholarships</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="competitions" href="#">Annual Literary &amp; Science Contests</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="programmes" href="#">Textbook Lending Archives</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="activities" href="#">Rural Mentorship Chapters</a></div><div class="flex flex-col gap-space-xs"><span class="font-label-caps text-label-caps uppercase text-primary font-semibold tracking-wider mb-space-xs">Philanthropy</span><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="donate" href="#">Make an Endowment</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="tax-exemption-guidelines" href="#">80G Tax Exemption Receipts</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="corpus-fund" href="#">Permanent Corpus Fund</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="csr-partnerships" href="#">CSR Collaboration</a></div><div class="flex flex-col gap-space-xs"><span class="font-label-caps text-label-caps uppercase text-primary font-semibold tracking-wider mb-space-xs">Registered Office</span><p class="font-body-sm text-body-sm text-on-surface-variant">Samiti Bhavan, Court Compound Road<br/>Purba Bardhaman, Pin 713101<br/>West Bengal, India</p><p class="font-caption text-caption text-on-surface-variant mt-space-xs">Working Hours: Mon–Sat 10:00 AM – 6:00 PM IST</p></div></div><div class="pt-space-md border-t border-outline-variant/30 flex flex-col md:flex-row items-center justify-between gap-space-sm text-on-surface-variant"><span class="font-caption text-caption">© 2011–2025 Bardhaman Chhatra Kalyan Samiti. All archival materials preserved under open public record.</span><span class="font-caption text-caption">Preserving Educational Heritage in Bengal</span></div></div></footer></body></html>

@@ -1,0 +1,182 @@
+{
+  "designSystems": [
+    {
+      "name": "assets/5880942927c342ac8c96928a3805f3b5",
+      "designSystem": {
+        "displayName": "Bengal Editorial Archive",
+        "styleGuidelines": "## Brand & Style\n\nThis design system draws its spirit from fine printmaking, literary periodicals, and the tangible dignity of an archival annual report. Designed for a grassroots charity rooted in Bardhaman, West Bengal, it rejects the sterile conventions of modern SaaS and generic donor portals. The aesthetic is humanist, archival, and tactile\u2014treating the screen as high-grain woven paper pressed with rich archival ink.\n\nThe visual style merges literary editorial design with subtle Bengali print aesthetics:\n- **Print Ephemera Quality:** Fine hairline dividers, deliberate running headers, folio markers, and footnotes honor the layout rigor of classic literary journals.\n- **Asymmetric Composition:** Grids are consciously un-centered, utilizing purposeful white space, offset text columns, and large expressive typographic scales rather than predictable cards.\n- **Dignified Restraint:** The visual language avoids synthetic drop-shadows, synthetic gradients, and playful bubbly geometry. Every element conveys endurance, transparency, and accountability.\n\n## Layout & Spacing\n\nThe layout is built upon an editorial grid structured like a broadsheet newspaper and bound journal:\n- **Grid Architecture:** A 12-column asymmetric desktop grid. Editorial layouts frequently use 7-column story tracks alongside 5-column statistical sidebars, or 8-column center text offset by marginal annotations.\n- **Running Folios & Margins:** Page sections are punctuated by a formal running top-header line with live page sections, chapter marks, and location stamps (`BARDHAMAN, WB`).\n- **Whitespace & Rhythm:** Large vertical jumps (`space-2xl` and `space-3xl`) isolate pivotal narrative beats, ensuring the presentation never feels cluttered or automated.\n- **Breakpoints:**\n  - `Mobile` (< 768px): Single continuous scroll, 1.25rem margins, stats stacked above narratives.\n  - `Tablet` (768px - 1024px): 6-column grid with grouped summaries.\n  - `Desktop` (> 1024px): 12-column asymmetrical layouts with wide book margins (4rem).\n\n## Elevation & Depth\n\nThis design system intentionally repudiates digital drop-shadows, synthetic blurs, and floating surfaces. Depth is purely physical and planar:\n\n- **Strict Flatness:** No elevation tokens (`box-shadow: none`). UI components sit flush on the cream ground like printed ink on paper.\n- **Hairline Rules:** Separation is achieved through precise 1px ink strokes (`rgba(31, 36, 48, 0.15)` or `#E2DAC8`). Horizontal borders separate sections; vertical rules partition multi-column text.\n- **Tonal Inset Surfaces:** Layering is achieved solely through field tinting. Secondary modules and summary cards use `#F1EADA` (Footer/Archive Cream) bounded by hairline outlines.\n- **Overlapping Plate Collage:** Archival photography and report plates overlap each other slightly via offset placement and negative margins, mimicking cut-and-paste editorial layouts without cast shadows.\n\n## Components\n\n### Buttons\n- **Primary Button:** Solid Deep Maroon (`#7A1F2B`) background with pure white text. Fixed height (44px), `6px` corner radius, `space-lg` horizontal padding. No shadow. On hover: shifts slightly deeper (`#651722`) with no movement or scale jumps.\n- **Secondary Button:** Outline-only. 1.5px border of Deep Ink (`#1F2430`), transparent background, Deep Ink text. On hover: inverts cleanly to Deep Ink fill with Canvas Cream (`#FAF6EC`) text.\n- **Text Link Button:** Deep Maroon text with a constant 1px baseline underline offset by 3px. On hover: transitions to Muted Marigold (`#D9A441`).\n\n### Cards & Editorial Modules\n- **Archival Report Card:** Background of `#F1EADA` or `#FAF6EC` with an all-around 1px border of `rgba(31, 36, 48, 0.15)`. No shadow. Internal padding of `space-xl`.\n- **Chapter Summary Tile:** Asymmetric arrangement featuring a massive italic serif chapter numeral in Muted Marigold (`#D9A441`), followed by an uppercase tracked subhead and body copy.\n\n### Numeric Stat Blocks\n- Massive numerals rendered in `display-stat` (Playfair Display Italic) sitting flush against a top or bottom hairline rule. Accompanied by a concise 2-line explanation in `body-sm`.\n\n### Input Fields & Controls\n- **Text Fields:** Minimalist under-bordered or full hairline-framed inputs. Background of pure `#FAF6EC`, bottom border 1.5px Deep Ink (`#1F2430`). Focus state replaces the border with Deep Maroon (`#7A1F2B`) without glow or aura.\n- **Checkboxes & Radios:** Handcrafted geometric outlines. 1px stroke of Deep Ink. Checkmarks appear as crisp deep maroon geometric fills.\n\n### Lists & Tables\n- **Financial Balance Sheets:** Alternating subtle zebra striping with `#F1EADA` and `#FAF6EC`. All data separated by hairline horizontal rules. Monetary values align right in monospace or tabular lining figures.\n- **Annotated List Items:** Dotless lists divided by 1px rules, with italicized date folios aligned to the left margin.\n\n### Chips & Tags\n- Rectangular or 4px radius badges. Background `#F1EADA`, border 1px `rgba(31, 36, 48, 0.15)`, text `label-caps` in Deep Ink.",
+        "theme": {
+          "colorMode": "LIGHT",
+          "font": "PLAYFAIR_DISPLAY",
+          "roundness": "ROUND_FOUR",
+          "customColor": "#7a1f2b",
+          "headlineFont": "PLAYFAIR_DISPLAY",
+          "bodyFont": "SOURCE_SANS_3",
+          "labelFont": "SOURCE_SANS_3",
+          "namedColors": {
+            "primary_fixed_dim": "#ffb3b5",
+            "on_error_container": "#93000a",
+            "on_surface_variant": "#564242",
+            "outline_variant": "#dcc0c0",
+            "surface_variant": "#dee2f3",
+            "tertiary": "#2e2b21",
+            "surface": "#faf9ff",
+            "on_primary": "#ffffff",
+            "tertiary_fixed": "#e9e2d2",
+            "primary_fixed": "#ffdada",
+            "surface_container_lowest": "#ffffff",
+            "on_secondary": "#ffffff",
+            "surface_container_highest": "#dee2f3",
+            "secondary": "#7d5700",
+            "error": "#ba1a1a",
+            "on_primary_fixed_variant": "#822530",
+            "surface_container": "#e9edfe",
+            "tertiary_container": "#444136",
+            "error_container": "#ffdad6",
+            "surface_dim": "#d5d9ea",
+            "on_primary_fixed": "#40000c",
+            "on_secondary_fixed": "#271900",
+            "on_tertiary_container": "#b3ad9e",
+            "inverse_on_surface": "#edf0ff",
+            "outline": "#897172",
+            "on_background": "#161b27",
+            "primary": "#5b0617",
+            "surface_container_low": "#f1f3ff",
+            "secondary_fixed_dim": "#f5bd58",
+            "secondary_container": "#ffc55f",
+            "primary_container": "#7a1f2b",
+            "on_error": "#ffffff",
+            "on_secondary_container": "#755100",
+            "on_primary_container": "#ff8b92",
+            "on_tertiary_fixed": "#1e1c12",
+            "surface_bright": "#faf9ff",
+            "surface_container_high": "#e4e8f8",
+            "secondary_fixed": "#ffdeaa",
+            "on_surface": "#161b27",
+            "on_secondary_fixed_variant": "#5f4100",
+            "surface_tint": "#a13c46",
+            "on_tertiary_fixed_variant": "#4a473b",
+            "background": "#faf9ff",
+            "tertiary_fixed_dim": "#ccc6b7",
+            "inverse_primary": "#ffb3b5",
+            "inverse_surface": "#2b303d",
+            "on_tertiary": "#ffffff"
+          },
+          "designMd": "---\nname: Bengal Editorial Archive\ncolors:\n  surface: '#faf9ff'\n  surface-dim: '#d5d9ea'\n  surface-bright: '#faf9ff'\n  surface-container-lowest: '#ffffff'\n  surface-container-low: '#f1f3ff'\n  surface-container: '#e9edfe'\n  surface-container-high: '#e4e8f8'\n  surface-container-highest: '#dee2f3'\n  on-surface: '#161b27'\n  on-surface-variant: '#564242'\n  inverse-surface: '#2b303d'\n  inverse-on-surface: '#edf0ff'\n  outline: '#897172'\n  outline-variant: '#dcc0c0'\n  surface-tint: '#a13c46'\n  primary: '#5b0617'\n  on-primary: '#ffffff'\n  primary-container: '#7a1f2b'\n  on-primary-container: '#ff8b92'\n  inverse-primary: '#ffb3b5'\n  secondary: '#7d5700'\n  on-secondary: '#ffffff'\n  secondary-container: '#ffc55f'\n  on-secondary-container: '#755100'\n  tertiary: '#2e2b21'\n  on-tertiary: '#ffffff'\n  tertiary-container: '#444136'\n  on-tertiary-container: '#b3ad9e'\n  error: '#ba1a1a'\n  on-error: '#ffffff'\n  error-container: '#ffdad6'\n  on-error-container: '#93000a'\n  primary-fixed: '#ffdada'\n  primary-fixed-dim: '#ffb3b5'\n  on-primary-fixed: '#40000c'\n  on-primary-fixed-variant: '#822530'\n  secondary-fixed: '#ffdeaa'\n  secondary-fixed-dim: '#f5bd58'\n  on-secondary-fixed: '#271900'\n  on-secondary-fixed-variant: '#5f4100'\n  tertiary-fixed: '#e9e2d2'\n  tertiary-fixed-dim: '#ccc6b7'\n  on-tertiary-fixed: '#1e1c12'\n  on-tertiary-fixed-variant: '#4a473b'\n  background: '#faf9ff'\n  on-background: '#161b27'\n  surface-variant: '#dee2f3'\ntypography:\n  display-stat:\n    fontFamily: Playfair Display\n    fontSize: 112px\n    fontWeight: '400'\n    lineHeight: 104px\n  display-stat-mobile:\n    fontFamily: Playfair Display\n    fontSize: 68px\n    fontWeight: '400'\n    lineHeight: 68px\n  headline-xl:\n    fontFamily: Playfair Display\n    fontSize: 56px\n    fontWeight: '700'\n    lineHeight: 64px\n    letterSpacing: -0.02em\n  headline-xl-mobile:\n    fontFamily: Playfair Display\n    fontSize: 38px\n    fontWeight: '700'\n    lineHeight: 44px\n    letterSpacing: -0.01em\n  headline-lg:\n    fontFamily: Playfair Display\n    fontSize: 40px\n    fontWeight: '600'\n    lineHeight: 48px\n  headline-lg-mobile:\n    fontFamily: Playfair Display\n    fontSize: 28px\n    fontWeight: '600'\n    lineHeight: 36px\n  headline-md:\n    fontFamily: Playfair Display\n    fontSize: 26px\n    fontWeight: '600'\n    lineHeight: 34px\n  headline-sm:\n    fontFamily: Playfair Display\n    fontSize: 20px\n    fontWeight: '600'\n    lineHeight: 28px\n  quote-lead:\n    fontFamily: Playfair Display\n    fontSize: 24px\n    fontWeight: '400'\n    lineHeight: 36px\n  body-lg:\n    fontFamily: Source Sans 3\n    fontSize: 18px\n    fontWeight: '400'\n    lineHeight: 28px\n  body-md:\n    fontFamily: Source Sans 3\n    fontSize: 16px\n    fontWeight: '400'\n    lineHeight: 24px\n  body-sm:\n    fontFamily: Source Sans 3\n    fontSize: 14px\n    fontWeight: '400'\n    lineHeight: 20px\n  label-caps:\n    fontFamily: Source Sans 3\n    fontSize: 12px\n    fontWeight: '600'\n    lineHeight: 16px\n    letterSpacing: 0.12em\n  caption:\n    fontFamily: Source Sans 3\n    fontSize: 12px\n    fontWeight: '400'\n    lineHeight: 18px\nrounded:\n  sm: 0.125rem\n  DEFAULT: 0.25rem\n  md: 0.375rem\n  lg: 0.5rem\n  xl: 0.75rem\n  full: 9999px\nspacing:\n  gutter: 1.5rem\n  gutter-desktop: 2.5rem\n  margin: 1.25rem\n  margin-desktop: 4rem\n  space-xs: 0.25rem\n  space-sm: 0.5rem\n  space-md: 1rem\n  space-lg: 1.5rem\n  space-xl: 2.5rem\n  space-2xl: 4rem\n  space-3xl: 6rem\n---\n\n## Brand & Style\n\nThis design system draws its spirit from fine printmaking, literary periodicals, and the tangible dignity of an archival annual report. Designed for a grassroots charity rooted in Bardhaman, West Bengal, it rejects the sterile conventions of modern SaaS and generic donor portals. The aesthetic is humanist, archival, and tactile\u2014treating the screen as high-grain woven paper pressed with rich archival ink.\n\nThe visual style merges literary editorial design with subtle Bengali print aesthetics:\n- **Print Ephemera Quality:** Fine hairline dividers, deliberate running headers, folio markers, and footnotes honor the layout rigor of classic literary journals.\n- **Asymmetric Composition:** Grids are consciously un-centered, utilizing purposeful white space, offset text columns, and large expressive typographic scales rather than predictable cards.\n- **Dignified Restraint:** The visual language avoids synthetic drop-shadows, synthetic gradients, and playful bubbly geometry. Every element conveys endurance, transparency, and accountability.\n\n## Colors\n\nThe palette reproduces physical pigments: unbleached cotton rag paper, dense printer's ink, oxidized madder root (maroon), and ceremonial marigold paste.\n\n### Primary Palette\n- **Canvas (`#FAF6EC`):** The primary paper substrate. All core views, essays, and reports rest on this warm cream background.\n- **Deep Ink (`#1F2430`):** The primary text and structural color. A nuanced, near-black blue-slate that prevents the harsh glare of true digital black (`#000000`).\n- **Deep Maroon (`#7A1F2B`):** The primary functional accent. Evokes terracotta brickwork, traditional Bengal handloom borders, and wax seals. Used for key calls to action, section flourishes, and major focal anchors.\n- **Muted Marigold (`#D9A441`):** The secondary highlight. Used sparingly for numeric badges, pull-quote callouts, table highlights, and monetary stat figures.\n- **Footer Cream-Dark (`#F1EADA`):** Surface variant for secondary page regions, grounding sidebars, and comprehensive informational footers.\n- **Hairline Rule (`#E2DAC8` or `rgba(31, 36, 48, 0.15)`):** 1px structural ink lines that separate chapters, statistics, and editorial metadata.\n\n## Typography\n\nTypography establishes the cadence of an authored print volume:\n- **Headlines & Editorial Serifs (`Playfair Display`):** Carries authoritative weight, classical proportions, and delicate bracketed serifs. Headlines are tightly tracked and deliberate.\n- **Massive Italic Numerals (`display-stat`):** Impact metrics, annual expenditures, and historic milestones use gigantic italicized serifs (72px to 112px). They interact with the layout as sculptural bookplate engravings.\n- **Body & Data (`Source Sans 3`):** A clean, understated grotesque typeface with humanist proportions that remains exceptionally readable across extended long-form narrative copy, financial balance sheets, and audit reports.\n- **Folio & Meta Labels (`label-caps`):** Sub-headers, chapter numbers, and timestamps are rendered in uppercase tracking (`+0.12em`) to mirror running heads in classic book publishing.\n\n## Layout & Spacing\n\nThe layout is built upon an editorial grid structured like a broadsheet newspaper and bound journal:\n- **Grid Architecture:** A 12-column asymmetric desktop grid. Editorial layouts frequently use 7-column story tracks alongside 5-column statistical sidebars, or 8-column center text offset by marginal annotations.\n- **Running Folios & Margins:** Page sections are punctuated by a formal running top-header line with live page sections, chapter marks, and location stamps (`BARDHAMAN, WB`).\n- **Whitespace & Rhythm:** Large vertical jumps (`space-2xl` and `space-3xl`) isolate pivotal narrative beats, ensuring the presentation never feels cluttered or automated.\n- **Breakpoints:**\n  - `Mobile` (< 768px): Single continuous scroll, 1.25rem margins, stats stacked above narratives.\n  - `Tablet` (768px - 1024px): 6-column grid with grouped summaries.\n  - `Desktop` (> 1024px): 12-column asymmetrical layouts with wide book margins (4rem).\n\n## Elevation & Depth\n\nThis design system intentionally repudiates digital drop-shadows, synthetic blurs, and floating surfaces. Depth is purely physical and planar:\n\n- **Strict Flatness:** No elevation tokens (`box-shadow: none`). UI components sit flush on the cream ground like printed ink on paper.\n- **Hairline Rules:** Separation is achieved through precise 1px ink strokes (`rgba(31, 36, 48, 0.15)` or `#E2DAC8`). Horizontal borders separate sections; vertical rules partition multi-column text.\n- **Tonal Inset Surfaces:** Layering is achieved solely through field tinting. Secondary modules and summary cards use `#F1EADA` (Footer/Archive Cream) bounded by hairline outlines.\n- **Overlapping Plate Collage:** Archival photography and report plates overlap each other slightly via offset placement and negative margins, mimicking cut-and-paste editorial layouts without cast shadows.\n\n## Shapes\n\nThe geometric tone balances the crispness of sheared paper blocks with modest tactile smoothing:\n- **Buttons & Interactive Surfaces:** Clipped to a subtle `6px` radius (Soft, `roundedness: 1`). This softens digital sharpness while maintaining an architectural, printed stamp form.\n- **Badges & Folio Markers:** Strictly rectangular or gentle `4px` borders to reflect physical rubber stamps and library indexing cards.\n- **Imagery & Documents:** Crisp `0px` corners, often bordered by a 1px ink rule or framed within cream borders like traditional photographic plates.\n\n## Components\n\n### Buttons\n- **Primary Button:** Solid Deep Maroon (`#7A1F2B`) background with pure white text. Fixed height (44px), `6px` corner radius, `space-lg` horizontal padding. No shadow. On hover: shifts slightly deeper (`#651722`) with no movement or scale jumps.\n- **Secondary Button:** Outline-only. 1.5px border of Deep Ink (`#1F2430`), transparent background, Deep Ink text. On hover: inverts cleanly to Deep Ink fill with Canvas Cream (`#FAF6EC`) text.\n- **Text Link Button:** Deep Maroon text with a constant 1px baseline underline offset by 3px. On hover: transitions to Muted Marigold (`#D9A441`).\n\n### Cards & Editorial Modules\n- **Archival Report Card:** Background of `#F1EADA` or `#FAF6EC` with an all-around 1px border of `rgba(31, 36, 48, 0.15)`. No shadow. Internal padding of `space-xl`.\n- **Chapter Summary Tile:** Asymmetric arrangement featuring a massive italic serif chapter numeral in Muted Marigold (`#D9A441`), followed by an uppercase tracked subhead and body copy.\n\n### Numeric Stat Blocks\n- Massive numerals rendered in `display-stat` (Playfair Display Italic) sitting flush against a top or bottom hairline rule. Accompanied by a concise 2-line explanation in `body-sm`.\n\n### Input Fields & Controls\n- **Text Fields:** Minimalist under-bordered or full hairline-framed inputs. Background of pure `#FAF6EC`, bottom border 1.5px Deep Ink (`#1F2430`). Focus state replaces the border with Deep Maroon (`#7A1F2B`) without glow or aura.\n- **Checkboxes & Radios:** Handcrafted geometric outlines. 1px stroke of Deep Ink. Checkmarks appear as crisp deep maroon geometric fills.\n\n### Lists & Tables\n- **Financial Balance Sheets:** Alternating subtle zebra striping with `#F1EADA` and `#FAF6EC`. All data separated by hairline horizontal rules. Monetary values align right in monospace or tabular lining figures.\n- **Annotated List Items:** Dotless lists divided by 1px rules, with italicized date folios aligned to the left margin.\n\n### Chips & Tags\n- Rectangular or 4px radius badges. Background `#F1EADA`, border 1px `rgba(31, 36, 48, 0.15)`, text `label-caps` in Deep Ink.",
+          "colorVariant": "FIDELITY",
+          "overridePrimaryColor": "#7a1f2b",
+          "overrideSecondaryColor": "#d9a441",
+          "overrideTertiaryColor": "#f1eada",
+          "overrideNeutralColor": "#1f2430",
+          "spacingScale": 2,
+          "typography": {
+            "caption": {
+              "fontFamily": "Source Sans 3",
+              "fontSize": "12px",
+              "fontWeight": "400",
+              "lineHeight": "18px"
+            },
+            "headline-sm": {
+              "fontFamily": "Playfair Display",
+              "fontSize": "20px",
+              "fontWeight": "600",
+              "lineHeight": "28px"
+            },
+            "display-stat-mobile": {
+              "fontFamily": "Playfair Display",
+              "fontSize": "68px",
+              "fontWeight": "400",
+              "lineHeight": "68px"
+            },
+            "label-caps": {
+              "fontFamily": "Source Sans 3",
+              "fontSize": "12px",
+              "fontWeight": "600",
+              "lineHeight": "16px",
+              "letterSpacing": "0.12em"
+            },
+            "headline-lg-mobile": {
+              "fontFamily": "Playfair Display",
+              "fontSize": "28px",
+              "fontWeight": "600",
+              "lineHeight": "36px"
+            },
+            "headline-xl": {
+              "fontFamily": "Playfair Display",
+              "fontSize": "56px",
+              "fontWeight": "700",
+              "lineHeight": "64px",
+              "letterSpacing": "-0.02em"
+            },
+            "body-md": {
+              "fontFamily": "Source Sans 3",
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "24px"
+            },
+            "headline-lg": {
+              "fontFamily": "Playfair Display",
+              "fontSize": "40px",
+              "fontWeight": "600",
+              "lineHeight": "48px"
+            },
+            "body-sm": {
+              "fontFamily": "Source Sans 3",
+              "fontSize": "14px",
+              "fontWeight": "400",
+              "lineHeight": "20px"
+            },
+            "body-lg": {
+              "fontFamily": "Source Sans 3",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "28px"
+            },
+            "headline-md": {
+              "fontFamily": "Playfair Display",
+              "fontSize": "26px",
+              "fontWeight": "600",
+              "lineHeight": "34px"
+            },
+            "quote-lead": {
+              "fontFamily": "Playfair Display",
+              "fontSize": "24px",
+              "fontWeight": "400",
+              "lineHeight": "36px"
+            },
+            "headline-xl-mobile": {
+              "fontFamily": "Playfair Display",
+              "fontSize": "38px",
+              "fontWeight": "700",
+              "lineHeight": "44px",
+              "letterSpacing": "-0.01em"
+            },
+            "display-stat": {
+              "fontFamily": "Playfair Display",
+              "fontSize": "112px",
+              "fontWeight": "400",
+              "lineHeight": "104px"
+            }
+          },
+          "spacing": {
+            "space-lg": "1.5rem",
+            "margin": "1.25rem",
+            "space-xl": "2.5rem",
+            "space-sm": "0.5rem",
+            "space-2xl": "4rem",
+            "gutter": "1.5rem",
+            "margin-desktop": "4rem",
+            "space-3xl": "6rem",
+            "space-xs": "0.25rem",
+            "gutter-desktop": "2.5rem",
+            "space-md": "1rem"
+          },
+          "headlineFontFamily": "Playfair Display",
+          "bodyFontFamily": "Source Sans 3",
+          "labelFontFamily": "Source Sans 3"
+        }
+      },
+      "version": "1"
+    }
+  ]
+}

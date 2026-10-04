@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&amp;family=Source+Sans+3:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "error-container": "#ffdad6", "on-background": "#161b27", "tertiary-container": "#444136", "surface-dim": "#d5d9ea", "on-secondary": "#ffffff", "primary-fixed-dim": "#ffb3b5", "surface-container": "#e9edfe", "surface-tint": "#a13c46", "on-primary-fixed-variant": "#822530", "background": "#faf9ff", "on-error": "#ffffff", "tertiary-fixed": "#e9e2d2", "error": "#ba1a1a", "on-tertiary": "#ffffff", "inverse-surface": "#2b303d", "on-surface-variant": "#564242", "on-primary-fixed": "#40000c", "inverse-primary": "#ffb3b5", "surface-bright": "#faf9ff", "secondary-fixed-dim": "#f5bd58", "surface-variant": "#dee2f3", "on-secondary-fixed-variant": "#5f4100", "on-primary": "#ffffff", "surface-container-low": "#f1f3ff", "outline-variant": "#dcc0c0", "secondary-container": "#ffc55f", "on-tertiary-fixed-variant": "#4a473b", "on-tertiary-fixed": "#1e1c12", "on-tertiary-container": "#b3ad9e", "on-error-container": "#93000a", "primary-fixed": "#ffdada", "on-primary-container": "#ff8b92", "tertiary": "#2e2b21", "on-secondary-container": "#755100", "surface": "#faf9ff", "on-surface": "#161b27", "secondary": "#7d5700", "tertiary-fixed-dim": "#ccc6b7", "secondary-fixed": "#ffdeaa", "primary-container": "#7a1f2b", "inverse-on-surface": "#edf0ff", "primary": "#5b0617", "surface-container-lowest": "#ffffff", "outline": "#897172", "surface-container-high": "#e4e8f8", "on-secondary-fixed": "#271900", "surface-container-highest": "#dee2f3" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "space-md": "1rem", "space-sm": "0.5rem", "space-xl": "2.5rem", "gutter": "1.5rem", "space-3xl": "6rem", "margin-desktop": "4rem", "margin": "1.25rem", "space-xs": "0.25rem", "space-2xl": "4rem", "gutter-desktop": "2.5rem", "space-lg": "1.5rem" }, "fontFamily": { "headline-md": [ "Playfair Display" ], "headline-lg": [ "Playfair Display" ], "display-stat": [ "Playfair Display" ], "headline-xl-mobile": [ "Playfair Display" ], "headline-lg-mobile": [ "Playfair Display" ], "quote-lead": [ "Playfair Display" ], "label-caps": [ "\"Source Sans 3\"" ], "body-md": [ "\"Source Sans 3\"" ], "body-lg": [ "\"Source Sans 3\"" ], "headline-xl": [ "Playfair Display" ], "display-stat-mobile": [ "Playfair Display" ], "headline-sm": [ "Playfair Display" ], "caption": [ "\"Source Sans 3\"" ], "body-sm": [ "\"Source Sans 3\"" ] }, "fontSize": { "headline-md": [ "26px", { "lineHeight": "34px", "fontWeight": "600" } ], "headline-lg": [ "40px", { "lineHeight": "48px", "fontWeight": "600" } ], "display-stat": [ "112px", { "lineHeight": "104px", "fontWeight": "400" } ], "headline-xl-mobile": [ "38px", { "lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "700" } ], "headline-lg-mobile": [ "28px", { "lineHeight": "36px", "fontWeight": "600" } ], "quote-lead": [ "24px", { "lineHeight": "36px", "fontWeight": "400" } ], "label-caps": [ "12px", { "lineHeight": "16px", "letterSpacing": "0.12em", "fontWeight": "600" } ], "body-md": [ "16px", { "lineHeight": "24px", "fontWeight": "400" } ], "body-lg": [ "18px", { "lineHeight": "28px", "fontWeight": "400" } ], "headline-xl": [ "56px", { "lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "display-stat-mobile": [ "68px", { "lineHeight": "68px", "fontWeight": "400" } ], "headline-sm": [ "20px", { "lineHeight": "28px", "fontWeight": "600" } ], "caption": [ "12px", { "lineHeight": "18px", "fontWeight": "400" } ], "body-sm": [ "14px", { "lineHeight": "20px", "fontWeight": "400" } ] } } } };</script></head><body class="bg-surface text-on-surface font-body-md text-body-md"><header class="fixed top-0 left-0 w-full z-50 bg-surface/95 backdrop-blur-md border-b border-outline-variant/30"><div class="w-full border-b border-outline-variant/20 bg-surface-container-low"><div class="max-w-7xl mx-auto px-margin lg:px-margin-desktop h-7 flex items-center justify-between font-label-caps text-label-caps text-on-surface-variant"><span class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-caption">location_on</span>PURBA BARDHAMAN, WEST BENGAL • ESTD. 1954</span><span class="tracking-widest font-headline-sm text-caption italic text-secondary">সা বিদ্যা যা বিমুক্তয়ে</span><span class="hidden md:inline-block tracking-wider uppercase text-caption">GOVT. REG. NO: S/14298 • 80G &amp; 12A CERTIFIED</span></div></div><div class="h-20 max-w-7xl mx-auto px-margin lg:px-margin-desktop flex items-center justify-between"><div class="flex items-center gap-space-md"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1XhLTykQsiDqhri1ACyT2K6R8V8IEYmrW-2CYNLu_3rLSvZDC-GHWdzN9UACr61ZK-Hh7DGgKQpGI2_wHoV8k9e9AdUtXByfAEnPkR8IgErvZfxpo5nXHCmOTUa9yAEkstpSzkyuB6qUgs0JWL8y_PFgtmnKGKJGRhuLIfuOLLrh242FFhw-OhEmdnlGOzQbnS1CntXO-dsEGhJM5nsOqVhoikF9xC_6yHJRed16WlYd8tE5aQdPJ1FW79RWl5AhRRGDcG9jApu2x4"/><div class="flex flex-col"><a class="font-headline-sm text-headline-sm text-primary tracking-tight" data-path="home" href="#">Bardhaman Chhatra Kalyan Samiti</a><span class="font-label-caps text-caption tracking-widest text-on-surface-variant uppercase">Archival Educational Trust &amp; Relief Society</span></div></div><nav class="hidden xl:flex items-center gap-space-lg" data-active-classes="text-primary font-bold border-b-2 border-primary"><a class="text-on-surface-variant hover:text-on-surface font-label-caps text-label-caps uppercase transition-colors py-1" data-path="about" href="#">About</a><a class="text-on-surface-variant hover:text-on-surface font-label-caps text-label-caps uppercase transition-colors py-1" data-path="scholarships" href="#">Scholarships</a><a class="text-on-surface-variant hover:text-on-surface font-label-caps text-label-caps uppercase transition-colors py-1" data-path="competitions" href="#">Competitions</a><a class="text-on-surface-variant hover:text-on-surface font-label-caps text-label-caps uppercase transition-colors py-1" data-path="programmes" href="#">Programmes</a><a class="text-on-surface-variant hover:text-on-surface font-label-caps text-label-caps uppercase transition-colors py-1" data-path="membership" href="#">Membership</a><a class="text-on-surface-variant hover:text-on-surface font-label-caps text-label-caps uppercase transition-colors py-1" data-path="updates" href="#">Updates</a><a class="text-on-surface-variant hover:text-on-surface font-label-caps text-label-caps uppercase transition-colors py-1" data-path="apply" href="#">Apply</a></nav><div class="flex items-center gap-space-sm"><a class="inline-flex items-center justify-center bg-primary-container text-on-primary font-label-caps text-label-caps uppercase px-space-lg h-11 rounded-lg transition-colors hover:bg-primary" data-path="donate" href="#">Join / Donate</a></div></div></header><main class="w-full pt-20 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<!-- Archival Gazette Cover Headband -->
+<section class="w-full pt-space-xl pb-space-lg">
+<div class="max-w-7xl mx-auto px-margin lg:px-margin-desktop">
+<!-- Running Folio Line -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm pb-space-sm mb-space-lg text-tertiary">
+<div class="flex items-center gap-space-sm">
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-primary font-bold">SUPPORT &amp; STEWARDSHIP</span>
+<span class="inline-block w-6 h-[1.5px] bg-primary"></span>
+<span class="font-caption text-caption uppercase tracking-wider text-outline">FOLIO SERIES 2024–25 / BARDHAMAN</span>
+</div>
+<div class="flex items-center gap-space-md font-caption text-caption text-on-surface-variant">
+<span>Purba Bardhaman Welfare Roll</span>
+<span class="text-outline">•</span>
+<span class="font-semibold text-primary">Tax Exemption Sec 80G Active</span>
+</div>
+</div>
+<!-- Main Headline & Editorial Pacing -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop items-baseline">
+<div class="lg:col-span-8 flex flex-col gap-space-sm">
+<h1 class="font-headline-lg text-headline-lg text-tertiary tracking-tight leading-tight">
+            Support a student’s education.
+          </h1>
+<p class="font-quote-lead text-quote-lead italic text-on-surface-variant">
+            Receipts are emailed after we verify your payment, usually within 1–2 working days.
+          </p>
+</div>
+<div class="lg:col-span-4 flex flex-col lg:items-end justify-end text-left lg:text-right">
+<div class="text-caption font-label-caps uppercase text-secondary font-semibold tracking-widest mb-1">Treasury Desk Memo</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-xs">
+            Direct public remissions sustain 380+ district scholars, rural textbook distributions, and emergency medical stipends across lower Damodar basin schools.
+          </p>
+</div>
+</div>
+<!-- Single Marigold Thin Accent Line -->
+<div class="w-full h-[1.5px] bg-secondary-container mt-space-lg"></div>
+</div>
+</section>
+<!-- STEP 1: CHOOSE A TYPE -->
+<section class="w-full py-space-xl">
+<div class="max-w-7xl mx-auto px-margin lg:px-margin-desktop">
+<div class="flex items-baseline gap-space-md mb-space-lg">
+<span class="font-display-stat text-display-stat-mobile lg:text-display-stat italic text-tertiary select-none leading-none">1</span>
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps text-primary tracking-widest uppercase font-bold">STEP 01 / CONTRIBUTION CATEGORY</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Select the character of your enrolment or non-restricted benefaction</span>
+</div>
+</div>
+<!-- Broadside Category Tabs -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-0">
+<!-- Tab A: New Membership -->
+<button class="contribution-tab text-left p-space-lg transition-all relative opacity-45" id="tab-membership-new" onclick="selectContributionType('new_member', 2000)" type="button">
+<div class="tab-indicator absolute top-0 left-0 right-0 h-[2px] bg-transparent"></div>
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-caps text-caption uppercase tracking-wider text-outline">Category A</span>
+<span class="font-label-caps text-caption text-secondary font-semibold">One-time / Lifetime</span>
+</div>
+<div class="font-headline-sm text-headline-sm text-tertiary mb-space-xs">New Membership — ₹ 2,000</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Full ordinary voting enrolment on the archival society register, annual report dispatch, and lifelong student mentorship rights.
+          </p>
+</button>
+<!-- Tab B: Renewal -->
+<button class="contribution-tab text-left p-space-lg transition-all relative opacity-45" id="tab-membership-renewal" onclick="selectContributionType('renewal', 500)" type="button">
+<div class="tab-indicator absolute top-0 left-0 right-0 h-[2px] bg-transparent"></div>
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-caps text-caption uppercase tracking-wider text-outline">Category B</span>
+<span class="font-label-caps text-caption text-secondary font-semibold">Annual Sustenance</span>
+</div>
+<div class="font-headline-sm text-headline-sm text-tertiary mb-space-xs">Membership Renewal — ₹ 500</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Annual maintenance of active voting register status for verified enrolled members for Financial Year 2025–26.
+          </p>
+</button>
+<!-- Tab C: Donation (Default Active) -->
+<button class="contribution-tab text-left p-space-lg transition-all relative opacity-100 bg-surface-container-low" id="tab-donation" onclick="selectContributionType('donation', 1000)" type="button">
+<div class="tab-indicator absolute top-0 left-0 right-0 h-[2px] bg-primary"></div>
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-caps text-caption uppercase tracking-wider text-primary font-bold">Category C • Default</span>
+<span class="font-label-caps text-caption text-secondary font-semibold">Any Sum Permitted</span>
+</div>
+<div class="font-headline-sm text-headline-sm text-tertiary mb-space-xs">Donation — from ₹ 200</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Directly dedicated to scholar allowances, primary book depots, and secondary board matriculation sponsorships.
+          </p>
+</button>
+</div>
+<!-- Dynamic Sub-Panel for Donation Amount Chips -->
+<div class="mt-space-lg pt-space-lg" id="donation-amounts-drawer">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-lg">
+<div>
+<span class="font-label-caps text-label-caps uppercase tracking-wider text-tertiary block mb-space-xs font-semibold">Select Stipend Equivalent / Contribution Sum</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Every rupee is accounted in the annual gazette balance sheet</span>
+</div>
+<!-- Amount Chips -->
+<div class="flex flex-wrap items-center gap-space-sm" id="amount-chips-group">
+<button class="amount-chip px-space-md py-space-xs font-label-caps text-label-caps tracking-wider transition-colors text-on-surface-variant hover:text-primary" onclick="setDonationAmount(200, this)" type="button">₹ 200</button>
+<button class="amount-chip px-space-md py-space-xs font-label-caps text-label-caps tracking-wider transition-colors text-on-surface-variant hover:text-primary" onclick="setDonationAmount(500, this)" type="button">₹ 500</button>
+<button class="amount-chip px-space-md py-space-xs font-label-caps text-label-caps tracking-wider transition-colors bg-primary text-on-primary font-bold" onclick="setDonationAmount(1000, this)" type="button">₹ 1,000</button>
+<button class="amount-chip px-space-md py-space-xs font-label-caps text-label-caps tracking-wider transition-colors text-on-surface-variant hover:text-primary" onclick="setDonationAmount(2500, this)" type="button">₹ 2,500</button>
+<button class="amount-chip px-space-md py-space-xs font-label-caps text-label-caps tracking-wider transition-colors text-on-surface-variant hover:text-primary" onclick="setDonationAmount(5000, this)" type="button">₹ 5,000</button>
+</div>
+<!-- Custom Amount Field -->
+<div class="flex items-center min-w-[220px]">
+<span class="font-headline-sm text-headline-sm text-tertiary pr-space-xs">₹</span>
+<input class="w-full bg-transparent font-body-md text-body-md text-tertiary pb-space-xs focus:outline-none focus:placeholder-transparent placeholder:text-outline placeholder:italic" id="custom-amount-input" min="100" oninput="handleCustomAmountInput(this.value)" placeholder="Enter other amount" type="number"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- STEP 2: REMITTANCE CHANNEL -->
+<section class="w-full py-space-xl bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-margin lg:px-margin-desktop">
+<div class="flex items-baseline gap-space-md mb-space-lg">
+<span class="font-display-stat text-display-stat-mobile lg:text-display-stat italic text-tertiary select-none leading-none">2</span>
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps text-primary tracking-widest uppercase font-bold">STEP 02 / REMITTANCE CHANNEL</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">All payments flow directly to our registered State Bank of India treasury ledger</span>
+</div>
+</div>
+<!-- Payment Channel Toggles -->
+<div class="flex items-center gap-space-xl mb-space-xl">
+<button class="channel-toggle pb-space-xs font-headline-sm text-headline-sm text-primary font-bold relative transition-colors" id="channel-btn-upi" onclick="switchChannel('upi')" type="button">
+          UPI Instant Transfer
+          <span class="active-indicator block absolute bottom-0 left-0 right-0 h-[2px] bg-primary"></span>
+</button>
+<button class="channel-toggle pb-space-xs font-headline-sm text-headline-sm text-on-surface-variant hover:text-tertiary relative transition-colors" id="channel-btn-bank" onclick="switchChannel('bank')" type="button">
+          Bank Transfer (NEFT / RTGS / IMPS)
+          <span class="active-indicator hidden absolute bottom-0 left-0 right-0 h-[2px] bg-primary"></span>
+</button>
+</div>
+<!-- Channel Content: UPI -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop items-center" id="channel-view-upi">
+<!-- UPI QR Code Block -->
+<div class="lg:col-span-4 flex flex-col items-start">
+<div class="p-space-md bg-surface-container-lowest inline-block">
+<!-- Archival Stylized SVG QR Representation -->
+<svg aria-label="Official Samiti UPI QR Code" class="w-44 h-44 text-tertiary" fill="currentColor" viewbox="0 0 180 180" xmlns="http://www.w3.org/2000/svg">
+<rect fill="none" height="50" stroke="currentColor" stroke-width="4" width="50" x="0" y="0"></rect>
+<rect fill="currentColor" height="26" width="26" x="12" y="12"></rect>
+<rect fill="none" height="50" stroke="currentColor" stroke-width="4" width="50" x="130" y="0"></rect>
+<rect fill="currentColor" height="26" width="26" x="142" y="12"></rect>
+<rect fill="none" height="50" stroke="currentColor" stroke-width="4" width="50" x="0" y="130"></rect>
+<rect fill="currentColor" height="26" width="26" x="12" y="142"></rect>
+<!-- Data Grid Accents -->
+<rect height="10" width="10" x="62" y="10"></rect>
+<rect height="10" width="22" x="80" y="22"></rect>
+<rect height="22" width="10" x="108" y="10"></rect>
+<rect height="8" width="16" x="62" y="42"></rect>
+<rect height="8" width="28" x="90" y="42"></rect>
+<!-- Middle Grid Patterns -->
+<rect height="10" width="20" x="10" y="62"></rect>
+<rect height="30" width="10" x="40" y="62"></rect>
+<rect height="24" width="24" x="62" y="62"></rect>
+<rect height="10" width="20" x="98" y="62"></rect>
+<rect height="10" width="40" x="130" y="62"></rect>
+<rect height="20" width="10" x="10" y="82"></rect>
+<rect height="20" width="20" x="150" y="82"></rect>
+<rect height="20" width="12" x="62" y="98"></rect>
+<rect height="10" width="34" x="84" y="98"></rect>
+<rect height="20" width="20" x="130" y="108"></rect>
+<!-- Bottom Data Elements -->
+<rect height="10" width="20" x="62" y="130"></rect>
+<rect height="20" width="14" x="92" y="130"></rect>
+<rect height="40" width="10" x="120" y="130"></rect>
+<rect height="10" width="30" x="140" y="140"></rect>
+<rect height="18" width="20" x="62" y="152"></rect>
+<rect height="10" width="18" x="92" y="160"></rect>
+<rect height="10" width="10" x="160" y="160"></rect>
+</svg>
+</div>
+<span class="font-caption text-caption text-on-surface-variant mt-space-xs">Verified VPA • Official Account of BCSK</span>
+</div>
+<!-- UPI Instructions & Copy -->
+<div class="lg:col-span-8 flex flex-col gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-caps text-label-caps uppercase tracking-wider text-outline">Virtual Payment Address (VPA)</span>
+<div class="flex items-center gap-space-md flex-wrap">
+<span class="font-headline-sm text-headline-sm text-tertiary select-all font-mono tracking-tight" id="upi-id-text">bardhamanchhatra@sbi</span>
+<button class="font-label-caps text-label-caps text-primary hover:text-secondary uppercase tracking-widest inline-flex items-center gap-space-xs" onclick="copyText('upi-id-text', this)" type="button">
+<span class="material-symbols-outlined text-body-md">content_copy</span>
+<span class="btn-copy-label">Copy UPI ID</span>
+</button>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xl">
+            Scan with any BHIM, Google Pay, PhonePe, or Paytm app. If making a scholarship stipend contribution, please note your initials in the transaction memo if your app permits.
+          </p>
+<div class="flex items-center gap-space-lg text-outline font-label-caps text-caption uppercase tracking-wider pt-space-xs">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-body-sm text-secondary">verified</span> Zero Transaction Fee</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-body-sm text-secondary">lock</span> Direct RBI Cleared</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-body-sm text-secondary">receipt_long</span> Instant Ledger Confirmation</span>
+</div>
+</div>
+</div>
+<!-- Channel Content: Bank Transfer (Initially Hidden) -->
+<div class="hidden" id="channel-view-bank">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop">
+<div class="lg:col-span-8">
+<dl class="flex flex-col divide-y divide-outline-variant/30 text-body-md">
+<div class="py-space-sm flex flex-col sm:flex-row sm:items-center justify-between gap-space-xs">
+<dt class="font-label-caps text-caption uppercase tracking-wider text-outline sm:w-1/3">Account Name</dt>
+<dd class="sm:w-2/3 flex items-center justify-between font-semibold text-tertiary">
+<span id="bank-acc-name">Bardhaman Chhatra Kalyan Samiti</span>
+<button class="font-label-caps text-caption text-primary hover:text-secondary uppercase tracking-wider" onclick="copyText('bank-acc-name', this)" type="button">
+<span class="btn-copy-label">Copy</span>
+</button>
+</dd>
+</div>
+<div class="py-space-sm flex flex-col sm:flex-row sm:items-center justify-between gap-space-xs">
+<dt class="font-label-caps text-caption uppercase tracking-wider text-outline sm:w-1/3">Account Number</dt>
+<dd class="sm:w-2/3 flex items-center justify-between font-mono font-semibold text-tertiary">
+<span id="bank-acc-num">10842091726</span>
+<button class="font-label-caps text-caption text-primary hover:text-secondary uppercase tracking-wider" onclick="copyText('bank-acc-num', this)" type="button">
+<span class="btn-copy-label">Copy</span>
+</button>
+</dd>
+</div>
+<div class="py-space-sm flex flex-col sm:flex-row sm:items-center justify-between gap-space-xs">
+<dt class="font-label-caps text-caption uppercase tracking-wider text-outline sm:w-1/3">IFSC Code</dt>
+<dd class="sm:w-2/3 flex items-center justify-between font-mono font-semibold text-tertiary">
+<span id="bank-ifsc">SBIN0000048</span>
+<button class="font-label-caps text-caption text-primary hover:text-secondary uppercase tracking-wider" onclick="copyText('bank-ifsc', this)" type="button">
+<span class="btn-copy-label">Copy</span>
+</button>
+</dd>
+</div>
+<div class="py-space-sm flex flex-col sm:flex-row sm:items-center justify-between gap-space-xs">
+<dt class="font-label-caps text-caption uppercase tracking-wider text-outline sm:w-1/3">Bank &amp; Branch</dt>
+<dd class="sm:w-2/3 flex items-center justify-between text-tertiary">
+<span id="bank-branch">State Bank of India, Bardhaman Main Branch, Court Compound</span>
+<button class="font-label-caps text-caption text-primary hover:text-secondary uppercase tracking-wider" onclick="copyText('bank-branch', this)" type="button">
+<span class="btn-copy-label">Copy</span>
+</button>
+</dd>
+</div>
+<div class="py-space-sm flex flex-col sm:flex-row sm:items-center justify-between gap-space-xs">
+<dt class="font-label-caps text-caption uppercase tracking-wider text-outline sm:w-1/3">Account Type</dt>
+<dd class="sm:w-2/3 text-tertiary font-semibold">
+                  Savings Welfare Trust Account
+                </dd>
+</div>
+</dl>
+<p class="font-quote-lead text-caption italic text-on-surface-variant mt-space-md">
+              Bank transfer is best for large or CSR donations.
+            </p>
+</div>
+<div class="lg:col-span-4 flex flex-col justify-center p-space-lg bg-surface-container">
+<span class="font-label-caps text-caption uppercase tracking-widest text-primary font-bold mb-space-xs">Notice to Institutional Donors</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-sm">
+              If your corporate CSR charter or family foundation requires a pro-forma receipt before fund clearance, email our Treasurer directly at:
+            </p>
+<span class="font-mono text-body-sm text-tertiary font-semibold select-all">treasury@bardhamanchhatra.org</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- STEP 3: PAYMENT INTIMATION & 80G -->
+<section class="w-full py-space-xl">
+<div class="max-w-7xl mx-auto px-margin lg:px-margin-desktop">
+<div class="flex items-baseline gap-space-md mb-space-lg">
+<span class="font-display-stat text-display-stat-mobile lg:text-display-stat italic text-tertiary select-none leading-none">3</span>
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps text-primary tracking-widest uppercase font-bold">STEP 03 / PAYMENT INTIMATION &amp; 80G</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Notify our accounts clerks to match your remittance with bank slips</span>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop">
+<!-- Form Column (Plain Editorial Layout, Zero Rounded Bubbles) -->
+<div class="lg:col-span-8">
+<form class="flex flex-col gap-space-lg" id="intimation-form" onsubmit="handleFormSubmit(event)">
+<!-- Row 1: Name and Phone -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-lg">
+<div class="flex flex-col">
+<label class="font-label-caps text-caption uppercase tracking-wider text-outline mb-space-xs" for="contributor-name">Name of Contributor / Guardian *</label>
+<input class="w-full bg-transparent font-body-md text-body-md text-tertiary pb-space-xs focus:outline-none focus:placeholder-transparent placeholder:text-outline/70" id="contributor-name" placeholder="e.g. Dr. Subhasish Chattopadhyay" required="" type="text"/>
+</div>
+<div class="flex flex-col">
+<label class="font-label-caps text-caption uppercase tracking-wider text-outline mb-space-xs" for="contributor-phone">Contact Mobile / WhatsApp Number *</label>
+<input class="w-full bg-transparent font-body-md text-body-md text-tertiary pb-space-xs focus:outline-none focus:placeholder-transparent placeholder:text-outline/70" id="contributor-phone" placeholder="e.g. +91 94340 12345" required="" type="tel"/>
+</div>
+</div>
+<!-- Row 2: Email and Amount -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-lg">
+<div class="flex flex-col">
+<label class="font-label-caps text-caption uppercase tracking-wider text-outline mb-space-xs" for="contributor-email">Email Address (for electronic dispatch of 80G certificate) *</label>
+<input class="w-full bg-transparent font-body-md text-body-md text-tertiary pb-space-xs focus:outline-none focus:placeholder-transparent placeholder:text-outline/70" id="contributor-email" placeholder="e.g. subhasish.chat@gmail.com" required="" type="email"/>
+</div>
+<div class="flex flex-col">
+<label class="font-label-caps text-caption uppercase tracking-wider text-outline mb-space-xs" for="intimated-amount">Amount Paid (₹) *</label>
+<input class="w-full bg-transparent font-body-md text-body-md text-tertiary pb-space-xs focus:outline-none font-semibold" id="intimated-amount" min="100" required="" type="number" value="1000"/>
+</div>
+</div>
+<!-- Row 3: UPI Reference / UTR Number -->
+<div class="flex flex-col">
+<label class="font-label-caps text-caption uppercase tracking-wider text-outline mb-space-xs" for="transaction-ref">UPI Reference / UTR Number (12 digits) *</label>
+<input class="w-full bg-transparent font-body-md text-body-md font-mono text-tertiary pb-space-xs focus:outline-none focus:placeholder-transparent placeholder:text-outline/70" id="transaction-ref" maxlength="22" placeholder="e.g. 403918274619 or CMS582910" required="" type="text"/>
+<span class="font-caption text-caption text-on-surface-variant mt-space-xs">Located in your banking debit SMS or UPI transaction details screen</span>
+</div>
+<!-- Row 4: File Upload Row (Simple Archival Line) -->
+<div class="flex flex-col pt-space-xs">
+<label class="font-label-caps text-caption uppercase tracking-wider text-outline mb-space-xs">Payment Receipt Screenshot or Bank Voucher (Optional)</label>
+<div class="flex items-center gap-space-md py-space-xs">
+<label class="cursor-pointer font-label-caps text-caption uppercase tracking-wider text-tertiary px-space-md py-space-xs transition-colors hover:bg-surface-variant" for="file-voucher">
+                  Select File…
+                </label>
+<input accept="image/*,.pdf" class="hidden" id="file-voucher" onchange="handleFileSelected(this)" type="file"/>
+<span class="font-caption text-caption text-on-surface-variant italic" id="file-chosen-text">PNG, PDF, JPG max 5MB</span>
+</div>
+</div>
+<!-- Row 5: PAN for 80G Deduction -->
+<div class="flex flex-col pt-space-xs">
+<label class="font-label-caps text-caption uppercase tracking-wider text-outline mb-space-xs" for="contributor-pan">Permanent Account Number (PAN) — Optional</label>
+<input class="w-full max-w-sm bg-transparent font-mono text-body-md uppercase text-tertiary pb-space-xs focus:outline-none placeholder:text-outline/70" id="contributor-pan" maxlength="10" placeholder="e.g. ABCDE1234F" type="text"/>
+<span class="font-caption text-caption text-on-surface-variant mt-space-xs">Mandatory only if claiming statutory tax deduction under Section 80G of the Income Tax Act, 1961.</span>
+</div>
+<!-- Submit Action Block -->
+<div class="flex flex-col items-start gap-space-sm pt-space-md">
+<button class="h-11 px-space-xl bg-primary text-on-primary font-label-caps text-label-caps uppercase tracking-wider rounded transition-colors hover:bg-primary-container inline-flex items-center gap-space-xs" id="submit-btn" type="submit">
+<span>Submit intimation</span>
+<span class="font-sans text-body-lg">→</span>
+</button>
+<p class="font-quote-lead text-caption italic text-on-surface-variant">
+                We check every payment against our bank statement before dispatching signed receipts.
+              </p>
+</div>
+</form>
+<!-- Feedback Toast / Notice Modal in Print Restraint Style -->
+<div class="hidden mt-space-lg p-space-lg bg-surface-container" id="submission-success">
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-secondary">check_circle</span>
+<div class="flex flex-col">
+<h4 class="font-headline-sm text-headline-sm text-tertiary">Intimation Recorded into Folio</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs">
+                  Thank you. Reference <span class="font-mono font-semibold" id="success-ref">BCKS-80G-TEMP</span> has been marked. Our volunteer secretary verifies passbook entries at 5:00 PM daily. You will receive an official stamp-certified receipt via email shortly.
+                </p>
+</div>
+</div>
+</div>
+</div>
+<!-- Archival Sidebar: Society Impact & Assurance -->
+<div class="lg:col-span-4 flex flex-col gap-space-lg">
+<div class="p-space-lg bg-surface-container-low flex flex-col gap-space-md">
+<span class="font-label-caps text-caption uppercase tracking-wider text-primary font-bold">Public Oversight</span>
+<div class="space-y-space-xs text-body-sm text-on-surface-variant">
+<p>Every contribution is routed without commission. Board members, trustees, and examiners act in strictly honorary capacities without sitting fees or emoluments.</p>
+<p class="pt-space-xs font-semibold text-tertiary">Purba Bardhaman District Secretariat • Court Compound</p>
+</div>
+<div class="pt-space-xs text-outline font-label-caps text-caption uppercase tracking-wider">
+              Audit FY 2023–24 Passed by Ray &amp; Chattopadhyay Chartered Accountants
+            </div>
+</div>
+<div class="p-space-lg bg-surface-container flex flex-col gap-space-xs">
+<span class="font-label-caps text-caption uppercase tracking-wider text-secondary font-bold">Frequently Clarified</span>
+<h5 class="font-headline-sm text-body-lg text-tertiary mt-space-xs">Is cash remittance accepted?</h5>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Cash up to ₹ 2,000 may only be deposited in person at our Court Compound archives against an instant printed counterfoil receipt. For all other sums, digital/bank transfer is required under statutory societies compliance.
+            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- STATUTORY RECORD & POLICIES FOOTPIECE -->
+<section class="w-full py-space-lg bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-margin lg:px-margin-desktop flex flex-col md:flex-row items-center justify-between gap-space-md font-caption text-caption text-on-surface-variant">
+<div>
+<span>Registration: West Bengal Societies Act XXVI of 1961 (Reg. S/1L/82491)</span>
+<span class="mx-space-xs">•</span>
+<span>12A Reg. No. CIT/BDN/12A/2012-13</span>
+<span class="mx-space-xs">•</span>
+<span>80G Approval No. CIT/BDN/80G/Tech/2015-16/1429</span>
+</div>
+<div class="flex items-center gap-space-md font-label-caps text-caption uppercase tracking-wider">
+<a class="hover:text-primary transition-colors" href="#">Refund &amp; Cancellation Policy</a>
+<span class="text-outline">•</span>
+<a class="hover:text-primary transition-colors" href="#">Donor Privacy Policy</a>
+<span class="text-outline">•</span>
+<a class="hover:text-primary transition-colors" href="#">Audited Public Gazettes</a>
+</div>
+</div>
+</section>
+</div>
+<script>
+  let currentContributionType = 'donation';
+  let activeAmount = 1000;
+
+  function selectContributionType(type, defaultAmt) {
+    currentContributionType = type;
+    const tabNew = document.getElementById('tab-membership-new');
+    const tabRenewal = document.getElementById('tab-membership-renewal');
+    const tabDonation = document.getElementById('tab-donation');
+    const donationDrawer = document.getElementById('donation-amounts-drawer');
+    const amountField = document.getElementById('intimated-amount');
+
+    // Reset styles
+    [tabNew, tabRenewal, tabDonation].forEach(tab => {
+      tab.classList.remove('opacity-100', 'bg-surface-container-low');
+      tab.classList.add('opacity-45');
+      const ind = tab.querySelector('.tab-indicator');
+      if (ind) {
+        ind.classList.remove('bg-primary');
+        ind.classList.add('bg-transparent');
+      }
+    });
+
+    let selectedTab = tabDonation;
+    if (type === 'new_member') {
+      selectedTab = tabNew;
+      donationDrawer.classList.add('hidden');
+    } else if (type === 'renewal') {
+      selectedTab = tabRenewal;
+      donationDrawer.classList.add('hidden');
+    } else {
+      donationDrawer.classList.remove('hidden');
+    }
+
+    selectedTab.classList.remove('opacity-45');
+    selectedTab.classList.add('opacity-100', 'bg-surface-container-low');
+    const activeInd = selectedTab.querySelector('.tab-indicator');
+    if (activeInd) {
+      activeInd.classList.remove('bg-transparent');
+      activeInd.classList.add('bg-primary');
+    }
+
+    activeAmount = defaultAmt;
+    if (amountField) {
+      amountField.value = defaultAmt;
+      amountField.readOnly = (type !== 'donation');
+    }
+  }
+
+  function setDonationAmount(val, element) {
+    activeAmount = val;
+    const amountField = document.getElementById('intimated-amount');
+    const customInput = document.getElementById('custom-amount-input');
+    if (amountField) amountField.value = val;
+    if (customInput) customInput.value = '';
+
+    const chips = document.querySelectorAll('.amount-chip');
+    chips.forEach(chip => {
+      chip.classList.remove('bg-primary', 'text-on-primary', 'font-bold');
+      chip.classList.add('text-on-surface-variant');
+    });
+
+    if (element) {
+      element.classList.remove('text-on-surface-variant');
+      element.classList.add('bg-primary', 'text-on-primary', 'font-bold');
+    }
+  }
+
+  function handleCustomAmountInput(val) {
+    const num = parseInt(val, 10);
+    const amountField = document.getElementById('intimated-amount');
+    const chips = document.querySelectorAll('.amount-chip');
+    chips.forEach(chip => {
+      chip.classList.remove('bg-primary', 'text-on-primary', 'font-bold');
+      chip.classList.add('text-on-surface-variant');
+    });
+
+    if (!isNaN(num) && num > 0) {
+      activeAmount = num;
+      if (amountField) amountField.value = num;
+    }
+  }
+
+  function switchChannel(channel) {
+    const upiView = document.getElementById('channel-view-upi');
+    const bankView = document.getElementById('channel-view-bank');
+    const upiBtn = document.getElementById('channel-btn-upi');
+    const bankBtn = document.getElementById('channel-btn-bank');
+
+    if (channel === 'upi') {
+      upiView.classList.remove('hidden');
+      bankView.classList.add('hidden');
+
+      upiBtn.classList.remove('text-on-surface-variant');
+      upiBtn.classList.add('text-primary', 'font-bold');
+      upiBtn.querySelector('.active-indicator').classList.remove('hidden');
+
+      bankBtn.classList.remove('text-primary', 'font-bold');
+      bankBtn.classList.add('text-on-surface-variant');
+      bankBtn.querySelector('.active-indicator').classList.add('hidden');
+    } else {
+      bankView.classList.remove('hidden');
+      upiView.classList.add('hidden');
+
+      bankBtn.classList.remove('text-on-surface-variant');
+      bankBtn.classList.add('text-primary', 'font-bold');
+      bankBtn.querySelector('.active-indicator').classList.remove('hidden');
+
+      upiBtn.classList.remove('text-primary', 'font-bold');
+      upiBtn.classList.add('text-on-surface-variant');
+      upiBtn.querySelector('.active-indicator').classList.add('hidden');
+    }
+  }
+
+  function copyText(elementId, btnElement) {
+    const el = document.getElementById(elementId);
+    if (!el) return;
+    const text = el.innerText || el.textContent;
+
+    navigator.clipboard.writeText(text.trim()).then(() => {
+      const labelSpan = btnElement.querySelector('.btn-copy-label');
+      const originalText = labelSpan ? labelSpan.textContent : btnElement.textContent;
+      if (labelSpan) {
+        labelSpan.textContent = 'Copied ✓';
+      } else {
+        btnElement.textContent = 'Copied ✓';
+      }
+      setTimeout(() => {
+        if (labelSpan) {
+          labelSpan.textContent = originalText;
+        } else {
+          btnElement.textContent = originalText;
+        }
+      }, 2000);
+    }).catch(err => {
+      console.error('Copy failure: ', err);
+    });
+  }
+
+  function handleFileSelected(input) {
+    const display = document.getElementById('file-chosen-text');
+    if (input.files && input.files[0]) {
+      display.textContent = input.files[0].name + ' (' + (input.files[0].size / 1024).toFixed(1) + ' KB)';
+      display.classList.remove('text-on-surface-variant', 'italic');
+      display.classList.add('text-tertiary', 'font-semibold');
+    }
+  }
+
+  function handleFormSubmit(e) {
+    e.preventDefault();
+    const btn = document.getElementById('submit-btn');
+    const successBox = document.getElementById('submission-success');
+    const refHolder = document.getElementById('success-ref');
+
+    btn.disabled = true;
+    btn.innerHTML = '<span>Verifying &amp; Recording…</span>';
+
+    setTimeout(() => {
+      const randomRef = 'BCKS-80G-' + Math.floor(100000 + Math.random() * 900000);
+      if (refHolder) refHolder.textContent = randomRef;
+      btn.innerHTML = '<span>Intimation Lodged</span>';
+      successBox.classList.remove('hidden');
+      successBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }, 600);
+  }
+</script></main><footer class="w-full bg-surface-container-low border-t border-outline-variant/40 mt-space-3xl"><div class="max-w-7xl mx-auto px-margin lg:px-margin-desktop py-space-2xl"><div class="grid grid-cols-1 md:grid-cols-12 gap-gutter-desktop border-b border-outline-variant/30 pb-space-xl"><div class="md:col-span-4 flex flex-col gap-space-sm"><h3 class="font-headline-md text-headline-md text-primary">Bardhaman Chhatra Kalyan Samiti</h3><p class="font-quote-lead text-caption italic text-secondary">সা বিদ্যা যা বিমুক্তয়ে — That is knowledge which liberates</p><p class="font-body-sm text-body-sm text-on-surface-variant pr-space-md">An autonomous humanist charity and educational endowment dedicated to destitute students, meritorious scholars, and rural literacy across Purba Bardhaman since 1954.</p></div><div class="md:col-span-3 flex flex-col gap-space-xs font-body-sm text-body-sm text-on-surface-variant"><span class="font-label-caps text-label-caps uppercase tracking-wider text-on-surface font-bold mb-space-xs">Secretariat &amp; Records</span><p>Administrative Archives, Court Compound</p><p>Opposite District Library, Bardhaman 713101</p><p>Purba Bardhaman District, West Bengal</p><p class="mt-space-xs">Office Hours: Mon–Fri, 10:00 AM – 05:00 PM</p></div><div class="md:col-span-3 flex flex-col gap-space-xs font-body-sm text-body-sm text-on-surface-variant"><span class="font-label-caps text-label-caps uppercase tracking-wider text-on-surface font-bold mb-space-xs">Statutory Registration</span><p>West Bengal Societies Act XXVI of 1961: <span class="font-semibold text-on-surface">S/14298</span></p><p>Income Tax Exemption: <span class="font-semibold text-on-surface">12A / AAATB3142GE</span></p><p>Donation Deductibility: <span class="font-semibold text-on-surface">80G(5)(vi) Verified</span></p><p>NITI Aayog Darpan: <span class="font-semibold text-on-surface">WB/2018/019234</span></p></div><div class="md:col-span-2 flex flex-col gap-space-xs font-label-caps text-label-caps uppercase tracking-wider"><span class="text-on-surface font-bold mb-space-xs">Folio &amp; Bylaws</span><a class="text-on-surface-variant hover:text-primary transition-colors" data-path="constitution-and-bylaws" href="#">Constitution</a><a class="text-on-surface-variant hover:text-primary transition-colors" data-path="financial-audits" href="#">Audited Balance</a><a class="text-on-surface-variant hover:text-primary transition-colors" data-path="executive-council" href="#">Executive Council</a><a class="text-on-surface-variant hover:text-primary transition-colors" data-path="rti-declaration" href="#">RTI Declaration</a><a class="text-on-surface-variant hover:text-primary transition-colors" data-path="annual-report" href="#">Annual Gazette</a></div></div><div class="pt-space-lg flex flex-col sm:flex-row items-center justify-between gap-space-sm font-caption text-caption text-on-surface-variant"><span>© 1954–2025 Bardhaman Chhatra Kalyan Samiti. Printed Broadside Gazette Edition. All records public.</span><span class="font-label-caps text-caption uppercase tracking-widest text-outline">Crafted with Dignified Editorial Restraint</span></div></div></footer></body></html>
