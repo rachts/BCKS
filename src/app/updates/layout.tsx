@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Official Dispatches & Circulars Gazette | Bardhaman Chhatra Kalyan Samiti',
-  description: 'Chronicle of notices, scholarship awardee notifications, health camp schedules, and downloadable circular PDFs.',
+  title: 'Updates | Bardhaman Chhatra Kalyan Samiti',
+  description: '[TODO: approved notices, results, publication dates, and documents] for Bardhaman Chhatra Kalyan Samiti.',
 };
 
 export default function UpdatesLayout({ children }: { children: React.ReactNode }) {

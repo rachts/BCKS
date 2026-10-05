@@ -24,41 +24,42 @@ export default function RevealOnScroll({
   const containerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    // Check reduced motion
-    const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    if (prefersReducedMotion || !containerRef.current) {
+    if (!containerRef.current) {
       return;
     }
 
     gsap.registerPlugin(ScrollTrigger);
 
     const ctx = gsap.context(() => {
-      const targets = selector
-        ? containerRef.current?.querySelectorAll(selector)
-        : containerRef.current;
+      const media = gsap.matchMedia();
+      media.add("(prefers-reduced-motion: no-preference)", () => {
+        const targets = selector
+          ? containerRef.current?.querySelectorAll(selector)
+          : containerRef.current;
 
-      if (!targets) return;
+        if (!targets) return;
 
-      gsap.fromTo(
-        targets,
-        {
-          y,
-          opacity: 0,
-        },
-        {
-          y: 0,
-          opacity: 1,
-          duration: 0.9,
-          delay,
-          stagger: stagger || 0,
-          ease: "power3.out",
-          scrollTrigger: {
-            trigger: containerRef.current,
-            start: "top 85%",
-            once: true,
+        gsap.fromTo(
+          targets,
+          {
+            y,
+            opacity: 0,
           },
-        }
-      );
+          {
+            y: 0,
+            opacity: 1,
+            duration: 0.9,
+            delay,
+            stagger: stagger || 0,
+            ease: "power3.out",
+            scrollTrigger: {
+              trigger: containerRef.current,
+              start: "top 85%",
+              once: true,
+            },
+          }
+        );
+      });
     }, containerRef);
 
     return () => ctx.revert();

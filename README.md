@@ -1,141 +1,97 @@
-# Bardhaman Chhatra Kalyan Samiti (BCKS) | বর্ধমান ছাত্র কল্যাণ সমিতি
+# Bardhaman Chhatra Kalyan Samiti (BCKS)
 
-A production-grade, bespoke web application built for the historic charitable society **Bardhaman Chhatra Kalyan Samiti** (Reg. S/1L/83617 under the West Bengal Societies Registration Act XXVI of 1961), founded in 2011 by Sri Baidyanath Singha Roy and dedicated to educational stipends, health camps, student welfare, and talent competitions across Purba and Paschim Bardhaman.
+Next.js website for Bardhaman Chhatra Kalyan Samiti, a student-welfare NGO in
+Bardhaman, West Bengal. This repository is a publication candidate, not proof
+of registration, tax status, payment credentials, programme history or live
+intake. Unverified content remains visibly marked `[TODO: ...]`.
 
----
+## Verified client-supplied scope
 
-## 🎨 Design System: "Heritage Broadside"
+- Activities: scholarships, quiz competitions, drawing and cultural
+  competitions, and health checkups.
+- Founder and founder-secretary: Sri Baidyanath Singha Roy, now on the
+  Advisory Committee; formerly Assistant Headmaster of Bardhaman Raj
+  Collegiate School and co-founder of Students Health Home, Bardhaman.
+- Fees: new membership Rs 2,000; annual renewal Rs 500; minimum donation
+  Rs 200.
+- Scholarship eligibility is limited to the four criteria shown on
+  `/scholarships` and `/apply`.
 
-The design strictly embodies the **"Heritage Broadside"** aesthetic — evoking a beautifully printed, archival annual report and gazette:
+See [`docs/CONTENT_NEEDED.md`](docs/CONTENT_NEEDED.md) before publishing.
 
-- **Color Palette**:
-  - **Paper Cream** (`#FAF6EC` / `bg-paper-cream`): Warm, archival background base
-  - **Paper Dark** (`#F1EADA` / `bg-paper-dark`): Subtly contrasted column tints and callout cards
-  - **Deep Ink** (`#1F2430` / `text-deep-ink`): High-legibility classical typography
-  - **Deep Maroon** (`#7A1F2B` / `text-deep-maroon` / `bg-deep-maroon`): Primary institutional accent
-  - **Muted Marigold** (`#D9A441`): Used sparingly for dates, thin rules, and brass badge highlights
-  - **Hairline Border** (`#E2DAC8` / `border-hairline`): 1px ink rules at 15% opacity
-- **Typography**:
-  - Headings: Serif (**Playfair Display**) — Hero (64–80px), Section titles (36–48px)
-  - Body: Sans-serif (**Source Sans 3** & **Plus Jakarta Sans**) — 17–18px, generous 1.7 line height
-  - Accents: 11px uppercase, tracked section labels accompanied by a 24px hairline rule; 72–120px italic serif numerals for milestones, metrics, and steps.
-- **Editorial Rules**:
-  - Maximum **ONE** deep-maroon accent band per page (with cream text) for a quote or primary CTA.
-  - Authentic hairline `<table>` styling with no zebra striping or card wrappers.
-  - Calm, trustworthy micro-interactions and smooth scroll.
+## Stack and routes
 
----
+Next.js 16 App Router, React 19, TypeScript, Tailwind CSS v4, GSAP and Lenis.
+The current route set is `/`, `/about`, `/scholarships`, `/competitions`,
+`/student-programmes`, `/functions`, `/our-people`, `/membership`, `/apply`,
+`/agm`, `/updates`, `/donate`, `/ways-to-give`, `/privacy` and
+`/refund-policy` and `/gallery`, plus `robots.txt` and `sitemap.xml`.
 
-## 🛠 Tech Stack
+The visual system is the existing Heritage Broadside design: cream paper,
+deep ink, maroon and restrained marigold, serif/sans typography, hairlines and
+calm motion. Do not add facts while editing content.
 
-- **Framework**: [Next.js 16 (App Router)](https://nextjs.org/)
-- **UI Runtime**: React 19
-- **Styling**: Tailwind CSS v4 with custom CSS variables and font configuration
-- **Animations**: [GSAP 3](https://greensock.com/gsap/) with [ScrollTrigger](https://greensock.com/scrolltrigger/)
-- **Smooth Scrolling**: [Lenis (lenis/react)](https://lenis.darkroom.engineering/)
-- **Language**: TypeScript (strict mode)
-- **Icons**: Lucide React
+## Requirements
 
----
+- Node.js `>=20.9.0` and npm `>=10`.
+- One package manager: npm. Use the committed `package-lock.json`.
+- Forms are hard-coded local demos. Environment variables cannot enable live
+  submissions; connecting a service requires a separately approved code change.
 
-## 🧭 Page Architecture & Routes
-
-The application features 13 fully responsive, server-rendered routes:
-
-1. **`/` (Homepage)**:
-   - Hero broadside with archival photography and gold badge
-   - Multi-metric statistics counter strip
-   - Tripartite mission & ideological tenets
-   - Archival activities showcase collage
-   - Merit criteria breakdown
-   - Founder quote dark band (Sri Baidyanath Singha Roy)
-   - Official gazette notices table with download circular links
-2. **`/about` (About the Samiti)**:
-   - Society genesis, charter registration summary (Reg. S/1L/83617)
-   - Dual-column broadsheet article with archival images
-   - Institutional milestones timeline (2011–2022)
-   - Founder biography and statutory transparency disclosure
-3. **`/scholarships` (Scholarships & Merit Stipends)**:
-   - Merit-cum-means criteria with large italic numerals
-   - 2026–27 academic stipend disbursement calendar
-   - Mandatory verification documents checklist
-   - Roll of merit scholars (historical disbursement register)
-   - Applicant desk rail & institutional nomination dark band
-4. **`/apply` (Application Forms & Digital Docket)**:
-   - 4 Statutory printable forms (`BCKS/ADM/M-01`, `BCKS/SCH/S-04`, `BCKS/VID/V-02`, `BCKS/COMP/N-03`)
-   - Interactive slide-out digital application docket drawer with live client-side validation
-   - Institutional intake trend graphic and submission guidelines
-5. **`/student-programmes` (Student Programmes & Health)**:
-   - Mobile diagnostic clinics and free ophthalmic camps
-   - Upcoming community health camps schedule
-   - Adolescent wellbeing and career counselling forum
-   - Medical volunteer patronage callout
-6. **`/competitions` (Annual Inter-School Competitions)**:
-   - Inter-school competition categories table (Elocution, Art, Quiz, Essay)
-   - Regulatory code collapsibles and criteria
-   - Chronicle of laureates (2023, 2024, 2025 results archive)
-   - Memorial prize patronage callout
-7. **`/functions` (Functions & Photographic Monographs)**:
-   - Archival photo monograph across Chapter I (AGM), Chapter II (Vidyasagar Jayanti), and Chapter III (Observances)
-   - Client-side year filter tabs (All, 2025, 2024, 2023)
-   - High-resolution photographic cards with Bengali annotations
-8. **`/our-people` (Governing Council & Patrons)**:
-   - Governing Council Directory (President Sri Amar Nath Ghosh, General Secretary Sri Baidyanath Singha Roy, Treasurer Sri Soumen Mukherjee)
-   - Executive committee members with affiliations and portfolios
-   - Institutional advisors and founding council roll
-9. **`/membership` (Membership & Patron Roll)**:
-   - Membership classifications (Life, Ordinary, Student)
-   - Statutory rights and constitutional duties under Act XXVI of 1961
-   - 3-Step enrolment protocol
-   - Searchable active district register with instant filtering
-10. **`/agm` (Annual General Meeting)**:
-    - Official notice plate for the 15th AGM
-    - Quorum, proxy, and voting eligibility rules
-    - 6-Stage parliamentary order of conclave
-    - Statutory auditor appointment notice
-11. **`/updates` (Official Dispatches Gazette)**:
-    - Gazette dispatches with Bengali dates
-    - Category filtering (All, Circular, Scholarship, Health Camp, Notice)
-    - Downloadable circular links and press communiqués
-12. **`/donate` (Donate & 80G Tax Exemption)**:
-    - Preset contribution chips (₹500 to ₹10,000) and custom input
-    - Official UPI QR code and one-click UPI ID copy
-    - Institutional NEFT/RTGS bank credentials
-    - Section 80G tax deduction claim form
-13. **`/ways-to-give` (Ways to Give)**:
-    - 7 Philanthropic pathways (Named Endowments, Book Bank, Health Camps, Corpus)
-    - Audited financial ledgers and transparency disclosures
-    - Statutory certificates (80G, 12A, WB Societies Act)
-    - Founding charter broadside quote
-
----
-
-## 🚀 Running Locally
-
-Ensure Node.js 18+ is installed.
+## Commands
 
 ```bash
-# Install dependencies
-npm install
-
-# Start development server
+npm ci
 npm run dev
-
-# Build for production
+npm run lint
+npm run typecheck
 npm run build
-
-# Start production server
-npm run start -p 3000
+npm test
+npm run test:axe
+npm run test:lighthouse
+npm audit --omit=dev --audit-level=high
 ```
 
-The application is accessible at [http://localhost:3000](http://localhost:3000).
+`npm test` runs Playwright route, viewport, overflow, image, console, reduced-
+motion, accessibility, navigation, link, mock Donate and form-validation
+checks. Lighthouse audits `/`, `/donate` and `/scholarships` on mobile and
+writes ignored reports under `reports/verification/`.
 
----
+## Environment
 
-## 🏛 Legal & Statutory Information
+| Variable | Required | Purpose |
+| --- | --- | --- |
+| `NEXT_PUBLIC_SITE_URL` | Required for hosted metadata | HTTPS preview origin for social metadata and sitemap. Canonicals still need a production decision. |
 
-- **Registered Society**: Bardhaman Chhatra Kalyan Samiti
-- **Registration No.**: S/1L/83617 under West Bengal Societies Registration Act XXVI of 1961
-- **Tax Exemption**: Section 80G & 12A of the Income Tax Act, 1961
-- **Registered Office**: Raniganj Bazar, Bardhaman, West Bengal 713101, India
-- **Contact**: contact@bcks-bardhaman.org | +91 342 256 0192
+Never commit `.env.local`, credentials, QR payloads, private sheet URLs or
+tokens. See `docs/PAYMENT_RUNBOOK.md` for the operational contract still
+needed before live payment use.
+
+## Content workflow
+
+Editable site constants currently live in `src/content/site.ts`; most page
+copy is still in route components and needs migration to `content/` before a
+non-developer editing workflow is promised. Use `docs/CONTENT_GUIDE.md` and
+the approval register in `docs/CONTENT_NEEDED.md`. Do not publish student or
+child names beside photos.
+
+## Deployment notes
+
+`npm run build` exports to `out/`; `npm start` previews that directory locally.
+Cloudflare Pages is approved, with Netlify as an alternative: build command
+`npm run build`, publish directory `out`, no Next server adapter. Images are
+served as static assets (`unoptimized: true`); security headers are supplied by
+`public/_headers`. All pages retain noindex, including the 404.
+
+No hosted preview has been deployed. Configure access protection for ALL preview
+and domain aliases before sharing: noindex and an unlisted URL are not privacy.
+Upload only `out/`, never private `.opencode/` material or archival references.
+Public launch remains blocked by content, consent and service approvals.
+
+## Current verification snapshot
+
+2026-10-05: lint, typecheck and static export passed; 93 Playwright tests passed,
+including 16-route accessibility, responsive layouts, local-only forms and
+withheld photographs. Historical Lighthouse measurements predate this export;
+do not treat them as fresh scores. Demo SEO is intentionally limited by noindex.
+No live payment, backend, consent or hosted access-control verification is claimed.

@@ -1,0 +1,2 @@
+import Link from 'next/link';
+export default function NotFound() { return <main className="max-w-[900px] mx-auto px-6 py-24"><p className="font-mono text-xs text-maroon">404 / NOT FOUND</p><h1 className="font-serif text-5xl mt-3">This page is not in the archive.</h1><p className="mt-4">The link may be outdated or the document may not have been published.</p><Link className="inline-block mt-8 text-maroon underline" href="/">Return to the homepage</Link></main>; }

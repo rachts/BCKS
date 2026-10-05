@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SmoothScroll from "@/components/SmoothScroll";
+import { isDemo } from "@/content/demo";
 
 const playfair = Playfair_Display({
   subsets: ["latin"],
@@ -18,24 +19,42 @@ const sourceSans = Source_Sans_3({
 });
 
 export const metadata: Metadata = {
-  title: "Bardhaman Chhatra Kalyan Samiti (BCKS) | বর্ধমান ছাত্র কল্যাণ সমিতি",
+  robots: isDemo ? { index: false, follow: false } : undefined,
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'),
+  title: { default: "Bardhaman Chhatra Kalyan Samiti (BCKS)", template: "%s | BCKS" },
   description:
-    "Established 2011. Grassroots registered charity in Purba Bardhaman dedicated to student welfare, higher education merit scholarships, academic competitions, and community service. 80G tax exempt.",
+    "Bardhaman Chhatra Kalyan Samiti supports student welfare through scholarships, competitions and health checkups.",
   keywords: [
     "Bardhaman Chhatra Kalyan Samiti",
     "BCKS Burdwan",
     "Student Welfare Society",
-    "Higher Education Scholarships West Bengal",
+    "School Scholarships West Bengal",
     "Sit and Draw Competition Bardhaman",
-    "Purba Bardhaman Charity",
-    "80G Tax Exemption NGO",
+    "Student Welfare Bardhaman",
   ],
   authors: [{ name: "Bardhaman Chhatra Kalyan Samiti" }],
   openGraph: {
     title: "Bardhaman Chhatra Kalyan Samiti (BCKS)",
-    description: "No deserving student should stop learning because of money. Serving students across Purba Bardhaman since 2011.",
+    description: "Student welfare through scholarships, competitions and health checkups.",
     type: "website",
     locale: "en_IN",
+    images: [{
+      url: "/images/brand/bcks-logo.png",
+      width: 640,
+      height: 640,
+      alt: "Bardhaman Chhatra Kalyan Samiti organisation logo",
+    }],
+  },
+  twitter: {
+    card: 'summary',
+    title: 'Bardhaman Chhatra Kalyan Samiti',
+    description: 'Student welfare through scholarships, competitions and health checkups.',
+    images: [{
+      url: "/images/brand/bcks-logo.png",
+      width: 640,
+      height: 640,
+      alt: "Bardhaman Chhatra Kalyan Samiti organisation logo",
+    }],
   },
 };
 
@@ -50,9 +69,14 @@ export default function RootLayout({
       className={`${playfair.variable} ${sourceSans.variable} scroll-smooth antialiased`}
     >
       <body className="bg-paper text-ink min-h-screen flex flex-col selection:bg-maroon selection:text-paper font-sans">
+        <a href="#main-content" className="skip-link">Skip to content</a>
         <SmoothScroll>
+          {isDemo && <div className="hairline-b bg-paper-dark px-4 py-2 text-center text-xs text-ink leading-relaxed">
+            <strong className="text-maroon uppercase tracking-wider">Demonstration preview</strong>
+            <span> · No payments or applications are sent. Missing NGO details remain marked TODO.</span>
+          </div>}
           <Navbar />
-          <main className="flex-grow">{children}</main>
+          <main id="main-content" tabIndex={-1} className="flex-grow">{children}</main>
           <Footer />
         </SmoothScroll>
       </body>

@@ -12,6 +12,9 @@ node_modules/
 # Environment variables
 .env*.local
 .env
+.env.*
+!.env.example
+stitch_screens/
 
 # Logs
 logs
@@ -35,8 +38,15 @@ lerna-debug.log*
 *.sln
 *.sw?
 
+# Temporary / generated assets
+public/screens/
+src/src/
+
 # Scratch scripts
 fetch_stitch.py
 fetch_batch2.py
 fetch_batch3.py
 test_*.js
+test-results/
+playwright-report/
+reports/verification/

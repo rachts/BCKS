@@ -31,7 +31,7 @@ export default function SectionHeader({
       {badge && (
         <div className={`flex items-center space-x-2 text-[11px] font-semibold tracking-folio uppercase text-maroon mb-3 ${isCentered ? "justify-center" : ""}`}>
           <span>{badge}</span>
-          <span className="w-6 h-[1.5px] bg-maroon inline-block"></span>
+          <span aria-hidden="true" className="w-6 h-px bg-maroon inline-block"></span>
         </div>
       )}
       {level === "h1" ? (

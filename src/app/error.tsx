@@ -1,0 +1,3 @@
+'use client';
+import { useEffect } from 'react';
+export default function Error({ reset }: { reset: () => void }) { useEffect(() => {}, []); return <main className="max-w-[900px] mx-auto px-6 py-24"><p className="font-mono text-xs text-maroon">ERROR / TEMPORARY INTERRUPTION</p><h1 className="font-serif text-4xl mt-3">The archive could not be loaded.</h1><p className="mt-4">Please try again. No payment or application is considered submitted unless the confirmation step succeeds.</p><button onClick={() => reset()} className="mt-8 bg-maroon text-paper px-5 py-3 rounded">Try again</button></main>; }
