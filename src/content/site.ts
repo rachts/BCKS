@@ -1,5 +1,5 @@
 export const siteContent = {
-  name: 'Bardhaman Chhatra Kalyan Samiti',
+  name: 'BARDHAMAN CHHATRA KALYAN SAMITY',
   founder: 'Sri Baidyanath Singha Roy',
   founderRole: 'Founder and founder-secretary; now on the Advisory Committee',
   founderBackground:
