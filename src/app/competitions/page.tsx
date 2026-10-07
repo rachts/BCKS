@@ -12,7 +12,7 @@ export default function CompetitionsPage() {
           <SectionHeader
             badge="Competitions"
             title="Quiz, drawing and cultural competitions"
-            subtitle="Quiz, drawing and cultural competitions are activities of Bardhaman Chhatra Kalyan Samiti."
+            subtitle="Quiz, drawing and cultural competitions are activities of BARDHAMAN CHHATRA KALYAN SAMITY."
             level="h1"
           />
         </header>

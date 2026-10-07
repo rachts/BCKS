@@ -1,7 +1,7 @@
 import SectionHeader from '@/components/SectionHeader';
 
 export const metadata = {
-  title: 'Functions & Celebrations | Bardhaman Chhatra Kalyan Samiti',
+  title: 'Functions & Celebrations | BARDHAMAN CHHATRA KALYAN SAMITY',
   description: 'Functions and celebrations information is awaiting confirmation.',
 };
 

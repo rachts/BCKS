@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Membership | Bardhaman Chhatra Kalyan Samiti',
+  title: 'Membership | BARDHAMAN CHHATRA KALYAN SAMITY',
   description: 'New membership Rs 2000; renewal Rs 500 per year. [TODO: membership terms and approved public register].',
 };
 

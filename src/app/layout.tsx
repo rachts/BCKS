@@ -21,20 +21,20 @@ const sourceSans = Source_Sans_3({
 export const metadata: Metadata = {
   robots: isDemo ? { index: false, follow: false } : undefined,
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'),
-  title: { default: "Bardhaman Chhatra Kalyan Samiti (BCKS)", template: "%s | BCKS" },
+  title: { default: "BARDHAMAN CHHATRA KALYAN SAMITY (BCKS)", template: "%s | BCKS" },
   description:
-    "Bardhaman Chhatra Kalyan Samiti supports student welfare through scholarships, competitions and health checkups.",
+    "BARDHAMAN CHHATRA KALYAN SAMITY supports student welfare through scholarships, competitions and health checkups.",
   keywords: [
-    "Bardhaman Chhatra Kalyan Samiti",
+    "BARDHAMAN CHHATRA KALYAN SAMITY",
     "BCKS Burdwan",
     "Student Welfare Society",
     "School Scholarships West Bengal",
     "Sit and Draw Competition Bardhaman",
     "Student Welfare Bardhaman",
   ],
-  authors: [{ name: "Bardhaman Chhatra Kalyan Samiti" }],
+  authors: [{ name: "BARDHAMAN CHHATRA KALYAN SAMITY" }],
   openGraph: {
-    title: "Bardhaman Chhatra Kalyan Samiti (BCKS)",
+    title: "BARDHAMAN CHHATRA KALYAN SAMITY (BCKS)",
     description: "Student welfare through scholarships, competitions and health checkups.",
     type: "website",
     locale: "en_IN",
@@ -42,18 +42,18 @@ export const metadata: Metadata = {
       url: "/images/brand/bcks-logo.png",
       width: 640,
       height: 640,
-      alt: "Bardhaman Chhatra Kalyan Samiti organisation logo",
+      alt: "BARDHAMAN CHHATRA KALYAN SAMITY organisation logo",
     }],
   },
   twitter: {
     card: 'summary',
-    title: 'Bardhaman Chhatra Kalyan Samiti',
+    title: 'BARDHAMAN CHHATRA KALYAN SAMITY',
     description: 'Student welfare through scholarships, competitions and health checkups.',
     images: [{
       url: "/images/brand/bcks-logo.png",
       width: 640,
       height: 640,
-      alt: "Bardhaman Chhatra Kalyan Samiti organisation logo",
+      alt: "BARDHAMAN CHHATRA KALYAN SAMITY organisation logo",
     }],
   },
 };

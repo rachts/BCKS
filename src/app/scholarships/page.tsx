@@ -3,7 +3,7 @@ import SectionHeader from '@/components/SectionHeader';
 import RevealOnScroll from '@/components/RevealOnScroll';
 
 export const metadata = {
-  title: 'Scholarships | Bardhaman Chhatra Kalyan Samiti',
+  title: 'Scholarships | BARDHAMAN CHHATRA KALYAN SAMITY',
   description: 'Scholarship eligibility for financially disadvantaged, meritorious government or government-sponsored school students in Classes 9–12.',
 };
 
@@ -19,7 +19,7 @@ export default function ScholarshipsPage() {
     <section className="max-w-[1200px] mx-auto px-4 sm:px-6 pt-10 sm:pt-14 pb-20">
       <header className="pb-10 hairline-b">
         <SectionHeader badge="Scholarships" title="Scholarship eligibility and application information" level="h1" />
-        <p className="text-base text-ink/80 leading-relaxed max-w-2xl">Scholarships are an activity of Bardhaman Chhatra Kalyan Samiti. The four eligibility criteria are listed below.</p>
+        <p className="text-base text-ink/80 leading-relaxed max-w-2xl">Scholarships are an activity of BARDHAMAN CHHATRA KALYAN SAMITY. The four eligibility criteria are listed below.</p>
       </header>
       <RevealOnScroll>
         <div className="py-12">

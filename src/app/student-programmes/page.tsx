@@ -3,15 +3,15 @@ import SectionHeader from '@/components/SectionHeader';
 import RevealOnScroll from '@/components/RevealOnScroll';
 
 export const metadata = {
-  title: 'Student Programmes & Health Initiatives | Bardhaman Chhatra Kalyan Samiti',
-  description: 'Health checkups, quiz, drawing and cultural competitions are activities of Bardhaman Chhatra Kalyan Samiti, Bardhaman, West Bengal.',
+  title: 'Student Programmes & Health Initiatives | BARDHAMAN CHHATRA KALYAN SAMITY',
+  description: 'Health checkups, quiz, drawing and cultural competitions are activities of BARDHAMAN CHHATRA KALYAN SAMITY, Bardhaman, West Bengal.',
 };
 
 export default function StudentProgrammesPage() {
   return (
     <section className="max-w-[1200px] mx-auto px-4 sm:px-6 pt-10 sm:pt-14 pb-20">
       <header className="pb-10 hairline-b">
-        <SectionHeader badge="Student Programmes" title="Student programmes and health checkups" level="h1" description="Activities of Bardhaman Chhatra Kalyan Samiti in Bardhaman, West Bengal." />
+        <SectionHeader badge="Student Programmes" title="Student programmes and health checkups" level="h1" description="Activities of BARDHAMAN CHHATRA KALYAN SAMITY in Bardhaman, West Bengal." />
       </header>
       <RevealOnScroll>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 py-12">

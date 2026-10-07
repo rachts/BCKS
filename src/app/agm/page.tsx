@@ -1,8 +1,8 @@
 import SectionHeader from '@/components/SectionHeader';
 
 export const metadata = {
-  title: 'Annual General Meeting (AGM) | Bardhaman Chhatra Kalyan Samiti',
-  description: 'Annual General Meeting information for Bardhaman Chhatra Kalyan Samiti.',
+  title: 'Annual General Meeting (AGM) | BARDHAMAN CHHATRA KALYAN SAMITY',
+  description: 'Annual General Meeting information for BARDHAMAN CHHATRA KALYAN SAMITY.',
 };
 
 export default function AgmPage() {

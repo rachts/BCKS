@@ -1,8 +1,8 @@
 import SectionHeader from '@/components/SectionHeader';
 
 export const metadata = {
-  title: 'Our People | Bardhaman Chhatra Kalyan Samiti',
-  description: 'Founder Sri Baidyanath Singha Roy, founder-secretary and Advisory Committee member of Bardhaman Chhatra Kalyan Samiti.',
+  title: 'Our People | BARDHAMAN CHHATRA KALYAN SAMITY',
+  description: 'Founder Sri Baidyanath Singha Roy, founder-secretary and Advisory Committee member of BARDHAMAN CHHATRA KALYAN SAMITY.',
 };
 
 export default function OurPeoplePage() {
@@ -20,7 +20,7 @@ export default function OurPeoplePage() {
           <p className="font-mono text-xs uppercase tracking-widest text-[#7A1F2B] mb-3">Founder / Founder-secretary; now Advisory Committee</p>
           <h2 className="font-serif text-3xl font-bold mb-5">Sri Baidyanath Singha Roy</h2>
           <p className="text-base text-[#1F2430]/85 leading-[1.8]">
-            Sri Baidyanath Singha Roy is the founder and founder-secretary of Bardhaman Chhatra Kalyan Samiti and is now a member of its Advisory Committee. He was Assistant Headmaster of Bardhaman Raj Collegiate School and co-founder of Students Health Home, Bardhaman.
+            Sri Baidyanath Singha Roy is the founder and founder-secretary of BARDHAMAN CHHATRA KALYAN SAMITY and is now a member of its Advisory Committee. He was Assistant Headmaster of Bardhaman Raj Collegiate School and co-founder of Students Health Home, Bardhaman.
           </p>
         </section>
         <section className="pt-10" aria-labelledby="committee">

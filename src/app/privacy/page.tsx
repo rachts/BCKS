@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-export const metadata = { title: 'Privacy notice', description: 'Draft privacy notice for Bardhaman Chhatra Kalyan Samiti.' };
+export const metadata = { title: 'Privacy notice', description: 'Draft privacy notice for BARDHAMAN CHHATRA KALYAN SAMITY.' };
 
 export default function PrivacyPage() {
   return <article className="max-w-[900px] mx-auto px-6 py-16 prose prose-slate">

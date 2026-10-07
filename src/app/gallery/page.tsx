@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import SectionHeader from '@/components/SectionHeader';
 
 export const metadata: Metadata = {
-  title: 'Photo Gallery | Bardhaman Chhatra Kalyan Samiti',
+  title: 'Photo Gallery | BARDHAMAN CHHATRA KALYAN SAMITY',
   description: 'Photographs are withheld pending verified event mapping and publication consent.',
 };
 

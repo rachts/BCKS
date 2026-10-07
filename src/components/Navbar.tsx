@@ -119,7 +119,7 @@ export default function Navbar() {
             <BrandLogo className="h-11 w-11 sm:h-14 sm:w-14" sizes="(min-width: 640px) 56px, 44px" priority />
             <div className="flex min-w-0 flex-col">
               <span className="font-serif font-bold text-[13px] sm:text-lg xl:text-[15px] tracking-tight text-ink group-hover:text-maroon transition-colors leading-tight">
-                Bardhaman Chhatra Kalyan Samiti
+                BARDHAMAN CHHATRA KALYAN SAMITY
               </span>
               <span lang="bn" className="font-serif text-[10px] sm:text-[11px] text-ink/70 font-medium leading-snug">
                 বর্ধমান ছাত্র কল্যাণ সমিতি

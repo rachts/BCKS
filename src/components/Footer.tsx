@@ -24,7 +24,7 @@ export default function Footer() {
           <BrandLogo className="h-14 w-14" sizes="56px" />
           <span className="flex min-w-0 flex-col font-serif">
             <span className="text-base font-semibold leading-tight text-ink group-hover:text-maroon transition-colors">
-              Bardhaman Chhatra Kalyan Samiti
+              BARDHAMAN CHHATRA KALYAN SAMITY
             </span>
             <span lang="bn" className="mt-1 text-xs text-ink/70">বর্ধমান ছাত্র কল্যাণ সমিতি</span>
           </span>
@@ -37,7 +37,7 @@ export default function Footer() {
               <span>Headquarters</span>
             </h2>
             <address className="not-italic space-y-2 text-xs leading-relaxed text-ink/85">
-              <p className="font-medium text-ink">Bardhaman Chhatra Kalyan Samiti</p>
+              <p className="font-medium text-ink">BARDHAMAN CHHATRA KALYAN SAMITY</p>
               <p>[TODO: verified postal address]</p>
               <p>[TODO: verified phone and email]</p>
               <div className="pt-2 space-y-1">
@@ -156,7 +156,7 @@ export default function Footer() {
         {/* Bottom Folio & Motto */}
         <div className="mt-12 pt-6 hairline-t flex flex-col sm:flex-row items-center justify-between text-xs text-ink/65 gap-4">
           <div>
-            <p>Bardhaman Chhatra Kalyan Samiti. All rights reserved.</p>
+            <p>BARDHAMAN CHHATRA KALYAN SAMITY. All rights reserved.</p>
           </div>
           <div className="text-center sm:text-right">
             <span className="font-serif italic text-maroon text-sm font-semibold tracking-wide">
