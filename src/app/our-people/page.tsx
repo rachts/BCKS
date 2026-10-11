@@ -25,7 +25,11 @@ export default function OurPeoplePage() {
         </section>
         <section className="pt-10" aria-labelledby="committee">
           <h2 id="committee" className="font-serif text-2xl font-bold mb-3">Committee</h2>
-          <p className="text-sm text-[#1F2430]/80">Information coming soon.</p>
+          <div className="space-y-4 text-sm text-[#1F2430]/80 leading-relaxed">
+            <p>The affairs of the organisation are managed by an Executive Committee elected by the members for a three-year term at the Annual General Meeting.</p>
+            <p>An Advisory Committee advises the Executive Committee. Its members are experienced members of the society or persons of eminence.</p>
+            <p>Current Executive Committee and Advisory Committee names and roles: <strong>[TODO: approved public committee list]</strong>.</p>
+          </div>
         </section>
       </div>
     </div>

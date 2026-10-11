@@ -21,12 +21,15 @@ export default function CompetitionsPage() {
           <ul className="grid grid-cols-1 md:grid-cols-3 gap-6 font-serif text-2xl font-bold">
             <li className="border-t border-[#1F2430]/15 pt-5">Quiz</li>
             <li className="border-t border-[#1F2430]/15 pt-5">Drawing</li>
-            <li className="border-t border-[#1F2430]/15 pt-5">Cultural Competitions</li>
+             <li className="border-t border-[#1F2430]/15 pt-5">Cultural competitions</li>
           </ul>
         </section>
         <section className="pt-10" aria-labelledby="competition-information">
           <h2 id="competition-information" className="font-serif text-2xl font-bold mb-3">Competition rules &amp; results</h2>
-          <p className="text-sm text-[#1F2430]/80">Information coming soon.</p>
+           <div className="space-y-4 text-sm text-[#1F2430]/80 leading-relaxed">
+             <p>Competitions are organised in two groups: Junior for Classes 5–8 and Senior for Classes 9–12. The subjects are recitation, music, drawing and quiz.</p>
+             <p>The last competition was held in April 2026. The winner list and detailed rules will be published after the competition records are reviewed.</p>
+           </div>
         </section>
       </div>
     </div>

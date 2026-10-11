@@ -20,7 +20,7 @@ export default function AboutPage() {
         </header>
         <section className="grid grid-cols-1 md:grid-cols-2 gap-10 py-10 border-b border-[#1F2430]/15">
           <p className="text-base leading-[1.8] text-[#1F2430]/85 first-letter:text-5xl first-letter:font-serif first-letter:text-[#7A1F2B] first-letter:float-left first-letter:mr-3 first-letter:leading-none">
-            BARDHAMAN CHHATRA KALYAN SAMITY is an NGO in Bardhaman, West Bengal. Its activities include scholarships, quiz, drawing and cultural competitions, and health checkups.
+            BARDHAMAN CHHATRA KALYAN SAMITY is an NGO working in Bardhaman, West Bengal, for the welfare of school-level students in and around Bardhaman Municipality. Since its inception in {siteContent.established}, the Samity has worked for deserving students from financially weaker sections of society. {siteContent.registration}
           </p>
           <div>
             <h2 className="font-serif text-2xl font-bold mb-4">Sri Baidyanath Singha Roy</h2>
@@ -42,7 +42,7 @@ export default function AboutPage() {
         </section>
         <section className="pt-10" aria-labelledby="institutional-information">
           <h2 id="institutional-information" className="font-serif text-2xl font-bold mb-3">Institutional history &amp; records</h2>
-          <p className="text-sm text-[#1F2430]/80">Information coming soon.</p>
+            <p className="text-sm text-[#1F2430]/80">The Samity was established in {siteContent.established} and works for students in government and government-sponsored schools. Further statutory records and contact details will be published after review.</p>
         </section>
       </div>
     </div>

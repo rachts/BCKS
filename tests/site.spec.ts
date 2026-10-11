@@ -71,13 +71,13 @@ for (const route of ['/donate', '/apply']) {
     await expect(form.locator('input[name="email"]')).toBeFocused();
     await sample.click();
     if (route === '/donate') {
-      await page.getByLabel('Amount', { exact: true }).fill('199');
+       await page.getByLabel('Amount', { exact: true }).fill('499');
       await run.click();
       await expect(form.getByRole('alert')).toContainText('at least');
-      await page.getByLabel('Amount', { exact: true }).fill('200.001');
+       await page.getByLabel('Amount', { exact: true }).fill('500.001');
       await run.click();
       await expect(form.getByRole('alert')).toContainText('decimal places');
-      await page.getByLabel('Amount', { exact: true }).fill('200.50');
+       await page.getByLabel('Amount', { exact: true }).fill('500.50');
     } else {
       await form.locator('input[name="class"]').fill('8');
       await run.click();
@@ -246,7 +246,7 @@ test('competition rules remain a concise pending note without fake clauses', asy
   await page.goto('/competitions');
   const clauses = page.locator('main button[aria-controls][aria-expanded]');
   await expect(clauses).toHaveCount(0);
-  await expect(page.getByText('Information coming soon.', { exact: true })).toBeVisible();
+  await expect(page.getByText('The last competition was held in April 2026.', { exact: false })).toBeVisible();
 });
 
 test('local links resolve and fragment targets exist', async ({ page, request }) => {

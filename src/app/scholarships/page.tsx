@@ -19,7 +19,7 @@ export default function ScholarshipsPage() {
     <section className="max-w-[1200px] mx-auto px-4 sm:px-6 pt-10 sm:pt-14 pb-20">
       <header className="pb-10 hairline-b">
         <SectionHeader badge="Scholarships" title="Scholarship eligibility and application information" level="h1" />
-        <p className="text-base text-ink/80 leading-relaxed max-w-2xl">Scholarships are an activity of BARDHAMAN CHHATRA KALYAN SAMITY. The four eligibility criteria are listed below.</p>
+         <p className="text-base text-ink/80 leading-relaxed max-w-2xl">Every year, the Samity provides scholarships to meritorious students from financially disadvantaged backgrounds who study in Classes 9–12 at government or government-sponsored schools.</p>
       </header>
       <RevealOnScroll>
         <div className="py-12">
@@ -35,6 +35,18 @@ export default function ScholarshipsPage() {
           </div>
         </div>
       </RevealOnScroll>
+      <section className="hairline-t py-10" aria-labelledby="scholarship-update">
+        <h2 id="scholarship-update" className="font-serif text-2xl font-semibold text-ink mb-3">2026 scholarship update</h2>
+        <p className="text-sm text-ink/80 leading-relaxed max-w-2xl">In 2026, scholarships were awarded to 55 students from 40 schools in Bardhaman.</p>
+      </section>
+      <section className="hairline-t py-10" aria-labelledby="csr-scholarships">
+        <h2 id="csr-scholarships" className="font-serif text-2xl font-semibold text-ink mb-3">Scholarships from CSR funds</h2>
+        <p className="text-sm text-ink/80 leading-relaxed max-w-2xl">A monthly scholarship project for needy, meritorious students using CSR funds is under process and is planned as a pilot project for the next academic season.</p>
+      </section>
+      <section className="hairline-t py-10" aria-labelledby="student-achievements">
+        <h2 id="student-achievements" className="font-serif text-2xl font-semibold text-ink mb-3">Student achievements</h2>
+        <p className="text-sm text-ink/80 leading-relaxed max-w-2xl">Since 2023, the Samity has supported a physically challenged student with monthly study stipends. In 2026, the student passed the Higher Secondary examination in Arts with nearly 70% marks. Some scholarship recipients also achieve 90% or more in Board examinations.</p>
+      </section>
       <aside className="hairline-t pt-6" aria-label="Application details pending">
         <p className="font-serif text-lg text-ink">Information coming soon</p>
         <p className="text-sm text-ink/75 mt-2 leading-relaxed">Award terms, application dates and submission instructions are awaiting confirmation.</p>

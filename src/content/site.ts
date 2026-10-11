@@ -4,14 +4,18 @@ export const siteContent = {
   founderRole: 'Founder and founder-secretary; now on the Advisory Committee',
   founderBackground:
     'Former Assistant Headmaster of Bardhaman Raj Collegiate School and co-founder of Students Health Home, Bardhaman.',
+  established: 2011,
+  registration: 'A society registered under the Society Registration Act and registered with DARPAN.',
   mission:
-    'To support deserving students with education, financial assistance, and opportunities that help them achieve their goals and build a better future.',
-  vision: 'To create a society where financial limitations never prevent a deserving student from pursuing education and realizing their potential.',
-  activities: ['Scholarships', 'Quiz competitions', 'Drawing and cultural competitions', 'Health checkups'],
+    'To work for the welfare of deserving school students from financially weaker sections of society.',
+  vision: 'Students are the future of society. By supporting underprivileged students, we can help build a better society.',
+  activities: ['Scholarships', 'Cultural competitions', 'Health camps and seminars'],
   fees: {
     newMembership: 2000,
     renewal: 500,
-    minimumDonation: 200,
+    minimumDonation: 500,
+    personalScholarship: 2000,
+    smritiPuraskar: 20000,
   },
   payment: {
     upiId: '[TODO: verified UPI ID]',

@@ -19,7 +19,7 @@ export default function HomePage() {
           <div className="lg:col-span-8 min-w-0">
             <p className="text-[11px] font-semibold tracking-folio uppercase text-maroon mb-5">Student welfare collective / Bardhaman, West Bengal</p>
             <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-[58px] leading-[1.12] text-ink font-semibold tracking-tight">{siteContent.name}</h1>
-            <p className="mt-6 text-base sm:text-lg text-ink/80 leading-relaxed max-w-2xl">Activities include scholarships, quiz, drawing and cultural competitions, and health checkups in Bardhaman, West Bengal.</p>
+            <p className="mt-6 text-base sm:text-lg text-ink/80 leading-relaxed max-w-2xl">Bardhaman Chhatra Kalyan Samity is an NGO working for the welfare of school-level students in and around Bardhaman Municipality, West Bengal.</p>
             <div className="mt-8 flex flex-wrap gap-4">
               <Link href="/scholarships" className="btn-primary py-3.5 px-7 text-base">Scholarship Information</Link>
               <Link href="/donate" className="btn-secondary py-3.5 px-7 text-base">Support / Donate</Link>
@@ -83,12 +83,12 @@ export default function HomePage() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           <article>
             <h3 className="font-serif text-2xl font-semibold text-ink mb-3">Become a Member</h3>
-            <p className="text-sm text-ink/80 leading-relaxed">New membership: Rs{siteContent.fees.newMembership}. Renewal: Rs{siteContent.fees.renewal} per year.</p>
+            <p className="text-sm text-ink/80 leading-relaxed">New membership: ₹{siteContent.fees.newMembership.toLocaleString()}. Annual renewal: ₹{siteContent.fees.renewal}.</p>
             <Link href="/membership" className="inline-block mt-5 text-sm font-semibold text-maroon hover:underline">Membership information →</Link>
           </article>
           <article>
             <h3 className="font-serif text-2xl font-semibold text-ink mb-3">Make a Donation</h3>
-            <p className="text-sm text-ink/80 leading-relaxed">Minimum donation: Rs{siteContent.fees.minimumDonation}.</p>
+            <p className="text-sm text-ink/80 leading-relaxed">Non-members can donate any amount in multiples of ₹{siteContent.fees.minimumDonation}.</p>
             <Link href="/donate" className="inline-block mt-5 text-sm font-semibold text-maroon hover:underline">Donation information →</Link>
           </article>
         </div>

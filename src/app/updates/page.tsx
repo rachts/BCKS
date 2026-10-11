@@ -11,7 +11,12 @@ export default function UpdatesPage() {
         <header className="pb-10 border-b border-[#1F2430]/15">
           <SectionHeader badge="Updates" title="Notices & Updates" level="h1" />
         </header>
-        <p className="py-10 text-sm text-[#1F2430]/80">Information coming soon.</p>
+        <section className="py-10 space-y-5 text-sm text-[#1F2430]/80 leading-relaxed" aria-labelledby="updates-information">
+          <h2 id="updates-information" className="font-serif text-2xl font-bold text-[#1F2430]">Updates</h2>
+          <p>Contact number and email ID of the society: <strong>[TODO: verified society contact]</strong>.</p>
+          <p>Contact details for Executive Committee members and the person responsible for the website: <strong>[TODO: approved public contact list]</strong>.</p>
+          <p>Notices, results and payment/member portals will be added after the relevant records, links and service details are verified.</p>
+        </section>
       </div>
     </div>
   );

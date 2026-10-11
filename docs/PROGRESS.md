@@ -1,5 +1,13 @@
 # Progress log
 
+## Corrections from supplied webpage copy — 2026-10-11
+- Updated approved organisation copy from the supplied “Corrections in webpages” document across the home, About, Scholarships, Student Programmes, Competitions, Membership and Ways to Give pages.
+- Corrected membership and giving amounts: ₹2,000 admission, ₹500 annual renewal, ₹2,000 Personal Scholarship, ₹20,000 Smriti Puraskar and non-member donations in multiples of ₹500.
+- Added supplied 2011 establishment, society/DARPAN registration wording, 2026 scholarship result (55 students from 40 schools), school reach (38 municipal schools and 2 adjoining panchayat schools), competition groups/subjects and April 2026 competition timing.
+- Kept unverified contact details, committee lists, payment identifiers, tax details, notices and winner names as pending or omitted. No student name was added to public copy without a separate privacy approval.
+- Added the supplied CSR scholarship pilot note, Executive Committee/Advisory Committee management structure, and updates/contact placeholders without inventing names, phone numbers, emails or portal links.
+- Validation after this correction pass: `npm run lint`, `npm run typecheck`, `npm run build`, focused Playwright checks (36 passed), full `npm test` (94 passed) and `git diff --check` all passed.
+
 ## Supplied organisation crest — 2026-10-05
 - Replaced Navbar placeholder boxed BCKS with supplied 640x640 crest; added
   aligned Footer branding using shared `src/components/BrandLogo.tsx`.
